@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "author": "Carlos Denner - VIDENS Analytics",
+    "version": "4.0.0",
+    "description": "Du battage médiatique aux politiques publiques : comment gouverner l'IA dans le secteur public",
+    "duration": "90 minutes",
+    "slides": 1
+  },
+  "segments": [
+    {
+      "id": "seg-1",
+      "title": "Du battage médiatique aux politiques publiques",
+      "subtitle": "Comment gouverner l'IA dans le secteur public",
+      "bullets": [],
+      "dimensions": [
+        {
+          "icon": "🎯",
+          "title": "Stratégique",
+          "description": "Vision et Planification"
+        },
+        {
+          "icon": "⚙️",
+          "title": "Opérationnelle",
+          "description": "Capacités et Approvisionnement"
+        },
+        {
+          "icon": "⚖️",
+          "title": "Éthique",
+          "description": "Transparence et Responsabilité"
+        }
+      ],
+      "keyMessage": "Du battage médiatique à la politique publique durable",
+      "media": [],
+      "engagement": {
+        "prompt": "Comment votre organisation aborde-t-elle actuellement la gouvernance de l'IA ?"
+      },
+      "citations": [],
+      "notes": "RÉSUMÉ : L'intelligence artificielle est passée d'une promesse technologique à un outil quotidien pour les gouvernements et les administrations publiques. Cependant, la vitesse de son adoption dépasse la capacité institutionnelle de la réglementer, de l'évaluer et de garantir son alignement avec l'intérêt public. Cette conférence propose un parcours critique du battage médiatique aux politiques publiques, explorant comment les États peuvent gouverner l'IA selon trois dimensions : stratégique (vision et planification), opérationnelle (capacités et approvisionnement public) et éthique (transparence, responsabilité et équité). À partir d'expériences internationales et latino-américaines, des lignes directrices pour une gouvernance responsable et durable de l'IA dans le secteur public seront présentées.",
+      "presenter": {
+        "name": "carlos.denner@videns.ai",
+        "title": "Expert en IA",
+        "organization": "Videns, propulsé par COFOMO",
+        "date": "14 août 2025",
+        "conference": "Intelligence Artificielle et Administration Publique, Semaine d'internationalisation de l'École supérieure d'administration publique – ESAP"
+      },
+      "isTitle": true
+    }
+  ]
+}

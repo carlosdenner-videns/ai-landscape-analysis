@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "author": "Carlos Denner - VIDENS Analytics",
+    "version": "4.0.0",
+    "description": "Del hype a la política pública: cómo gobernar la IA en el sector público",
+    "duration": "90 minutos",
+    "slides": 1
+  },
+  "segments": [
+    {
+      "id": "seg-1",
+      "title": "Del hype a la política pública",
+      "subtitle": "Cómo gobernar la IA en el sector público",
+      "bullets": [],
+      "dimensions": [
+        {
+          "icon": "🎯",
+          "title": "Estratégica",
+          "description": "Visión y Planificación"
+        },
+        {
+          "icon": "⚙️",
+          "title": "Operativa",
+          "description": "Capacidades y Contratación"
+        },
+        {
+          "icon": "⚖️",
+          "title": "Ética",
+          "description": "Transparencia y Rendición de Cuentas"
+        }
+      ],
+      "keyMessage": "Del hype tecnológico a la política pública sostenible",
+      "media": [],
+      "engagement": {
+        "prompt": "¿Cómo está abordando su organización la gobernanza de la IA actualmente?"
+      },
+      "citations": [],
+      "notes": "RESUMEN: La inteligencia artificial ha pasado de ser una promesa tecnológica a convertirse en una herramienta cotidiana para gobiernos y administraciones públicas. Sin embargo, la velocidad de su adopción supera la capacidad institucional para regularla, evaluarla y garantizar su alineación con el interés público. Esta conferencia propone un recorrido crítico del hype a la política pública, explorando cómo los Estados pueden gobernar la IA desde tres dimensiones: estratégica (visión y planificación), operativa (capacidades y contratación pública) y ética (transparencia, rendición de cuentas y equidad). A partir de experiencias internacionales y latinoamericanas, se presentarán lineamientos para una gobernanza responsable y sostenible de la IA en el sector público.",
+      "presenter": {
+        "name": "carlos.denner@videns.ai",
+        "title": "Experto en IA",
+        "organization": "Videns, propulsado por COFOMO",
+        "date": "14 de agosto, 2025",
+        "conference": "Inteligencia Artificial y Administración Pública, Semana de Internacionalización de la Escuela Superior de Administración Pública – ESAP"
+      },
+      "isTitle": true
+    }
+  ]
+}

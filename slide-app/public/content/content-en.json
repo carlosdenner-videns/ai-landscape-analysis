@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "author": "Carlos Denner - VIDENS Analytics",
+    "version": "4.0.0",
+    "description": "From Hype to Public Policy: How to Govern AI in the Public Sector",
+    "duration": "90 minutes",
+    "slides": 1
+  },
+  "segments": [
+    {
+      "id": "seg-1",
+      "title": "From Hype to Public Policy",
+      "subtitle": "How to Govern AI in the Public Sector",
+      "bullets": [],
+      "dimensions": [
+        {
+          "icon": "🎯",
+          "title": "Strategic",
+          "description": "Vision & Planning"
+        },
+        {
+          "icon": "⚙️",
+          "title": "Operational",
+          "description": "Capabilities & Procurement"
+        },
+        {
+          "icon": "⚖️",
+          "title": "Ethical",
+          "description": "Transparency & Accountability"
+        }
+      ],
+      "keyMessage": "From technological hype to sustainable public policy",
+      "media": [],
+      "engagement": {
+        "prompt": "How is your organization currently approaching AI governance?"
+      },
+      "citations": [],
+      "notes": "ABSTRACT: Artificial intelligence has moved from being a technological promise to becoming an everyday tool for governments and public administrations. However, the speed of its adoption exceeds institutional capacity to regulate, evaluate, and ensure alignment with the public interest. This conference proposes a critical journey from hype to public policy, exploring how States can govern AI from three dimensions: strategic (vision and planning), operational (capabilities and public procurement), and ethical (transparency, accountability, and equity). Drawing from international and Latin American experiences, guidelines for responsible and sustainable AI governance in the public sector will be presented.",
+      "presenter": {
+        "name": "carlos.denner@videns.ai",
+        "title": "Expert in AI",
+        "organization": "Videns, propulsed by COFOMO",
+        "date": "August 14, 2025",
+        "conference": "Artificial Intelligence and Public Administration, Internationalization Week of the Superior School of Public Administration – ESAP"
+      },
+      "isTitle": true
+    }
+  ]
+}
