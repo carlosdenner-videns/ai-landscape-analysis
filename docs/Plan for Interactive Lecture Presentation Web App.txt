@@ -1,0 +1,124 @@
+Plan for Interactive Lecture Presentation Web App
+Using the Lecture Outline as a Blueprint
+The lecture outline for the AI Landscape Analysis (Colombia presentation) will serve as our content blueprint. We will translate each outlined slide into a section of the web app, preserving all key points and visuals. According to the outline, the presentation is structured as follows[1][2]:
+* Opening (Slide 1): Context setting – Title and key points introducing the analysis (42 EU research papers, 710k words analyzed, etc.), with a word cloud visual (wordcloud.png) for impact[3].
+* Research Priorities (Slide 2): Top themes – Highlights the most frequent terms (e.g. Data – 3,031 mentions, Systems – 2,579, Health – 1,857)[4] using a bar chart (top_words.png). Key message: data governance is the #1 priority[5].
+* Policy Areas (Slide 3): Five pillars – Presents five AI policy-relevant areas (Technology & Innovation, Governance, Society, Applications, Ethics) with their mention counts[6], using a table or chart. This slide draws a comparison of strengths (e.g. ????? for Technology with 13,514 mentions, etc.) and notes relevance for Colombia.
+* Lessons for Colombia (Slide 4): Recommendations – Four evidence-based lessons: (1) Data Governance First (EU research shows data is foundational – 3,031 mentions[7]), (2) Balance Tech & Society (technical vs. social focus 2.25:1[8]), (3) Healthcare as Priority (health AI is a major application area – 1,857 mentions[9]), (4) Ethics Needs Attention (ethics had 2,534 mentions, needs strengthening[10]). Each lesson will be a bullet point with a brief explanation.
+* Gaps & Opportunities (Slide 5): Where Colombia Can Lead – Identifies gaps in the EU research and how they present opportunities for Colombia[11]. The outline lists underrepresented areas: Latin American context, agricultural AI, informal economy applications, Spanish language AI, and other Global South perspectives. This slide will emphasize that Colombia can contribute unique insights to these underexplored areas.
+Using this outline ensures we cover all required topics in a logical flow. Each “slide” in the web app will correspond to one of the above sections, with text and media aligned to the original lecture plan.
+Technology Stack: Building with React
+We will implement the presentation as a React single-page application, enabling interactive and smooth navigation through “slides.” Key considerations for the tech stack and design:
+* React Framework: Use Create React App or Next.js for easy setup. Each slide can be a React component or a route (if using a router for multipage style). This allows for dynamic content and potential interactive elements (like toggling languages).
+* Slide Navigation: Implement keyboard controls or on-click navigation to mimic slide advancement. We can use arrow key listeners or navigation buttons (Previous/Next) to move through sections. A progress indicator or menu can be added for quick jumps to sections.
+* Responsive Design: Ensure the layout is web-responsive so it looks good on a projector, laptop, or any device. Use simple CSS (or a library like Bootstrap/Tailwind) so that images and text scale appropriately (important for readability during presentation).
+* Embedding Media: We will embed images (charts, word cloud) using <img> tags or as static imports. For video content (the .mp4 in the project root and any relevant YouTube videos), we can use HTML5 <video> elements or React video player components. For example, an intro or interlude video can autoplay (with controls) in a slide. We’ll ensure to preload or stream videos so they play smoothly.
+By using React, we gain flexibility: we can include interactive elements (e.g., hover tooltips on charts, or expandable details) that traditional slides can’t, enhancing engagement. The React app will essentially function as a web-based slide deck, with each section of content rendered as a full-page view.
+Content and External Resources for Each Section
+To fill in gaps and enrich the presentation, we will integrate fresh statistics, graphics, and links. These will reinforce the points in each section:
+* Opening Slide (Context): We will add a brief description of the source of analysis (EU’s HUMAINT initiative) and why it matters. For credibility, include a link to the HUMAINT info[12] and mention that it’s cutting-edge EU AI research. Visual: the wordcloud.png shows dominant terms (e.g., “data”, “system”, “intelligence” appear largest[13]). We’ll ensure this image is front and center. Possibly include a caption or footnote that it’s based on 710k words of text analysis.
+* Research Priorities (Top Words): Alongside the top_words.png bar chart, we might provide context with a recent external stat: e.g., highlight that data is not only frequent in research but also a central issue in real-world AI policy. We could cite the EU AI Act’s focus on high-quality data governance (Article 10 mandates “high-quality datasets” for AI[14]). This reinforces why data tops the chart. Also, to illustrate healthcare priority: mention the booming AI in healthcare market (projected to reach $187 billion by 2030[15]) – this shows the slide’s point about health AI being a major area is backed by global trends.
+* Policy Areas (Five Pillars): For each area, we can add 1-2 contextual facts: e.g., AI Governance & Regulation: note that the EU is a “torch-bearer” in AI governance[16] (with the first comprehensive AI Act in 2024), stressing the strong governance research (7,558 mentions[6]). AI & Society: mention that social impact is significant (6,001 mentions[6]) and tie it to inclusion concerns (e.g., bias, digital divide). AI Ethics: emphasize emerging importance – for instance, UNESCO’s global AI Ethics Recommendation was adopted by 193 countries in 2021[17], reflecting worldwide interest in ethics even if research coverage is modest. These tidbits will make the table more than just numbers by linking to real-world initiatives.
+* Lessons for Colombia: We bolster each of the 4 lessons with external evidence:
+* Data Governance First – Add that Colombia is acting on this lesson: it launched a National AI Policy (CONPES 4144) in Feb 2025 focusing on data frameworks[18]. The EU’s experience (data mentioned 3,031 times) validates Colombia’s push to “establish data frameworks before AI deployment”[19].
+* Balance Technology & Society – The analysis shows technical topics outweighed social by ~2.25x[8]. We can reference a global perspective: advanced AI models mainly serve English speakers, while billions of non-English speakers are underserved[20]. This underscores balancing innovation with inclusion.
+* Healthcare as Priority – We’ll mention how health AI is an immediate opportunity. E.g., highlight that AI can improve healthcare outcomes (a Lancet Oncology study found AI-assisted screening caught 20% more cancers[21]). Also note Latin America’s need: by 2030 there will be an 11 million healthcare worker shortage[22] – AI could help bridge this gap. Such stats drive home why Colombia should focus on health tech (mirroring EU’s priority).
+* Ethics Needs Attention – Cite that only 17% of companies in LATAM have AI governance frameworks as of 2025[23] – indicating ethics and governance are still catching up. This is both a warning and an opportunity for Colombia to lead on AI ethics. We may also mention that public support for AI regulation is high (55% of Latin Americans)[23], so strengthening ethics is timely.
+* Gaps & Opportunities (Colombia’s Leadership): This final section will be enriched with fresh data to illuminate each gap:
+* Latin American Context: The EU research corpus had 0 mentions of Latin America[24]. We’ll contrast this with the reality: AI is rising in Latin America – the region saw an 18% increase in AI adoption in 2024, reaching 40% adoption[25] (though still trailing other regions). This gap highlights that EU research misses a dynamic emerging market, and Colombia can inject Latin American perspectives into global AI policy.
+* Agricultural AI: EU papers barely covered agriculture, but for Colombia this is crucial. We can note that AI in agriculture is growing – the global market was ~$2 billion in 2024[26] and expected to grow ~25% annually. Latin America stands to gain: e.g., in Brazil (where agri is ~30% of GDP), AI-powered precision farming saved 72 billion liters of water via one startup’s tech[27]. Colombia, with its large agricultural sector, could lead in agri-AI innovation where others haven’t.
+* Informal Economy Applications: The informal sector is huge in developing countries but absent in EU AI discourse. We’ll include a striking fact: over 60% of the world’s employed population (about 2 billion people) work in the informal economy[28]. Solutions addressing this (e.g., AI for informal small businesses or gig workers) are a niche for Colombia to explore, since EU research offers no guidance here.
+* Spanish Language AI: Emphasize language inclusion – most AI models are trained on English data, disadvantaging Spanish speakers. For instance, LLMs perform poorly for languages with limited data – they work well for 1.5 billion English speakers but much worse for others[20]. We can mention that Spanish (with ~500 million native speakers) still lacks AI resources compared to English. Colombia can push for AI that understands Spanish and local dialects, a perspective missing in English-centric research.
+* Global South Perspective: Note that AI policy is dominated by US/EU viewpoints. The Global South has unique attributes (as a WEF report notes: Latin America’s renewable energy, biodiversity, and cultural diversity give it an edge in AI development)[29]. Colombia can champion these strengths on the world stage – e.g., promote “technodiversity” and inclusive AI strategies. We will provide a link or footnote to such analysis to inspire thinking beyond the EU-centric narrative.
+Each section of content will thus combine the outline’s original insights with these added statistics, graphics, and references. All external facts will be cited or linked (we will display brief source info on the slides, or as footnote pop-ups). This not only fills the gaps in content but adds credibility and up-to-date context, ensuring the web-app presentation feels robust and current.
+Multilingual Support (English, Spanish, Portuguese)
+To cater to audiences in multiple languages (EN/ES/PT), we will structure content for easy localization:
+* Content Separation: All text content will be stored in separate JSON or JS files for each language (e.g., content-en.json, content-es.json, content-pt.json). These files will have the same structure (sections/slides with title, body text, captions, etc.), just translated. For example:
+
+  // content-en.json
+{
+  "slides": [
+    { "title": "AI Research Landscape: Evidence from 710,000 Words", 
+      "points": ["Analyzed 42 EU research publications", "Comprehensive view of AI policy priorities", "Using state-of-the-art NLP"] 
+    },
+    ... 
+  ]
+}
+  and similarly for Spanish and Portuguese with translated strings. This way, switching the language can dynamically swap the content source.
+* Language Toggle: Provide a UI toggle (buttons or a dropdown) to switch languages. Using React context or a simple state, we can load the appropriate content file based on the user’s choice. All components will re-render with the new language text.
+* RTL/LTR Consideration: Since Spanish and Portuguese are also LTR like English, layout remains the same. We just need to ensure text boxes are sized to fit possibly longer translated text.
+* Media Labels: If we include any text in images or charts, we’ll prepare translated versions or provide translated captions. For example, if the table on Slide 3 has headings in English, we can localize those strings too.
+* Testing: We will verify that each language version fits well (no text overflow, proper line breaks). The outline content is roughly a few bullet points per slide, which should translate compactly. We might need to adjust font sizes slightly if, say, Spanish text is significantly longer, but overall the structure is simple enough to manage in three languages.
+By planning multilingual support from the start, the presentation app can be used in international contexts – e.g., presenting to a Spanish-speaking policy group in Colombia, or a Portuguese-speaking audience – without creating separate slide decks. It future-proofs the content and expands its impact.
+Asset Collection and Folder Structure
+We will organize a clear folder structure to store all presentation assets (text, images, videos) so that the React app can easily load them. Below is a proposed structure:
+project-root/
+??? public/
+?   ??? index.html              # container HTML for React (if CRA)
+?   ??? assets/
+?   ?   ??? images/
+?   ?   ?   ??? wordcloud.png
+?   ?   ?   ??? top_words.png
+?   ?   ?   ??? document_lengths.png
+?   ?   ?   ??? topic_distribution.png
+?   ?   ?   ??? ... (any other graphics)
+?   ?   ??? videos/
+?   ?       ??? intro.mp4       # existing local video to embed
+?   ?       ??? ... (any other video files)
+?   ??? ... (other public files like favicon)
+??? src/
+?   ??? content/
+?   ?   ??? content-en.json     # English content for slides
+?   ?   ??? content-es.json     # Spanish content
+?   ?   ??? content-pt.json     # Portuguese content
+?   ??? components/
+?   ?   ??? Slide.js            # React component for a slide (renders title, points, media)
+?   ?   ??? SlideDeck.js        # Container or router for sequencing slides
+?   ?   ??? LanguageToggle.js   # Component for language switch UI
+?   ?   ??? ... other components (Navbar, Footer if any)
+?   ??? App.js                  # main app component
+?   ??? i18n.js (if using an i18n library, configuration can go here)
+??? package.json (and other config files)
+Notes on this structure:
+- The public/assets/images folder contains all the figure files (from the analysis output and any additional graphics we add). For instance, wordcloud.png, top_words.png, etc., as listed in the analysis summary[30]. We will also add any new images here (e.g., if we create a custom graphic or download one). By storing them in a known folder, we can reference them by path (e.g., <img src="/assets/images/wordcloud.png" alt="Word Cloud">).
+- The public/assets/videos folder will include the MP4 video the user developed (e.g., intro.mp4). We can reference it similarly (e.g., using a video component with src pointing to that file). If we plan to embed a YouTube video, we won’t store it locally but rather embed via an <iframe> or a player component. Those links can be kept in the content JSON or in the component.
+- In src/content/, we maintain the content for each language separately. This separation makes it easy to update translations or add another language. Each JSON contains all slide texts, which our app will load based on selected language. (If preferred, we could use a structured Markdown files per slide per language; however, JSON ensures easier key-value management for dynamic data like the mention counts that we might interpolate).
+- The React components in src/components/ will include a Slide component that takes data (title, bullet points, media references) and renders it. We might create specialized sub-components for different slide layouts (e.g., a component for the table in slide 3, one for a bullet list slide, etc.). The SlideDeck (or simply using React Router routes) will sequence the slides.
+- We will also include any styling (CSS files or styled-components) to control the look. Possibly a global stylesheet for basics (fonts, slide background colors) and maybe slide-specific styles if needed (e.g., making the word cloud image large and centered on opening slide).
+This structured approach means all external resources (images, videos, data files) are neatly organized for deployment. During development, we can drop new assets into the folders and reference them immediately. The folder setup also aligns with typical React app expectations, making it easy to package and deploy (for example, on GitHub Pages or a static site host for the presentation day).
+Conclusion and Next Steps
+By following the above plan, we will transform the static lecture outline into a beautiful, interactive web application. This approach offers several advantages over a traditional slide deck: rich media integration, live data/context via citations, and support for multiple languages.
+The next steps will be to collect all the needed assets and implement the React components:
+* Gather high-quality copies of the analysis visuals (wordcloud.png, etc.) and add any new graphics if needed (for instance, we might create a simple infographic for the “5 policy areas” or use existing charts from sources). All citations (as exemplified above) will be included in the content, so the audience can see sources for stats like “Latin America’s AI adoption reached 40% in 2024”[25] or “informal economy = 60% of global employment”[28].
+* Implement the React app structure and ensure that switching between English, Spanish, Portuguese content is seamless. We will translate the outline’s text to Spanish and Portuguese (maintaining the technical terms accurately) as needed.
+* Test the app thoroughly: navigate through slides, play the embedded video, switch languages, and resize screen to confirm responsiveness. Also test on the presentation hardware (if possible) to avoid any surprises.
+Once built, this web app will serve as a substitute for slides – during the presentation, we can simply open the app in a browser and use it to present, impressing the audience with an engaging format that includes live content, videos, and clickable references. By planning carefully and incorporating fresh, relevant information, we ensure no one will “miss the PowerPoint” at all! ??
+
+[1] [2] [3] [5] [7] [9] [10] [11] [13] [19] [24] HOW_TO_USE_FOR_COLOMBIA.md
+https://github.com/carlosdenner-videns/ai-landscape-analysis/blob/d7ce9a788fd3d2ab52d6dfe8e117bb5cf455e47a/docs/HOW_TO_USE_FOR_COLOMBIA.md
+[4] [6] [8] [30] ANALYSIS_SUMMARY.md
+https://github.com/carlosdenner-videns/ai-landscape-analysis/blob/d7ce9a788fd3d2ab52d6dfe8e117bb5cf455e47a/docs/ANALYSIS_SUMMARY.md
+[12] README.md
+https://github.com/carlosdenner-videns/ai-landscape-analysis/blob/d7ce9a788fd3d2ab52d6dfe8e117bb5cf455e47a/README.md
+[14] Article 10: Data and Data Governance | EU Artificial Intelligence Act
+https://artificialintelligenceact.eu/article/10/
+[15] [21] Why strategy beats speed in introducing AI for healthcare | World Economic Forum
+https://www.weforum.org/stories/2025/03/ai-healthcare-strategy-speed/
+[16] European AI Governance - The Future Society
+https://thefuturesociety.org/theme/european-ai-governance/
+[17] The UNESCO Recommendation on the Ethics of Artificial Intelligence
+https://www.soroptimistinternational.org/2024/07/18/the-unesco-recommendation-on-the-ethics-of-artificial-intelligence/
+[18] AI takes off in Colombia! Colombia Adopts CONPES 4144
+http://www.bu.com.co/en/insights/noticias/ai-takes-colombia-colombia-adopts-conpes-4144
+[20] Closing the Digital Divide in AI | Stanford HAI
+https://hai.stanford.edu/news/closing-the-digital-divide-in-ai
+[22] 7 ways AI is transforming healthcare - The World Economic Forum
+https://www.weforum.org/stories/2025/08/ai-transforming-global-health/
+[23] [25] [27] AI Adoption in Latin America Unlocks New Potential
+https://hispanicexecutive.com/ai-adoption-in-latin-america-how-the-region-sets-its-own-terms/
+[26] AI in Agriculture: Key Statistics and Trends for 2024 - Artsmart.ai
+https://artsmart.ai/blog/ai-in-agriculture-statistics-trends-2024/
+[28] Informal Economy | Data Futures Exchange
+https://data.undp.org/insights/informal-economy
+[29] Latin America can set the standard in fueling and governing AI | World Economic Forum
+https://www.weforum.org/stories/2025/01/latin-america-ai-standards-fueling-governing/

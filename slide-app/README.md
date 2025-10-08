@@ -1,6 +1,7 @@
 # AI Landscape Analysis - Interactive Lecture Deck
+## Colombia Presentation: EU AI Research Insights
 
-A beautiful, responsive, multilingual (EN/ES/PT) web application that presents lectures as interactive slide decks. Built with React, TypeScript, and Tailwind CSS.
+A beautiful, responsive, multilingual (EN/ES/PT) web application presenting analysis of 42 EU research papers (710,000 words) on AI policy priorities, with specific lessons and opportunities for Colombia. Built with React, TypeScript, and Tailwind CSS.
 
 ## 🚀 Quick Start
 
@@ -300,14 +301,28 @@ Modify animations in `src/index.css`:
 
 Before presenting:
 
-- [ ] All images are added to `/public/assets/images/`
-- [ ] All videos are added or YouTube IDs are correct
-- [ ] Alt text provided for all images
-- [ ] Citations include working URLs
-- [ ] Speaker notes added for each segment
-- [ ] Content translated to all required languages
+- [ ] Add analysis images to `/public/assets/images/`:
+  - `wordcloud.png` - Word cloud from 710k words
+  - `top_words.png` - Bar chart of top terms
+  - `topic_distribution.png` - Five pillars visualization
+  - `document_lengths.png` - Research depth analysis
+  - `global_local_snapshot.png` - Gap analysis visualization
+- [ ] Add `intro.mp4` video to `/public/assets/videos/`
+- [ ] Verify all citations link to correct sources
+- [ ] Test language switching (EN/ES/PT)
+- [ ] Review speaker notes for each slide
 - [ ] Test on target projector/screen resolution
 - [ ] Verify dark mode if presenting in dark room
+
+## 📊 Presentation Content
+
+The deck includes 5 segments:
+
+1. **Opening** - Context: 42 EU papers, 710k words analyzed
+2. **Research Priorities** - Top themes (Data: 3,031 mentions, Systems: 2,579, Health: 1,857)
+3. **Policy Areas** - Five pillars with star ratings
+4. **Lessons for Colombia** - 4 evidence-based recommendations
+5. **Gaps & Opportunities** - Where Colombia can lead (Latin American context, Agricultural AI, Informal economy, Spanish language AI, Global South perspective)
 
 ## 🐛 Troubleshooting
 

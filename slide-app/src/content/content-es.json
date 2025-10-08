@@ -1,253 +1,29 @@
 {
   "meta": {
-    "author": "Equipo de Análisis del Panorama de IA",
-    "version": "1.0.0"
+    "author": "Carlos Denner - VIDENS Analytics",
+    "version": "4.0.0",
+    "description": "Del hype a la política pública: cómo gobernar la IA en el sector público",
+    "duration": "90 minutos",
+    "slides": 1
   },
   "segments": [
     {
       "id": "seg-1",
-      "title": "El Auge Global de la IA y Por Qué Importa",
-      "subtitle": "Comprendiendo la transformación de nuestro mundo a través de la inteligencia artificial",
+      "title": "Del hype a la política pública",
+      "subtitle": "Cómo gobernar la IA en el sector público",
       "bullets": [
-        "La IA está remodelando industrias desde la salud hasta el transporte",
-        "Se espera que el mercado global de IA alcance $1.8 billones para 2030",
-        "Más del 77% de los dispositivos que usamos incluyen IA en alguna forma",
-        "Las publicaciones de investigación en IA han aumentado un 300% en la última década"
+        "🚀 La IA ha pasado de promesa tecnológica a herramienta cotidiana para gobiernos",
+        "⚖️ La velocidad de adopción supera la capacidad institucional para regularla",
+        "🎯 Tres dimensiones: Estratégica (visión), Operativa (capacidades), Ética (rendición de cuentas)",
+        "🌎 A partir de experiencias internacionales y latinoamericanas",
+        "📋 Lineamientos para una gobernanza responsable y sostenible de la IA"
       ],
-      "media": [
-        {
-          "type": "image",
-          "src": "/assets/images/wordcloud.png",
-          "alt": "Nube de palabras de investigación en IA mostrando temas clave",
-          "caption": "Temas más prominentes en la literatura de investigación en IA"
-        },
-        {
-          "type": "videoLocal",
-          "src": "/assets/videos/intro.mp4",
-          "caption": "Visión General del Proyecto de Análisis del Panorama de IA"
-        }
-      ],
+      "media": [],
       "engagement": {
-        "prompt": "¿Cómo ha cambiado ya la IA tu rutina diaria sin que te dieras cuenta?"
+        "prompt": "¿Cómo está abordando su organización la gobernanza de la IA actualmente?"
       },
-      "citations": [
-        {
-          "label": "Pronóstico del Mercado Global de IA 2023-2030 - Grand View Research",
-          "url": "https://www.grandviewresearch.com/industry-analysis/artificial-intelligence-ai-market"
-        },
-        {
-          "label": "El Estado de la IA en 2023 - McKinsey Global Institute",
-          "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
-        },
-        {
-          "label": "Informe del Índice de IA 2023 - Stanford HAI",
-          "url": "https://aiindex.stanford.edu/report/"
-        }
-      ],
-      "notes": "Comenzar con entusiasmo. Enfatizar la omnipresencia de la IA. Usar ejemplos personales."
-    },
-    {
-      "id": "seg-2",
-      "title": "Política y Regulación de la IA",
-      "subtitle": "Equilibrando Innovación y Protección",
-      "bullets": [
-        "Ley de IA de la UE: primer marco regulatorio integral de IA del mundo",
-        "Enfoque basado en riesgos: mínimo, limitado, alto riesgo e inaceptable",
-        "Enfoque en transparencia, responsabilidad y supervisión humana",
-        "La gobernanza de IA de China enfatiza el control estatal y la estabilidad social",
-        "EE.UU. adopta un enfoque específico por sector con marcos voluntarios"
-      ],
-      "media": [
-        {
-          "type": "image",
-          "src": "/assets/images/policy_timeline.png",
-          "alt": "Línea de tiempo de políticas globales de IA mostrando hitos regulatorios importantes",
-          "caption": "Cronología de los principales desarrollos de política de IA en todo el mundo"
-        },
-        {
-          "type": "videoYouTube",
-          "id": "dQw4w9WgXcQ",
-          "caption": "Ley de IA de la UE Explicada (Marcador de posición)"
-        }
-      ],
-      "engagement": {
-        "prompt": "¿Deberían los sistemas de IA que toman decisiones que cambian vidas regularse como dispositivos médicos?"
-      },
-      "citations": [
-        {
-          "label": "Ley de Inteligencia Artificial de la UE - Texto Oficial",
-          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206"
-        },
-        {
-          "label": "Estrategias Nacionales de IA - Observatorio de Políticas OECD.AI",
-          "url": "https://oecd.ai/en/dashboards/overview"
-        },
-        {
-          "label": "Plan de Desarrollo de IA de Nueva Generación de China",
-          "url": "https://www.newamerica.org/cybersecurity-initiative/digichina/blog/full-translation-chinas-new-generation-artificial-intelligence-development-plan-2017/"
-        },
-        {
-          "label": "Marco de Gestión de Riesgos de IA del NIST",
-          "url": "https://www.nist.gov/itl/ai-risk-management-framework"
-        }
-      ],
-      "notes": "Destacar diferentes filosofías regulatorias: UE (basada en derechos), China (céntrica en el estado), EE.UU. (impulsada por el mercado)"
-    },
-    {
-      "id": "seg-3",
-      "title": "IA en la Atención Médica",
-      "subtitle": "Transformando la Medicina, Salvando Vidas",
-      "bullets": [
-        "Los diagnósticos impulsados por IA logran un 94% de precisión en la detección de ciertos cánceres",
-        "Descubrimiento de fármacos acelerado: compuestos identificados en meses vs. años",
-        "Medicina personalizada: planes de tratamiento adaptados a la genética individual",
-        "Análisis predictivo: identificación de pacientes en riesgo antes de que aparezcan los síntomas",
-        "Desafíos: privacidad de datos, sesgo algorítmico, colaboración médico-IA"
-      ],
-      "media": [
-        {
-          "type": "image",
-          "src": "/assets/images/health_ai_retina.png",
-          "alt": "Sistema de IA analizando escaneos de retina para detección de enfermedades",
-          "caption": "Modelo de aprendizaje profundo detectando retinopatía diabética"
-        }
-      ],
-      "engagement": {
-        "prompt": "¿Confiarías en un diagnóstico de IA por encima de la opinión de un médico humano?"
-      },
-      "citations": [
-        {
-          "label": "Aprendizaje Profundo para Análisis de Imágenes Médicas - Nature Medicine",
-          "url": "https://www.nature.com/articles/s41591-018-0316-z"
-        },
-        {
-          "label": "IA en el Descubrimiento de Fármacos: Progreso Reciente - Science",
-          "url": "https://www.science.org/doi/10.1126/science.aax9249"
-        },
-        {
-          "label": "IA en la Atención Médica: Desafíos y Oportunidades - The Lancet",
-          "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(19)32498-4/fulltext"
-        }
-      ],
-      "notes": "Enfatizar tanto la promesa como la precaución. Mencionar aprobaciones de la FDA. Discutir el consentimiento del paciente."
-    },
-    {
-      "id": "seg-4",
-      "title": "Vehículos Autónomos",
-      "subtitle": "Dirigiéndonos Hacia un Futuro Impulsado por IA",
-      "bullets": [
-        "La tecnología de conducción autónoma podría prevenir el 90% de los accidentes de tráfico",
-        "Múltiples niveles: Nivel 0 (ninguno) a Nivel 5 (autonomía completa)",
-        "Actualmente en Nivel 2-3: asistencia al conductor y automatización condicional",
-        "Desafíos clave: casos extremos, responsabilidad, dilemas éticos (problema del tranvía)",
-        "Adopción esperada del mercado: flotas comerciales antes que vehículos de consumo"
-      ],
-      "media": [
-        {
-          "type": "image",
-          "src": "/assets/images/av_waymo_city.jpg",
-          "alt": "Vehículo autónomo navegando por las calles de la ciudad",
-          "caption": "Taxi autónomo Waymo operando en San Francisco"
-        }
-      ],
-      "engagement": {
-        "prompt": "En un accidente inevitable, ¿cómo debería decidir un vehículo autónomo a quién salvar?"
-      },
-      "citations": [
-        {
-          "label": "Niveles SAE de Automatización de Conducción",
-          "url": "https://www.sae.org/news/2019/01/sae-updates-j3016-automated-driving-graphic"
-        },
-        {
-          "label": "El Experimento de la Máquina Moral - Nature",
-          "url": "https://www.nature.com/articles/s41586-018-0637-6"
-        },
-        {
-          "label": "Vehículos Autónomos: Seguridad, Responsabilidad y Regulación",
-          "url": "https://www.rand.org/pubs/research_reports/RR2150.html"
-        }
-      ],
-      "notes": "Discutir implementaciones actuales (Waymo, Cruise). Abordar estadísticas de seguridad. Explorar marcos éticos."
-    },
-    {
-      "id": "seg-5",
-      "title": "Equidad Algorítmica",
-      "subtitle": "Asegurando que la IA Sea Justa e Inclusiva",
-      "bullets": [
-        "Los sistemas de IA pueden perpetuar y amplificar los sesgos sociales existentes",
-        "Reconocimiento facial: tasas de error más altas para mujeres y personas de color",
-        "Puntuación crediticia: resultados discriminatorios a pesar de algoritmos ciegos a la raza",
-        "IA de contratación: puede discriminar según características protegidas",
-        "Soluciones: datos de entrenamiento diversos, métricas de equidad, auditorías algorítmicas"
-      ],
-      "media": [
-        {
-          "type": "image",
-          "src": "/assets/images/fairness_face_error_chart.png",
-          "alt": "Gráfico que muestra las tasas de error de reconocimiento facial en diferentes demografías",
-          "caption": "Disparidades demográficas en la precisión del reconocimiento facial"
-        }
-      ],
-      "engagement": {
-        "prompt": "¿Es posible crear IA verdaderamente imparcial, o deberíamos enfocarnos en el sesgo transparente?"
-      },
-      "citations": [
-        {
-          "label": "Gender Shades: Sesgo en Reconocimiento Facial Comercial - MIT",
-          "url": "http://gendershades.org/"
-        },
-        {
-          "label": "Equidad y Abstracción en Sistemas Sociotécnicos",
-          "url": "https://dl.acm.org/doi/10.1145/3287560.3287598"
-        },
-        {
-          "label": "Responsabilidad Algorítmica: Una Introducción - Data & Society",
-          "url": "https://datasociety.net/library/algorithmic-accountability-a-primer/"
-        },
-        {
-          "label": "Directrices de la UE sobre IA Confiable",
-          "url": "https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai"
-        }
-      ],
-      "notes": "Usar ejemplos concretos. Discutir la investigación COMPAS de ProPublica. Enfatizar la naturaleza continua del trabajo de equidad."
-    },
-    {
-      "id": "seg-6",
-      "title": "IA y Sociedad: Una Visión para el Futuro",
-      "subtitle": "Dando Forma al Mañana Juntos",
-      "bullets": [
-        "La IA aumentará las capacidades humanas, no reemplazará el juicio humano",
-        "Necesidades críticas: alfabetización en IA, recapacitación de la fuerza laboral, acceso equitativo",
-        "Los marcos de gobernanza deben ser adaptativos y multisectoriales",
-        "Enfoque en IA centrada en el ser humano: diseñada para las personas, por equipos diversos",
-        "El futuro de la IA depende de las decisiones que tomemos hoy"
-      ],
-      "media": [
-        {
-          "type": "image",
-          "src": "/assets/images/global_local_snapshot.png",
-          "alt": "Visualización conectando tendencias globales de IA con impactos locales",
-          "caption": "Dinámicas global-locales en la adopción de IA"
-        }
-      ],
-      "engagement": {
-        "prompt": "¿Qué preguntas tienes sobre el papel de la IA en nuestro futuro?"
-      },
-      "citations": [
-        {
-          "label": "IA Centrada en el Ser Humano - Stanford HAI",
-          "url": "https://hai.stanford.edu/research/research-focus-areas"
-        },
-        {
-          "label": "Recomendación de la UNESCO sobre Ética de la IA",
-          "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics"
-        },
-        {
-          "label": "Informe sobre el Futuro del Trabajo - Foro Económico Mundial",
-          "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023"
-        }
-      ],
-      "notes": "Terminar con una nota esperanzadora pero realista. Abrir el piso para preguntas y respuestas. Compartir información de contacto para seguimiento."
+      "citations": [],
+      "notes": "Diapositiva de apertura. Establecer el contexto: la IA está aquí, avanza rápido, los gobiernos necesitan ponerse al día. Marco de tres dimensiones: estratégica, operativa, ética. Se trata de gobernanza práctica, no solo teoría."
     }
   ]
 }

@@ -5,15 +5,17 @@ This directory contains media assets for the presentation slides.
 ## Expected Files
 
 ### Images (in `/assets/images/`)
-- `wordcloud.png` - AI research word cloud
-- `policy_timeline.png` - Global AI policy timeline
-- `health_ai_retina.png` - AI analyzing retinal scans
-- `av_waymo_city.jpg` - Autonomous vehicle in city
-- `fairness_face_error_chart.png` - Facial recognition error rates chart
-- `global_local_snapshot.png` - Global-local AI dynamics visualization
+**Required for Colombia Presentation:**
+- `wordcloud.png` - Word cloud from 710,000 words of EU AI research (Slide 1)
+- `top_words.png` - Bar chart showing top 5 terms with mention counts (Slide 2)
+- `topic_distribution.png` - Five pillars of AI policy with star ratings (Slide 3)
+- `document_lengths.png` - Research depth visualization (Slide 4)
+- `global_local_snapshot.png` - Gap analysis between EU research and LATAM realities (Slide 5)
 
 ### Videos (in `/assets/videos/`)
 - `intro.mp4` - Project introduction video
+
+**Note:** These images should be generated from your analysis output in the `landscape_analysis_output` folder.
 
 ## Adding New Assets
 
