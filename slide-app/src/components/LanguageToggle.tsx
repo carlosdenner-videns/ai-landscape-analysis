@@ -9,13 +9,14 @@ interface LanguageToggleProps {
 }
 
 /**
- * LanguageToggle component for switching between EN/ES/PT
+ * LanguageToggle component for switching between EN/ES/PT/FR
  */
 export function LanguageToggle({ currentLanguage, onLanguageChange }: LanguageToggleProps) {
   const languages: { code: Language; label: string }[] = [
     { code: 'en', label: 'EN' },
     { code: 'es', label: 'ES' },
     { code: 'pt', label: 'PT' },
+    { code: 'fr', label: 'FR' },
   ];
 
   return (

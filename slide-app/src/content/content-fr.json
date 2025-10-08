@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "author": "Carlos Denner - VIDENS Analytics",
+    "version": "4.0.0",
+    "description": "Du battage médiatique aux politiques publiques : comment gouverner l'IA dans le secteur public",
+    "duration": "90 minutes",
+    "slides": 1
+  },
+  "segments": [
+    {
+      "id": "seg-1",
+      "title": "Du battage médiatique aux politiques publiques",
+      "subtitle": "Comment gouverner l'IA dans le secteur public",
+      "bullets": [
+        "L'intelligence artificielle est passée d'une promesse technologique à un outil quotidien pour les gouvernements et les administrations publiques",
+        "La vitesse de son adoption dépasse la capacité institutionnelle de la réglementer, de l'évaluer et de garantir son alignement avec l'intérêt public",
+        "Nous explorerons comment les États peuvent gouverner l'IA selon trois dimensions : stratégique, opérationnelle et éthique",
+        "À partir d'expériences internationales et latino-américaines, nous présenterons des lignes directrices pour une gouvernance responsable",
+        "Un parcours critique vers des politiques publiques durables à l'ère de l'intelligence artificielle"
+      ],
+      "media": [],
+      "engagement": {
+        "prompt": "Comment votre organisation aborde-t-elle actuellement la gouvernance de l'IA ?"
+      },
+      "citations": [],
+      "notes": "Diapositive d'ouverture professionnelle. Carlos Denner, 14 août. Conférence internationale. Établir la crédibilité et le contexte académique. Trois dimensions : stratégique, opérationnelle, éthique.",
+      "presenter": {
+        "name": "carlos.denner@videns.ai",
+        "title": "Expert en IA",
+        "organization": "Videns, propulsé par COFOMO",
+        "date": "14 août 2025",
+        "conference": "Conférence internationale sur la gouvernance de l'IA"
+      },
+      "isTitle": true
+    }
+  ]
+}

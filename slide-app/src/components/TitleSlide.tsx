@@ -33,14 +33,20 @@ export function TitleSlide({ segment, showNotes }: TitleSlideProps) {
       {/* Main content container */}
       <div className="h-full flex flex-col justify-center items-center px-safe py-safe text-center relative z-10">
         
-        {/* VIDENS branding */}
+        {/* VIDENS branding - clickable */}
         <div className="absolute top-8 left-8 animate-slideInLeft">
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-videns-primary rounded-lg flex items-center justify-center">
+          <a 
+            href="https://chatgpt.com/?model=gpt-4&q=Tell%20me%20about%20Videns%20AI%20company" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center space-x-3 hover:opacity-80 transition-opacity cursor-pointer group"
+            aria-label="Ask ChatGPT about Videns AI"
+          >
+            <div className="w-8 h-8 bg-videns-primary rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
               <div className="w-4 h-4 bg-white rounded-sm animate-aiPulse"></div>
             </div>
-            <span className="text-videns-secondary font-bold text-xl">VIDENS</span>
-          </div>
+            <span className="text-videns-secondary font-bold text-xl group-hover:text-videns-primary transition-colors">VIDENS</span>
+          </a>
         </div>
 
         {/* Date */}
@@ -65,8 +71,8 @@ export function TitleSlide({ segment, showNotes }: TitleSlideProps) {
 
           {/* Abstract/Description */}
           <div className="animate-fadeIn max-w-3xl mx-auto" style={{ animationDelay: '1s', opacity: 0 }}>
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-videns-200">
-              <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
+            <div className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-videns-200 dark:border-videns-700">
+              <div className="space-y-4 text-gray-700 dark:text-gray-200 text-lg leading-relaxed">
                 {segment.bullets.map((bullet, index) => (
                   <p key={index} className="animate-slideInLeft" style={{ animationDelay: `${1.2 + index * 0.2}s`, opacity: 0 }}>
                     {bullet}
@@ -79,18 +85,18 @@ export function TitleSlide({ segment, showNotes }: TitleSlideProps) {
           {/* Presenter information */}
           {segment.presenter && (
             <div className="animate-fadeIn" style={{ animationDelay: '2.5s', opacity: 0 }}>
-              <div className="bg-videns-50/90 backdrop-blur-sm rounded-xl p-6 shadow-md border border-videns-200">
-                <h3 className="text-2xl font-bold text-videns-secondary mb-2">
+              <div className="bg-videns-50/90 dark:bg-gray-700/90 backdrop-blur-sm rounded-xl p-6 shadow-md border border-videns-200 dark:border-videns-600">
+                <h3 className="text-2xl font-bold text-videns-secondary dark:text-videns-300 mb-2">
                   {segment.presenter.name}
                 </h3>
-                <p className="text-videns-700 text-lg">
+                <p className="text-videns-700 dark:text-videns-200 text-lg">
                   {segment.presenter.title}
                 </p>
-                <p className="text-videns-600 font-medium">
+                <p className="text-videns-600 dark:text-videns-300 font-medium">
                   {segment.presenter.organization}
                 </p>
                 {segment.presenter.conference && (
-                  <p className="text-videns-500 text-sm mt-2 italic">
+                  <p className="text-videns-500 dark:text-videns-400 text-sm mt-2 italic">
                     {segment.presenter.conference}
                   </p>
                 )}

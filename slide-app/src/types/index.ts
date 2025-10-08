@@ -50,7 +50,7 @@ export type Deck = {
 /**
  * Supported languages
  */
-export type Language = 'en' | 'es' | 'pt';
+export type Language = 'en' | 'es' | 'pt' | 'fr';
 
 /**
  * Theme modes
