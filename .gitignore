@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+ENV/
+env/
+
+# PDF files (large, not suitable for git)
+*.pdf
+humaint_pdfs/
+
+# Large data files
+*.json
+landscape_analysis_output/data/extracted_texts.json
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# NLTK data (downloaded automatically)
+nltk_data/
+
+# Analysis output (keep structure but not large files)
+# landscape_analysis_output/data/*.json (already covered above)
+
+# OS
+.DS_Store
+desktop.ini
+
+# Logs
+analysis_log.txt
+*.log
