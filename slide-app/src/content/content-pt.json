@@ -12,18 +12,26 @@
       "title": "Do hype à política pública",
       "subtitle": "Como governar a IA no setor público",
       "bullets": [
-        "🚀 A IA passou de promessa tecnológica a ferramenta cotidiana para governos",
-        "⚖️ A velocidade de adoção supera a capacidade institucional para regulá-la",
-        "🎯 Três dimensões: Estratégica (visão), Operacional (capacidades), Ética (prestação de contas)",
-        "🌎 A partir de experiências internacionais e latino-americanas",
-        "📋 Diretrizes para uma governança responsável e sustentável da IA"
+        "A inteligência artificial passou de ser uma promessa tecnológica a se tornar uma ferramenta cotidiana para governos e administrações públicas",
+        "A velocidade de sua adoção supera a capacidade institucional para regulá-la, avaliá-la e garantir seu alinhamento com o interesse público",
+        "Exploraremos como os Estados podem governar a IA a partir de três dimensões: estratégica, operacional e ética",
+        "A partir de experiências internacionais e latino-americanas, apresentaremos diretrizes para uma governança responsável",
+        "Uma jornada crítica rumo a políticas públicas sustentáveis na era da inteligência artificial"
       ],
       "media": [],
       "engagement": {
         "prompt": "Como sua organização está abordando a governança da IA atualmente?"
       },
       "citations": [],
-      "notes": "Slide de abertura. Estabelecer o contexto: a IA está aqui, avança rápido, os governos precisam se atualizar. Estrutura de três dimensões: estratégica, operacional, ética. Trata-se de governança prática, não apenas teoria."
+      "notes": "Slide de abertura profissional. Carlos Denner, 14 de agosto. Conferência internacional. Estabelecer credibilidade e contexto acadêmico. Três dimensões: estratégica, operacional, ética.",
+      "presenter": {
+        "name": "Carlos Denner",
+        "title": "Diretor de Pesquisa",
+        "organization": "VIDENS Analytics",
+        "date": "14 de agosto, 2025",
+        "conference": "Conferência Internacional sobre Governança de IA"
+      },
+      "isTitle": true
     }
   ]
 }

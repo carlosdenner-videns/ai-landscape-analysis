@@ -12,18 +12,26 @@
       "title": "Del hype a la política pública",
       "subtitle": "Cómo gobernar la IA en el sector público",
       "bullets": [
-        "🚀 La IA ha pasado de promesa tecnológica a herramienta cotidiana para gobiernos",
-        "⚖️ La velocidad de adopción supera la capacidad institucional para regularla",
-        "🎯 Tres dimensiones: Estratégica (visión), Operativa (capacidades), Ética (rendición de cuentas)",
-        "🌎 A partir de experiencias internacionales y latinoamericanas",
-        "📋 Lineamientos para una gobernanza responsable y sostenible de la IA"
+        "La inteligencia artificial ha pasado de ser una promesa tecnológica a convertirse en una herramienta cotidiana para gobiernos y administraciones públicas",
+        "La velocidad de su adopción supera la capacidad institucional para regularla, evaluarla y garantizar su alineación con el interés público",
+        "Exploraremos cómo los Estados pueden gobernar la IA desde tres dimensiones: estratégica, operativa y ética",
+        "A partir de experiencias internacionales y latinoamericanas, presentaremos lineamientos para una gobernanza responsable",
+        "Un recorrido crítico hacia políticas públicas sostenibles en la era de la inteligencia artificial"
       ],
       "media": [],
       "engagement": {
         "prompt": "¿Cómo está abordando su organización la gobernanza de la IA actualmente?"
       },
       "citations": [],
-      "notes": "Diapositiva de apertura. Establecer el contexto: la IA está aquí, avanza rápido, los gobiernos necesitan ponerse al día. Marco de tres dimensiones: estratégica, operativa, ética. Se trata de gobernanza práctica, no solo teoría."
+      "notes": "Diapositiva de apertura profesional. Carlos Denner, 14 agosto. Conferencia internacional. Establecer credibilidad y contexto académico. Tres dimensiones: estratégica, operativa, ética.",
+      "presenter": {
+        "name": "Carlos Denner",
+        "title": "Director de Investigación",
+        "organization": "VIDENS Analytics",
+        "date": "14 de agosto, 2025",
+        "conference": "Conferencia Internacional sobre Gobernanza de IA"
+      },
+      "isTitle": true
     }
   ]
 }

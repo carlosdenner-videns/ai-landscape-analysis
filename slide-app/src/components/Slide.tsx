@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Segment } from '../types';
 import { MediaPlayer } from './MediaPlayer';
-import { CitationDrawer } from './CitationDrawer';
+import { TitleSlide } from './TitleSlide';
 
 /**
  * Props for Slide component
@@ -16,8 +16,13 @@ interface SlideProps {
  * Includes title, subtitle, bullets, media gallery, engagement prompt, and citations
  */
 export function Slide({ segment, showNotes }: SlideProps) {
-  const [citationsOpen, setCitationsOpen] = useState(false);
   const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
+
+  // Check if this is a title slide
+  const isTitle = (segment as any).isTitle;
+  if (isTitle) {
+    return <TitleSlide segment={segment as any} showNotes={showNotes} />;
+  }
 
   const hasMultipleMedia = segment.media.length > 1;
   const currentMedia = segment.media[currentMediaIndex];
@@ -74,15 +79,6 @@ export function Slide({ segment, showNotes }: SlideProps) {
             </div>
           )}
 
-          {segment.citations && segment.citations.length > 0 && (
-            <button
-              onClick={() => setCitationsOpen(true)}
-              className="mt-4 px-6 py-3 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-lg text-gray-900 dark:text-white font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500"
-              aria-label="View sources"
-            >
-              📚 View Sources ({segment.citations.length})
-            </button>
-          )}
         </div>
 
         {/* Right Column: Media */}
@@ -125,13 +121,21 @@ export function Slide({ segment, showNotes }: SlideProps) {
         </div>
       )}
 
-      {/* Citation Drawer */}
-      {segment.citations && (
-        <CitationDrawer
-          citations={segment.citations}
-          isOpen={citationsOpen}
-          onClose={() => setCitationsOpen(false)}
-        />
+      {/* Citations section - simplified for now */}
+      {segment.citations && segment.citations.length > 0 && (
+        <div className="mt-6 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
+          <h4 className="font-semibold mb-2">Referencias:</h4>
+          <ul className="space-y-1 text-sm">
+            {segment.citations.map((citation, index) => (
+              <li key={index}>
+                <a href={citation.url} target="_blank" rel="noopener noreferrer" 
+                   className="text-primary-600 hover:text-primary-800 underline">
+                  {citation.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
     </div>
   );
