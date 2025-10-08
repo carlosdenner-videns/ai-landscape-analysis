@@ -100,66 +100,52 @@ export function TitleSlide({ segment, showNotes, language }: TitleSlideProps) {
       {/* Main content container */}
       <div className="h-full flex flex-col justify-center items-center px-safe py-safe text-center relative z-10">
         
-        {/* Top header with logos and date - below language selector */}
-        <div className="absolute top-20 left-0 right-0 flex items-start justify-between px-8 pt-4">
-          
-          {/* VIDENS branding - left side */}
-          <div className="animate-slideInLeft">
-            <a 
-              href="https://www.google.com/search?q=Videns+AI" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center space-x-3 hover:opacity-80 transition-opacity cursor-pointer group"
-              aria-label="Search Google for Videns AI"
-            >
-              <div className="w-10 h-10 bg-videns-primary rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
-                <div className="w-5 h-5 bg-white rounded-sm animate-aiPulse"></div>
-              </div>
-              <span className="text-videns-secondary font-bold text-2xl group-hover:text-videns-primary transition-colors">VIDENS</span>
-            </a>
-          </div>
-
-          {/* Center - Date */}
-          <div className="animate-fadeIn" style={{ animationDelay: '0.3s', opacity: 0 }}>
-            <div className="text-center">
-              <span className="text-videns-secondary font-medium text-lg">
-                {segment.presenter?.date || '14 de agosto, 2025'}
-              </span>
+        {/* VIDENS branding - top left */}
+        <div className="absolute top-24 left-8 animate-slideInLeft">
+          <a 
+            href="https://www.google.com/search?q=Videns+AI" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center space-x-3 hover:opacity-80 transition-opacity cursor-pointer group"
+            aria-label="Search Google for Videns AI"
+          >
+            <div className="w-10 h-10 bg-videns-primary rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
+              <div className="w-5 h-5 bg-white rounded-sm animate-aiPulse"></div>
             </div>
-          </div>
+            <span className="text-videns-secondary font-bold text-2xl group-hover:text-videns-primary transition-colors">VIDENS</span>
+          </a>
+        </div>
 
-          {/* ESAP Logo - right side (below language selector) */}
-          <div className="animate-slideInRight">
-            <div className="flex flex-col items-center">
-              <div className="relative w-20 h-20 mb-1">
-                {/* ESAP Logo - Pyramid of circles */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  {/* Top circle */}
-                  <div className="w-4 h-4 bg-blue-600 rounded-full mb-0.5"></div>
-                  {/* Second row - 2 circles */}
-                  <div className="flex space-x-1 mb-0.5">
-                    <div className="w-4 h-4 bg-blue-600 rounded-full"></div>
-                    <div className="w-4 h-4 bg-blue-600 rounded-full"></div>
-                  </div>
-                  {/* Third row - 3 circles */}
-                  <div className="flex space-x-1 mb-0.5">
-                    <div className="w-4 h-4 bg-blue-600 rounded-full"></div>
-                    <div className="w-4 h-4 bg-blue-600 rounded-full"></div>
-                    <div className="w-4 h-4 bg-blue-600 rounded-full"></div>
-                  </div>
-                  {/* Bottom row - 4 circles with letters */}
-                  <div className="flex space-x-1">
-                    <div className="w-4 h-4 bg-blue-600 rounded-full flex items-center justify-center text-white text-[9px] font-bold">E</div>
-                    <div className="w-4 h-4 bg-blue-600 rounded-full flex items-center justify-center text-white text-[9px] font-bold">S</div>
-                    <div className="w-4 h-4 bg-blue-600 rounded-full flex items-center justify-center text-white text-[9px] font-bold">A</div>
-                    <div className="w-4 h-4 bg-blue-600 rounded-full flex items-center justify-center text-white text-[9px] font-bold">P</div>
-                  </div>
+        {/* ESAP Logo - top right (below language buttons) */}
+        <div className="absolute top-24 right-8 animate-slideInRight">
+          <div className="flex flex-col items-center space-y-1">
+            <div className="relative w-16 h-16">
+              {/* ESAP Logo - Pyramid of circles */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                {/* Top circle */}
+                <div className="w-3.5 h-3.5 bg-blue-600 rounded-full mb-0.5"></div>
+                {/* Second row - 2 circles */}
+                <div className="flex space-x-1 mb-0.5">
+                  <div className="w-3.5 h-3.5 bg-blue-600 rounded-full"></div>
+                  <div className="w-3.5 h-3.5 bg-blue-600 rounded-full"></div>
+                </div>
+                {/* Third row - 3 circles */}
+                <div className="flex space-x-1 mb-0.5">
+                  <div className="w-3.5 h-3.5 bg-blue-600 rounded-full"></div>
+                  <div className="w-3.5 h-3.5 bg-blue-600 rounded-full"></div>
+                  <div className="w-3.5 h-3.5 bg-blue-600 rounded-full"></div>
+                </div>
+                {/* Bottom row - 4 circles with letters */}
+                <div className="flex space-x-1">
+                  <div className="w-3.5 h-3.5 bg-blue-600 rounded-full flex items-center justify-center text-white text-[8px] font-bold">E</div>
+                  <div className="w-3.5 h-3.5 bg-blue-600 rounded-full flex items-center justify-center text-white text-[8px] font-bold">S</div>
+                  <div className="w-3.5 h-3.5 bg-blue-600 rounded-full flex items-center justify-center text-white text-[8px] font-bold">A</div>
+                  <div className="w-3.5 h-3.5 bg-blue-600 rounded-full flex items-center justify-center text-white text-[8px] font-bold">P</div>
                 </div>
               </div>
-              <span className="text-blue-600 font-bold text-xs">ESAP</span>
             </div>
+            <span className="text-blue-600 font-bold text-xs">ESAP</span>
           </div>
-
         </div>
 
         {/* Main title section */}
