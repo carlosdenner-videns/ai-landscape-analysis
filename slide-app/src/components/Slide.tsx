@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Segment } from '../types';
+import { Segment, Language } from '../types';
 import { MediaPlayer } from './MediaPlayer';
 import { TitleSlide } from './TitleSlide';
 
@@ -9,23 +9,48 @@ import { TitleSlide } from './TitleSlide';
 interface SlideProps {
   segment: Segment;
   showNotes: boolean;
+  language: Language;
 }
 
 /**
  * Slide component that displays a single segment
  * Includes title, subtitle, bullets, media gallery, engagement prompt, and citations
  */
-export function Slide({ segment, showNotes }: SlideProps) {
+export function Slide({ segment, showNotes, language }: SlideProps) {
   const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
   const [isSpeaking, setIsSpeaking] = useState(false);
 
   // Check if this is a title slide
   const isTitle = (segment as any).isTitle;
   if (isTitle) {
-    return <TitleSlide segment={segment as any} showNotes={showNotes} />;
+    return <TitleSlide segment={segment as any} showNotes={showNotes} language={language} />;
   }
 
-  // Text-to-speech function for reading notes in Spanish
+  // Map language codes to speech synthesis language codes
+  const languageMap: Record<Language, string> = {
+    'en': 'en-US',
+    'es': 'es-ES',
+    'pt': 'pt-BR',
+    'fr': 'fr-FR'
+  };
+
+  // Button text translations
+  const buttonLabels: Record<Language, { play: string; stop: string }> = {
+    'en': { play: 'Read Aloud', stop: 'Stop' },
+    'es': { play: 'Leer en Español', stop: 'Detener' },
+    'pt': { play: 'Ler em Português', stop: 'Parar' },
+    'fr': { play: 'Lire en Français', stop: 'Arrêter' }
+  };
+
+  // Notes header translations
+  const notesHeader: Record<Language, string> = {
+    'en': '📝 Presenter Notes:',
+    'es': '📝 Notas del Presentador:',
+    'pt': '📝 Notas do Apresentador:',
+    'fr': '📝 Notes du Présentateur:'
+  };
+
+  // Text-to-speech function for reading notes in selected language
   const speakNotes = () => {
     if (!segment.notes) return;
 
@@ -39,19 +64,20 @@ export function Slide({ segment, showNotes }: SlideProps) {
     // Create speech synthesis utterance
     const utterance = new SpeechSynthesisUtterance(segment.notes);
     
-    // Set Spanish voice
-    utterance.lang = 'es-ES';
+    // Set voice based on selected language
+    const speechLang = languageMap[language];
+    utterance.lang = speechLang;
     utterance.rate = 0.9; // Slightly slower for clarity
     utterance.pitch = 1;
     utterance.volume = 1;
 
-    // Try to use a Spanish voice if available
+    // Try to use a voice for the selected language if available
     const voices = window.speechSynthesis.getVoices();
-    const spanishVoice = voices.find(voice => 
-      voice.lang.startsWith('es-') || voice.lang === 'es'
+    const matchingVoice = voices.find(voice => 
+      voice.lang.startsWith(language + '-') || voice.lang === language
     );
-    if (spanishVoice) {
-      utterance.voice = spanishVoice;
+    if (matchingVoice) {
+      utterance.voice = matchingVoice;
     }
 
     // Handle events
@@ -151,34 +177,37 @@ export function Slide({ segment, showNotes }: SlideProps) {
         )}
       </div>
 
-      {/* Speaker Notes Overlay with Text-to-Speech */}
+      {/* Speaker Notes Overlay with Text-to-Speech - Always on top */}
       {showNotes && segment.notes && (
-        <div className="fixed bottom-0 left-0 right-0 bg-yellow-100 dark:bg-yellow-900 border-t-4 border-yellow-500 p-4 shadow-lg z-50">
-          <div className="flex items-start justify-between gap-4">
-            <p className="text-sm md:text-base text-yellow-900 dark:text-yellow-100 flex-1">
-              <strong>📝 Notes:</strong> {segment.notes}
-            </p>
-            <button
-              onClick={speakNotes}
-              className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-all whitespace-nowrap ${
-                isSpeaking 
-                  ? 'bg-red-600 hover:bg-red-700 text-white' 
-                  : 'bg-videns-primary hover:bg-videns-secondary text-white'
-              }`}
-              aria-label={isSpeaking ? 'Detener lectura' : 'Leer notas en español'}
-            >
-              {isSpeaking ? (
-                <>
-                  <span>⏸️</span>
-                  <span>Stop</span>
-                </>
-              ) : (
-                <>
-                  <span>🔊</span>
-                  <span>Read ES</span>
-                </>
-              )}
-            </button>
+        <div className="fixed bottom-0 left-0 right-0 bg-black/95 dark:bg-black/95 border-t-4 border-yellow-500 p-6 shadow-2xl backdrop-blur-sm z-[9999]">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex items-start justify-between gap-4 mb-3">
+              <div className="flex-1">
+                <h4 className="font-bold text-yellow-400 text-lg mb-2">{notesHeader[language]}</h4>
+                <p className="text-base text-white leading-relaxed">{segment.notes}</p>
+              </div>
+              <button
+                onClick={speakNotes}
+                className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-all whitespace-nowrap ${
+                  isSpeaking 
+                    ? 'bg-red-600 hover:bg-red-700 text-white' 
+                    : 'bg-videns-primary hover:bg-videns-secondary text-white'
+                }`}
+                aria-label={isSpeaking ? buttonLabels[language].stop : buttonLabels[language].play}
+              >
+                {isSpeaking ? (
+                  <>
+                    <span>⏸️</span>
+                    <span>{buttonLabels[language].stop}</span>
+                  </>
+                ) : (
+                  <>
+                    <span>🔊</span>
+                    <span>{buttonLabels[language].play}</span>
+                  </>
+                )}
+              </button>
+            </div>
           </div>
         </div>
       )}

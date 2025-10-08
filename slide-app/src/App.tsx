@@ -3,7 +3,7 @@ import { SlideDeck } from './components/SlideDeck';
 import { LanguageToggle } from './components/LanguageToggle';
 import { useLanguage } from './hooks/useLanguage';
 import { useTheme } from './hooks/useTheme';
-import { Deck, Language } from './types';
+import { Deck } from './types';
 
 /**
  * Main App component
@@ -111,7 +111,7 @@ function App() {
         )}
       </button>
 
-      <SlideDeck deck={deck} />
+      <SlideDeck deck={deck} language={language} />
     </div>
   );
 }

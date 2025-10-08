@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { Deck } from '../types';
+import { Deck, Language } from '../types';
 import { Slide } from './Slide';
 import { ProgressBar } from './ProgressBar';
 
@@ -8,13 +8,14 @@ import { ProgressBar } from './ProgressBar';
  */
 interface SlideDeckProps {
   deck: Deck;
+  language: Language;
 }
 
 /**
  * SlideDeck component that manages slide navigation and keyboard controls
  * Persists current slide in sessionStorage and preloads next slide media
  */
-export function SlideDeck({ deck }: SlideDeckProps) {
+export function SlideDeck({ deck, language }: SlideDeckProps) {
   const [currentIndex, setCurrentIndex] = useState(() => {
     const stored = sessionStorage.getItem('currentSlide');
     return stored ? parseInt(stored, 10) : 0;
@@ -111,7 +112,7 @@ export function SlideDeck({ deck }: SlideDeckProps) {
       <ProgressBar currentIndex={currentIndex} total={deck.segments.length} onNavigate={navigate} />
 
       <main className="flex-1 pt-16 overflow-hidden" role="main">
-        <Slide segment={currentSegment} showNotes={showNotes} />
+        <Slide segment={currentSegment} showNotes={showNotes} language={language} />
       </main>
 
       {/* Navigation Controls */}
