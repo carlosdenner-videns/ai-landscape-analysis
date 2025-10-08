@@ -1,0 +1,253 @@
+{
+  "meta": {
+    "author": "AI Landscape Analysis Team",
+    "version": "1.0.0"
+  },
+  "segments": [
+    {
+      "id": "seg-1",
+      "title": "AI's Global Rise and Why It Matters",
+      "subtitle": "Understanding the transformation of our world through artificial intelligence",
+      "bullets": [
+        "AI is reshaping industries from healthcare to transportation",
+        "Global AI market expected to reach $1.8 trillion by 2030",
+        "Over 77% of devices we use feature AI in some form",
+        "AI research publications have increased 300% in the last decade"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "/assets/images/wordcloud.png",
+          "alt": "AI research word cloud showing key themes",
+          "caption": "Most prominent themes in AI research literature"
+        },
+        {
+          "type": "videoLocal",
+          "src": "/assets/videos/intro.mp4",
+          "caption": "AI Landscape Analysis Project Overview"
+        }
+      ],
+      "engagement": {
+        "prompt": "How has AI already changed your daily routine without you realizing it?"
+      },
+      "citations": [
+        {
+          "label": "Global AI Market Forecast 2023-2030 - Grand View Research",
+          "url": "https://www.grandviewresearch.com/industry-analysis/artificial-intelligence-ai-market"
+        },
+        {
+          "label": "The State of AI in 2023 - McKinsey Global Institute",
+          "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
+        },
+        {
+          "label": "AI Index Report 2023 - Stanford HAI",
+          "url": "https://aiindex.stanford.edu/report/"
+        }
+      ],
+      "notes": "Start with enthusiasm. Emphasize the pervasiveness of AI. Use personal examples."
+    },
+    {
+      "id": "seg-2",
+      "title": "AI Policy and Regulation",
+      "subtitle": "Balancing Innovation and Protection",
+      "bullets": [
+        "EU AI Act: World's first comprehensive AI regulation framework",
+        "Risk-based approach: minimal, limited, high-risk, and unacceptable",
+        "Focus on transparency, accountability, and human oversight",
+        "China's AI governance emphasizes state control and social stability",
+        "US adopts sector-specific approach with voluntary frameworks"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "/assets/images/policy_timeline.png",
+          "alt": "Global AI policy timeline showing major regulatory milestones",
+          "caption": "Timeline of major AI policy developments worldwide"
+        },
+        {
+          "type": "videoYouTube",
+          "id": "dQw4w9WgXcQ",
+          "caption": "EU AI Act Explained (Placeholder)"
+        }
+      ],
+      "engagement": {
+        "prompt": "Should AI systems that make life-changing decisions be regulated like medical devices?"
+      },
+      "citations": [
+        {
+          "label": "EU Artificial Intelligence Act - Official Text",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206"
+        },
+        {
+          "label": "National AI Strategies - OECD.AI Policy Observatory",
+          "url": "https://oecd.ai/en/dashboards/overview"
+        },
+        {
+          "label": "China's New Generation AI Development Plan",
+          "url": "https://www.newamerica.org/cybersecurity-initiative/digichina/blog/full-translation-chinas-new-generation-artificial-intelligence-development-plan-2017/"
+        },
+        {
+          "label": "NIST AI Risk Management Framework",
+          "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+        }
+      ],
+      "notes": "Highlight different regulatory philosophies: EU (rights-based), China (state-centric), US (market-driven)"
+    },
+    {
+      "id": "seg-3",
+      "title": "AI in Healthcare",
+      "subtitle": "Transforming Medicine, Saving Lives",
+      "bullets": [
+        "AI-powered diagnostics achieve 94% accuracy in detecting certain cancers",
+        "Drug discovery accelerated: compounds identified in months vs. years",
+        "Personalized medicine: treatment plans tailored to individual genetics",
+        "Predictive analytics: identifying at-risk patients before symptoms appear",
+        "Challenges: data privacy, algorithmic bias, physician-AI collaboration"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "/assets/images/health_ai_retina.png",
+          "alt": "AI system analyzing retinal scans for disease detection",
+          "caption": "Deep learning model detecting diabetic retinopathy"
+        }
+      ],
+      "engagement": {
+        "prompt": "Would you trust an AI diagnosis over a human doctor's opinion?"
+      },
+      "citations": [
+        {
+          "label": "Deep Learning for Medical Image Analysis - Nature Medicine",
+          "url": "https://www.nature.com/articles/s41591-018-0316-z"
+        },
+        {
+          "label": "AI in Drug Discovery: Recent Progress - Science",
+          "url": "https://www.science.org/doi/10.1126/science.aax9249"
+        },
+        {
+          "label": "Healthcare AI: Challenges and Opportunities - The Lancet",
+          "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(19)32498-4/fulltext"
+        }
+      ],
+      "notes": "Emphasize both promise and caution. Mention FDA approvals. Discuss patient consent."
+    },
+    {
+      "id": "seg-4",
+      "title": "Autonomous Vehicles",
+      "subtitle": "Steering Toward an AI-Driven Future",
+      "bullets": [
+        "Self-driving technology could prevent 90% of traffic accidents",
+        "Multiple levels: Level 0 (none) to Level 5 (full autonomy)",
+        "Currently at Level 2-3: driver assistance and conditional automation",
+        "Key challenges: edge cases, liability, ethical dilemmas (trolley problem)",
+        "Expected market adoption: commercial fleets before consumer vehicles"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "/assets/images/av_waymo_city.jpg",
+          "alt": "Autonomous vehicle navigating city streets",
+          "caption": "Waymo autonomous taxi operating in San Francisco"
+        }
+      ],
+      "engagement": {
+        "prompt": "In an unavoidable accident, how should an autonomous vehicle decide who to save?"
+      },
+      "citations": [
+        {
+          "label": "SAE Levels of Driving Automation",
+          "url": "https://www.sae.org/news/2019/01/sae-updates-j3016-automated-driving-graphic"
+        },
+        {
+          "label": "The Moral Machine Experiment - Nature",
+          "url": "https://www.nature.com/articles/s41586-018-0637-6"
+        },
+        {
+          "label": "Autonomous Vehicles: Safety, Liability & Regulation",
+          "url": "https://www.rand.org/pubs/research_reports/RR2150.html"
+        }
+      ],
+      "notes": "Discuss current deployments (Waymo, Cruise). Address safety statistics. Explore ethical frameworks."
+    },
+    {
+      "id": "seg-5",
+      "title": "Algorithmic Fairness",
+      "subtitle": "Ensuring AI is Just and Inclusive",
+      "bullets": [
+        "AI systems can perpetuate and amplify existing societal biases",
+        "Facial recognition: higher error rates for women and people of color",
+        "Credit scoring: discriminatory outcomes despite race-blind algorithms",
+        "Hiring AI: may discriminate based on protected characteristics",
+        "Solutions: diverse training data, fairness metrics, algorithmic audits"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "/assets/images/fairness_face_error_chart.png",
+          "alt": "Chart showing facial recognition error rates across demographics",
+          "caption": "Demographic disparities in facial recognition accuracy"
+        }
+      ],
+      "engagement": {
+        "prompt": "Is it possible to create truly unbiased AI, or should we focus on transparent bias?"
+      },
+      "citations": [
+        {
+          "label": "Gender Shades: Bias in Commercial Facial Recognition - MIT",
+          "url": "http://gendershades.org/"
+        },
+        {
+          "label": "Fairness and Abstraction in Sociotechnical Systems",
+          "url": "https://dl.acm.org/doi/10.1145/3287560.3287598"
+        },
+        {
+          "label": "Algorithmic Accountability: A Primer - Data & Society",
+          "url": "https://datasociety.net/library/algorithmic-accountability-a-primer/"
+        },
+        {
+          "label": "EU Guidelines on Trustworthy AI",
+          "url": "https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai"
+        }
+      ],
+      "notes": "Use concrete examples. Discuss ProPublica's COMPAS investigation. Emphasize ongoing nature of fairness work."
+    },
+    {
+      "id": "seg-6",
+      "title": "AI and Society: A Vision for the Future",
+      "subtitle": "Shaping Tomorrow Together",
+      "bullets": [
+        "AI will augment human capabilities, not replace human judgment",
+        "Critical needs: AI literacy, workforce reskilling, equitable access",
+        "Governance frameworks must be adaptive and multistakeholder",
+        "Focus on human-centered AI: designed for people, by diverse teams",
+        "The future of AI depends on the choices we make today"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "/assets/images/global_local_snapshot.png",
+          "alt": "Visualization connecting global AI trends with local impacts",
+          "caption": "Global-local dynamics in AI adoption"
+        }
+      ],
+      "engagement": {
+        "prompt": "What questions do you have about AI's role in our future?"
+      },
+      "citations": [
+        {
+          "label": "Human-Centered AI - Stanford HAI",
+          "url": "https://hai.stanford.edu/research/research-focus-areas"
+        },
+        {
+          "label": "UNESCO Recommendation on AI Ethics",
+          "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics"
+        },
+        {
+          "label": "Future of Jobs Report - World Economic Forum",
+          "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023"
+        }
+      ],
+      "notes": "End on hopeful but realistic note. Open floor for Q&A. Share contact info for follow-up."
+    }
+  ]
+}
