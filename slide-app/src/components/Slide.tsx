@@ -17,12 +17,51 @@ interface SlideProps {
  */
 export function Slide({ segment, showNotes }: SlideProps) {
   const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
+  const [isSpeaking, setIsSpeaking] = useState(false);
 
   // Check if this is a title slide
   const isTitle = (segment as any).isTitle;
   if (isTitle) {
     return <TitleSlide segment={segment as any} showNotes={showNotes} />;
   }
+
+  // Text-to-speech function for reading notes in Spanish
+  const speakNotes = () => {
+    if (!segment.notes) return;
+
+    // Stop if already speaking
+    if (isSpeaking) {
+      window.speechSynthesis.cancel();
+      setIsSpeaking(false);
+      return;
+    }
+
+    // Create speech synthesis utterance
+    const utterance = new SpeechSynthesisUtterance(segment.notes);
+    
+    // Set Spanish voice
+    utterance.lang = 'es-ES';
+    utterance.rate = 0.9; // Slightly slower for clarity
+    utterance.pitch = 1;
+    utterance.volume = 1;
+
+    // Try to use a Spanish voice if available
+    const voices = window.speechSynthesis.getVoices();
+    const spanishVoice = voices.find(voice => 
+      voice.lang.startsWith('es-') || voice.lang === 'es'
+    );
+    if (spanishVoice) {
+      utterance.voice = spanishVoice;
+    }
+
+    // Handle events
+    utterance.onstart = () => setIsSpeaking(true);
+    utterance.onend = () => setIsSpeaking(false);
+    utterance.onerror = () => setIsSpeaking(false);
+
+    // Speak
+    window.speechSynthesis.speak(utterance);
+  };
 
   const hasMultipleMedia = segment.media.length > 1;
   const currentMedia = segment.media[currentMediaIndex];
@@ -112,12 +151,35 @@ export function Slide({ segment, showNotes }: SlideProps) {
         )}
       </div>
 
-      {/* Speaker Notes Overlay */}
+      {/* Speaker Notes Overlay with Text-to-Speech */}
       {showNotes && segment.notes && (
         <div className="fixed bottom-0 left-0 right-0 bg-yellow-100 dark:bg-yellow-900 border-t-4 border-yellow-500 p-4 shadow-lg z-50">
-          <p className="text-sm md:text-base text-yellow-900 dark:text-yellow-100">
-            <strong>📝 Notes:</strong> {segment.notes}
-          </p>
+          <div className="flex items-start justify-between gap-4">
+            <p className="text-sm md:text-base text-yellow-900 dark:text-yellow-100 flex-1">
+              <strong>📝 Notes:</strong> {segment.notes}
+            </p>
+            <button
+              onClick={speakNotes}
+              className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-all whitespace-nowrap ${
+                isSpeaking 
+                  ? 'bg-red-600 hover:bg-red-700 text-white' 
+                  : 'bg-videns-primary hover:bg-videns-secondary text-white'
+              }`}
+              aria-label={isSpeaking ? 'Detener lectura' : 'Leer notas en español'}
+            >
+              {isSpeaking ? (
+                <>
+                  <span>⏸️</span>
+                  <span>Stop</span>
+                </>
+              ) : (
+                <>
+                  <span>🔊</span>
+                  <span>Read ES</span>
+                </>
+              )}
+            </button>
+          </div>
         </div>
       )}
 

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Segment } from '../types';
 
 /**
@@ -21,6 +22,46 @@ interface TitleSlideProps {
  * Features VIDENS branding, animations, and presenter information
  */
 export function TitleSlide({ segment, showNotes }: TitleSlideProps) {
+  const [isSpeaking, setIsSpeaking] = useState(false);
+
+  // Text-to-speech function for reading notes in Spanish
+  const speakNotes = () => {
+    if (!segment.notes) return;
+
+    // Stop if already speaking
+    if (isSpeaking) {
+      window.speechSynthesis.cancel();
+      setIsSpeaking(false);
+      return;
+    }
+
+    // Create speech synthesis utterance
+    const utterance = new SpeechSynthesisUtterance(segment.notes);
+    
+    // Set Spanish voice (es-ES for Spain, es-MX for Mexico, es-CO for Colombia)
+    utterance.lang = 'es-ES';
+    utterance.rate = 0.9; // Slightly slower for clarity
+    utterance.pitch = 1;
+    utterance.volume = 1;
+
+    // Try to use a Spanish voice if available
+    const voices = window.speechSynthesis.getVoices();
+    const spanishVoice = voices.find(voice => 
+      voice.lang.startsWith('es-') || voice.lang === 'es'
+    );
+    if (spanishVoice) {
+      utterance.voice = spanishVoice;
+    }
+
+    // Handle events
+    utterance.onstart = () => setIsSpeaking(true);
+    utterance.onend = () => setIsSpeaking(false);
+    utterance.onerror = () => setIsSpeaking(false);
+
+    // Speak
+    window.speechSynthesis.speak(utterance);
+  };
+
   return (
     <div className="h-full relative title-slide overflow-hidden">
       {/* Animated AI dots */}
@@ -135,10 +176,33 @@ export function TitleSlide({ segment, showNotes }: TitleSlideProps) {
 
       </div>
 
-      {/* Speaker notes overlay */}
+      {/* Speaker notes overlay with text-to-speech */}
       {showNotes && segment.notes && (
         <div className="absolute bottom-0 left-0 right-0 bg-black/90 text-white p-6 backdrop-blur-sm">
-          <h4 className="font-bold mb-2 text-yellow-400">📝 Notas del Presentador:</h4>
+          <div className="flex items-start justify-between mb-2">
+            <h4 className="font-bold text-yellow-400">📝 Notas del Presentador:</h4>
+            <button
+              onClick={speakNotes}
+              className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-all ${
+                isSpeaking 
+                  ? 'bg-red-600 hover:bg-red-700' 
+                  : 'bg-videns-primary hover:bg-videns-secondary'
+              }`}
+              aria-label={isSpeaking ? 'Detener lectura' : 'Leer notas en español'}
+            >
+              {isSpeaking ? (
+                <>
+                  <span>⏸️</span>
+                  <span>Detener</span>
+                </>
+              ) : (
+                <>
+                  <span>🔊</span>
+                  <span>Leer en Español</span>
+                </>
+              )}
+            </button>
+          </div>
           <p className="text-sm leading-relaxed">{segment.notes}</p>
         </div>
       )}
