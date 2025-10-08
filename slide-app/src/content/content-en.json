@@ -11,19 +11,31 @@
       "id": "seg-1",
       "title": "From Hype to Public Policy",
       "subtitle": "How to Govern AI in the Public Sector",
-      "bullets": [
-        "Artificial intelligence has moved from being a technological promise to becoming an everyday tool for governments and public administrations",
-        "The speed of its adoption exceeds institutional capacity to regulate, evaluate, and ensure alignment with the public interest",
-        "We will explore how States can govern AI from three dimensions: strategic, operational, and ethical",
-        "Drawing from international and Latin American experiences, we will present guidelines for responsible governance",
-        "A critical journey towards sustainable public policies in the age of artificial intelligence"
+      "bullets": [],
+      "dimensions": [
+        {
+          "icon": "🎯",
+          "title": "Strategic",
+          "description": "Vision & Planning"
+        },
+        {
+          "icon": "⚙️",
+          "title": "Operational",
+          "description": "Capabilities & Procurement"
+        },
+        {
+          "icon": "⚖️",
+          "title": "Ethical",
+          "description": "Transparency & Accountability"
+        }
       ],
+      "keyMessage": "From technological hype to sustainable public policy",
       "media": [],
       "engagement": {
         "prompt": "How is your organization currently approaching AI governance?"
       },
       "citations": [],
-      "notes": "Professional opening slide. Carlos Denner, August 14. International conference. Establish credibility and academic context. Three dimensions: strategic, operational, ethical.",
+      "notes": "ABSTRACT: Artificial intelligence has moved from being a technological promise to becoming an everyday tool for governments and public administrations. However, the speed of its adoption exceeds institutional capacity to regulate, evaluate, and ensure alignment with the public interest. This conference proposes a critical journey from hype to public policy, exploring how States can govern AI from three dimensions: strategic (vision and planning), operational (capabilities and public procurement), and ethical (transparency, accountability, and equity). Drawing from international and Latin American experiences, guidelines for responsible and sustainable AI governance in the public sector will be presented.",
       "presenter": {
         "name": "carlos.denner@videns.ai",
         "title": "Expert in AI",

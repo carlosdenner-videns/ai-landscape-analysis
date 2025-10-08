@@ -11,19 +11,31 @@
       "id": "seg-1",
       "title": "Del hype a la política pública",
       "subtitle": "Cómo gobernar la IA en el sector público",
-      "bullets": [
-        "La inteligencia artificial ha pasado de ser una promesa tecnológica a convertirse en una herramienta cotidiana para gobiernos y administraciones públicas",
-        "La velocidad de su adopción supera la capacidad institucional para regularla, evaluarla y garantizar su alineación con el interés público",
-        "Exploraremos cómo los Estados pueden gobernar la IA desde tres dimensiones: estratégica, operativa y ética",
-        "A partir de experiencias internacionales y latinoamericanas, presentaremos lineamientos para una gobernanza responsable",
-        "Un recorrido crítico hacia políticas públicas sostenibles en la era de la inteligencia artificial"
+      "bullets": [],
+      "dimensions": [
+        {
+          "icon": "🎯",
+          "title": "Estratégica",
+          "description": "Visión y Planificación"
+        },
+        {
+          "icon": "⚙️",
+          "title": "Operativa",
+          "description": "Capacidades y Contratación"
+        },
+        {
+          "icon": "⚖️",
+          "title": "Ética",
+          "description": "Transparencia y Rendición de Cuentas"
+        }
       ],
+      "keyMessage": "Del hype tecnológico a la política pública sostenible",
       "media": [],
       "engagement": {
         "prompt": "¿Cómo está abordando su organización la gobernanza de la IA actualmente?"
       },
       "citations": [],
-      "notes": "Diapositiva de apertura profesional. Carlos Denner, 14 agosto. Conferencia internacional. Establecer credibilidad y contexto académico. Tres dimensiones: estratégica, operativa, ética.",
+      "notes": "RESUMEN: La inteligencia artificial ha pasado de ser una promesa tecnológica a convertirse en una herramienta cotidiana para gobiernos y administraciones públicas. Sin embargo, la velocidad de su adopción supera la capacidad institucional para regularla, evaluarla y garantizar su alineación con el interés público. Esta conferencia propone un recorrido crítico del hype a la política pública, explorando cómo los Estados pueden gobernar la IA desde tres dimensiones: estratégica (visión y planificación), operativa (capacidades y contratación pública) y ética (transparencia, rendición de cuentas y equidad). A partir de experiencias internacionales y latinoamericanas, se presentarán lineamientos para una gobernanza responsable y sostenible de la IA en el sector público.",
       "presenter": {
         "name": "carlos.denner@videns.ai",
         "title": "Experto en IA",

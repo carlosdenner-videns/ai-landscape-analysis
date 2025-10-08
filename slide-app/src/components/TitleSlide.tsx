@@ -36,11 +36,11 @@ export function TitleSlide({ segment, showNotes }: TitleSlideProps) {
         {/* VIDENS branding - clickable */}
         <div className="absolute top-8 left-8 animate-slideInLeft">
           <a 
-            href="https://chatgpt.com/?model=gpt-4&q=Tell%20me%20about%20Videns%20AI%20company" 
+            href="https://www.google.com/search?q=Videns+AI" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center space-x-3 hover:opacity-80 transition-opacity cursor-pointer group"
-            aria-label="Ask ChatGPT about Videns AI"
+            aria-label="Search Google for Videns AI"
           >
             <div className="w-8 h-8 bg-videns-primary rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
               <div className="w-4 h-4 bg-white rounded-sm animate-aiPulse"></div>
@@ -69,17 +69,35 @@ export function TitleSlide({ segment, showNotes }: TitleSlideProps) {
             </h2>
           </div>
 
-          {/* Abstract/Description */}
-          <div className="animate-fadeIn max-w-3xl mx-auto" style={{ animationDelay: '1s', opacity: 0 }}>
-            <div className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-videns-200 dark:border-videns-700">
-              <div className="space-y-4 text-gray-700 dark:text-gray-200 text-lg leading-relaxed">
-                {segment.bullets.map((bullet, index) => (
-                  <p key={index} className="animate-slideInLeft" style={{ animationDelay: `${1.2 + index * 0.2}s`, opacity: 0 }}>
-                    {bullet}
-                  </p>
-                ))}
-              </div>
+          {/* Key Topics - Visual Grid */}
+          <div className="animate-fadeIn max-w-5xl mx-auto" style={{ animationDelay: '1s', opacity: 0 }}>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              {(segment as any).dimensions?.map((dimension: any, index: number) => {
+                const animationClass = index === 0 ? 'animate-slideInLeft' : index === 2 ? 'animate-slideInRight' : 'animate-fadeIn';
+                const delay = 1.2 + (index * 0.2);
+                
+                return (
+                  <div 
+                    key={index}
+                    className={`bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-videns-200 dark:border-videns-700 hover:scale-105 transition-transform ${animationClass}`} 
+                    style={{ animationDelay: `${delay}s`, opacity: 0 }}
+                  >
+                    <div className="text-4xl mb-4">{dimension.icon}</div>
+                    <h3 className="text-xl font-bold text-videns-secondary dark:text-videns-300 mb-2">{dimension.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">{dimension.description}</p>
+                  </div>
+                );
+              })}
             </div>
+
+            {/* Key Message */}
+            {(segment as any).keyMessage && (
+              <div className="bg-gradient-to-r from-videns-500 to-videns-600 text-white rounded-xl p-6 shadow-xl animate-fadeIn" style={{ animationDelay: '1.8s', opacity: 0 }}>
+                <p className="text-2xl font-light italic">
+                  "{(segment as any).keyMessage}"
+                </p>
+              </div>
+            )}
           </div>
 
           {/* Presenter information */}

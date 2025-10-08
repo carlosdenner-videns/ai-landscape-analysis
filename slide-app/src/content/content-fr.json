@@ -11,19 +11,31 @@
       "id": "seg-1",
       "title": "Du battage médiatique aux politiques publiques",
       "subtitle": "Comment gouverner l'IA dans le secteur public",
-      "bullets": [
-        "L'intelligence artificielle est passée d'une promesse technologique à un outil quotidien pour les gouvernements et les administrations publiques",
-        "La vitesse de son adoption dépasse la capacité institutionnelle de la réglementer, de l'évaluer et de garantir son alignement avec l'intérêt public",
-        "Nous explorerons comment les États peuvent gouverner l'IA selon trois dimensions : stratégique, opérationnelle et éthique",
-        "À partir d'expériences internationales et latino-américaines, nous présenterons des lignes directrices pour une gouvernance responsable",
-        "Un parcours critique vers des politiques publiques durables à l'ère de l'intelligence artificielle"
+      "bullets": [],
+      "dimensions": [
+        {
+          "icon": "🎯",
+          "title": "Stratégique",
+          "description": "Vision et Planification"
+        },
+        {
+          "icon": "⚙️",
+          "title": "Opérationnelle",
+          "description": "Capacités et Approvisionnement"
+        },
+        {
+          "icon": "⚖️",
+          "title": "Éthique",
+          "description": "Transparence et Responsabilité"
+        }
       ],
+      "keyMessage": "Du battage médiatique à la politique publique durable",
       "media": [],
       "engagement": {
         "prompt": "Comment votre organisation aborde-t-elle actuellement la gouvernance de l'IA ?"
       },
       "citations": [],
-      "notes": "Diapositive d'ouverture professionnelle. Carlos Denner, 14 août. Conférence internationale. Établir la crédibilité et le contexte académique. Trois dimensions : stratégique, opérationnelle, éthique.",
+      "notes": "RÉSUMÉ : L'intelligence artificielle est passée d'une promesse technologique à un outil quotidien pour les gouvernements et les administrations publiques. Cependant, la vitesse de son adoption dépasse la capacité institutionnelle de la réglementer, de l'évaluer et de garantir son alignement avec l'intérêt public. Cette conférence propose un parcours critique du battage médiatique aux politiques publiques, explorant comment les États peuvent gouverner l'IA selon trois dimensions : stratégique (vision et planification), opérationnelle (capacités et approvisionnement public) et éthique (transparence, responsabilité et équité). À partir d'expériences internationales et latino-américaines, des lignes directrices pour une gouvernance responsable et durable de l'IA dans le secteur public seront présentées.",
       "presenter": {
         "name": "carlos.denner@videns.ai",
         "title": "Expert en IA",
