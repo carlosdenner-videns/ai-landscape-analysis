@@ -49,6 +49,14 @@ export function TitleSlide({ segment, showNotes, language }: TitleSlideProps) {
     'fr': '📝 Notes du Présentateur:'
   };
 
+  // Branding text translations
+  const brandingText: Record<Language, string> = {
+    'en': 'Videns, powered by Cofomo',
+    'es': 'Videns, impulsado por Cofomo',
+    'pt': 'Videns, impulsionado por Cofomo',
+    'fr': 'Videns, propulsée par Cofomo'
+  };
+
   // Text-to-speech function for reading notes in selected language
   const speakNotes = () => {
     if (!segment.notes) return;
@@ -103,16 +111,16 @@ export function TitleSlide({ segment, showNotes, language }: TitleSlideProps) {
         {/* VIDENS branding - top left */}
         <div className="absolute top-28 left-8 animate-slideInLeft">
           <a 
-            href="https://www.google.com/search?q=Videns+AI" 
+            href="https://www.google.com/search?q=videns+cofomo" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center space-x-3 hover:opacity-80 transition-opacity cursor-pointer group"
-            aria-label="Search Google for Videns AI"
+            aria-label="Search Google for Videns and Cofomo"
           >
             <div className="w-10 h-10 bg-videns-primary rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
               <div className="w-5 h-5 bg-white rounded-sm animate-aiPulse"></div>
             </div>
-            <span className="text-videns-secondary font-bold text-2xl group-hover:text-videns-primary transition-colors">VIDENS</span>
+            <span className="text-videns-secondary font-bold text-xl group-hover:text-videns-primary transition-colors">{brandingText[language]}</span>
           </a>
         </div>
 
