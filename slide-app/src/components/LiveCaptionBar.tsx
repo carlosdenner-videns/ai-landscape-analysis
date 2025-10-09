@@ -16,6 +16,7 @@ interface LiveCaptionBarProps {
 export function LiveCaptionBar({
   showOriginal = true,
 }: LiveCaptionBarProps) {
+  // Force defaults for Colombia presentation: English → Spanish
   const [sourceLanguage, setSourceLanguage] = useState<string>('en-US');
   const [targetLanguage, setTargetLanguage] = useState<'es' | 'pt' | 'fr'>('es');
   const [translatedText, setTranslatedText] = useState('');
