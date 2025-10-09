@@ -63,7 +63,7 @@ export function LiveCaptionBar({
 
   // Debounced translation function
   const debouncedTranslate = useRef(
-    debounce(async (text: string) => {
+    debounce(async (text: string, sourceLang: string, targetLang: string) => {
       if (!text || text.trim().length === 0) {
         setTranslatedText('');
         return;
@@ -72,8 +72,8 @@ export function LiveCaptionBar({
       setIsTranslating(true);
       try {
         // Extract language code from sourceLanguage (e.g., 'en-US' -> 'en')
-        const sourceLangCode = sourceLanguage.split('-')[0];
-        const translated = await translateText(text, sourceLangCode, targetLanguage);
+        const sourceLangCode = sourceLang.split('-')[0];
+        const translated = await translateText(text, sourceLangCode, targetLang);
         setTranslatedText(translated);
       } catch (err) {
         console.error('Translation error:', err);
@@ -99,10 +99,10 @@ export function LiveCaptionBar({
       // Only translate if we have new content
       if (latestFinal.transcript !== lastTranscript) {
         setLastTranscript(latestFinal.transcript);
-        debouncedTranslate(latestFinal.transcript);
+        debouncedTranslate(latestFinal.transcript, sourceLanguage, targetLanguage);
       }
     }
-  }, [results, lastTranscript, debouncedTranslate]);
+  }, [results, lastTranscript, debouncedTranslate, sourceLanguage, targetLanguage]);
 
   // Show browser compatibility warning
   useEffect(() => {
