@@ -117,7 +117,6 @@ function App() {
       {/* Live Caption Bar - Real-time speech transcription and translation */}
       <LiveCaptionBar 
         targetLanguage={language === 'en' ? 'es' : language as 'es' | 'pt' | 'fr'}
-        sourceLanguage="en-US"
         showOriginal={false}
       />
     </div>

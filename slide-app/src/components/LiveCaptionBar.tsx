@@ -7,7 +7,6 @@ import { translateText, debounce } from '../utils/translation';
  */
 interface LiveCaptionBarProps {
   targetLanguage?: 'es' | 'pt' | 'fr'; // Target language for translation
-  sourceLanguage?: string; // Source language (default: 'en-US')
   showOriginal?: boolean; // Show original transcript alongside translation
 }
 
@@ -17,9 +16,9 @@ interface LiveCaptionBarProps {
  */
 export function LiveCaptionBar({
   targetLanguage = 'es',
-  sourceLanguage = 'en-US',
   showOriginal = true,
 }: LiveCaptionBarProps) {
+  const [sourceLanguage, setSourceLanguage] = useState<string>('en-US');
   const [translatedText, setTranslatedText] = useState('');
   const [isTranslating, setIsTranslating] = useState(false);
   const [lastTranscript, setLastTranscript] = useState('');
@@ -41,11 +40,19 @@ export function LiveCaptionBar({
   const hasShownWarning = useRef(false);
 
   // Language labels for UI
-  const languageLabels: Record<string, string> = {
+  const targetLanguageLabels: Record<string, string> = {
     'es': '🇪🇸 Español',
     'pt': '🇧🇷 Português',
     'fr': '🇫🇷 Français',
   };
+
+  // Source language options
+  const sourceLanguageOptions: Array<{ code: string; label: string }> = [
+    { code: 'en-US', label: '🇺🇸 English' },
+    { code: 'pt-BR', label: '🇧🇷 Português' },
+    { code: 'es-ES', label: '🇪🇸 Español' },
+    { code: 'fr-FR', label: '🇫🇷 Français' },
+  ];
 
   // Debounced translation function
   const debouncedTranslate = useRef(
@@ -68,6 +75,12 @@ export function LiveCaptionBar({
       }
     }, 1500) // Wait 1.5s after speech stops before translating
   ).current;
+
+  // Clear transcript and translation when source language changes
+  useEffect(() => {
+    setTranslatedText('');
+    setLastTranscript('');
+  }, [sourceLanguage]);
 
   // Monitor transcript changes and trigger translation
   useEffect(() => {
@@ -148,10 +161,33 @@ export function LiveCaptionBar({
                 )}
               </div>
 
-              {/* Right side: Language indicator */}
-              <div className="flex items-center space-x-2 text-gray-300 text-xs">
-                <span>🎯</span>
-                <span className="font-medium">{languageLabels[targetLanguage]}</span>
+              {/* Right side: Language selectors */}
+              <div className="flex items-center space-x-4">
+                {/* Source language selector */}
+                <div className="flex items-center space-x-2">
+                  <span className="text-gray-400 text-xs font-medium">From:</span>
+                  <select
+                    value={sourceLanguage}
+                    onChange={(e) => setSourceLanguage(e.target.value)}
+                    className="bg-gray-700 text-white text-xs rounded px-2 py-1 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-videns-500 cursor-pointer"
+                    aria-label="Select source language"
+                  >
+                    {sourceLanguageOptions.map(option => (
+                      <option key={option.code} value={option.code}>
+                        {option.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Arrow indicator */}
+                <span className="text-gray-500 text-xs">→</span>
+
+                {/* Target language indicator */}
+                <div className="flex items-center space-x-2 text-gray-300 text-xs">
+                  <span className="text-gray-400 font-medium">To:</span>
+                  <span className="font-medium">{targetLanguageLabels[targetLanguage]}</span>
+                </div>
               </div>
             </div>
 
@@ -162,7 +198,9 @@ export function LiveCaptionBar({
                 {showOriginal && (
                   <div className="bg-gray-900/50 rounded-lg px-3 py-1.5 mb-2 border border-gray-700">
                     <p className="text-white text-sm leading-relaxed">
-                      <span className="text-blue-400 font-semibold mr-2">🇺🇸</span>
+                      <span className="text-blue-400 font-semibold mr-2">
+                        {sourceLanguageOptions.find(opt => opt.code === sourceLanguage)?.label.split(' ')[0]}
+                      </span>
                       {displayTranscript}
                     </p>
                   </div>
@@ -172,7 +210,7 @@ export function LiveCaptionBar({
                 <div className="bg-gradient-to-r from-videns-600 to-videns-700 rounded-lg px-4 py-3 border-2 border-videns-400 shadow-xl">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-sm font-bold text-yellow-300 uppercase tracking-wide">
-                      ✨ {languageLabels[targetLanguage]}
+                      ✨ {targetLanguageLabels[targetLanguage]}
                     </span>
                     {isTranslating && (
                       <span className="text-xs text-yellow-200 italic animate-pulse">
