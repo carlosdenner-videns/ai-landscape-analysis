@@ -4,7 +4,7 @@
     "version": "4.0.0",
     "description": "Du battage médiatique aux politiques publiques : comment gouverner l'IA dans le secteur public",
     "duration": "90 minutes",
-    "slides": 1
+    "slides": 7
   },
   "segments": [
     {
@@ -44,6 +44,199 @@
         "conference": "Intelligence Artificielle et Administration Publique, Semaine d'internationalisation de l'École supérieure d'administration publique – ESAP"
       },
       "isTitle": true
+    },
+    {
+      "id": "seg-2",
+      "title": "Pourquoi la gouvernance de l'IA est importante",
+      "subtitle": "L'écart de gouvernance est désormais le plus grand risque dans l'adoption de l'IA",
+      "bullets": [
+        "Les gouvernements se sont précipités pour déployer l'IA — mais peu ont construit les institutions pour la gouverner",
+        "L'IA avance vite. Les politiques publiques non",
+        "Le cycle du battage médiatique de l'IA atteint son apogée plus rapidement que les cycles politiques",
+        "Les agences publiques adoptent souvent des outils d'IA avant de définir la supervision",
+        "Résultat : incertitude, risque et perte de confiance"
+      ],
+      "keyMessage": "🟣 Battage → 🚀 Projets pilotes → ⚖️ Retard réglementaire → 🧭 Alignement de gouvernance",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/hype_policy_curve.svg",
+          "alt": "Courbe du battage IA vs maturité politique",
+          "caption": "L'écart entre le cycle de battage IA et la maturité politique"
+        }
+      ],
+      "engagement": {
+        "prompt": "Votre organisation a-t-elle expérimenté l'écart entre l'adoption de l'IA et la préparation à la gouvernance ?"
+      },
+      "citations": [],
+      "notes": "L'écart : Les gouvernements du monde entier se sont précipités pour adopter les technologies d'IA, mais les cadres de gouvernance sont restés en retrait. Cela crée des risques : les biais algorithmiques ne sont pas contrôlés, la responsabilité n'est pas claire et la confiance du public s'érode. Le défi n'est pas seulement technique—il est institutionnel."
+    },
+    {
+      "id": "seg-3",
+      "title": "Couche stratégique : Vision et planification",
+      "subtitle": "Sans vision, l'IA devient une automatisation sans direction",
+      "bullets": [
+        "Vision et coordination — stratégies nationales d'IA, alignement interagences",
+        "Renforcement des capacités — formation des fonctionnaires publics numériques",
+        "Alignement des investissements — lier le financement aux résultats mesurables"
+      ],
+      "keyMessage": "La gouvernance de l'IA commence par un sens clair de l'objectif — liant l'innovation à la valeur publique",
+      "stats": [
+        {
+          "flag": "🇪🇺",
+          "label": "Union Européenne",
+          "value": "Loi sur l'IA comme cadre général"
+        },
+        {
+          "flag": "🇫🇮",
+          "label": "Finlande",
+          "value": "Plan national AI4Citizens"
+        },
+        {
+          "flag": "🇪🇪",
+          "label": "Estonie",
+          "value": "Gouvernance précoce de l'IA par conception"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/strategy_pillars.svg",
+          "alt": "Piliers de gouvernance stratégique",
+          "caption": "Trois piliers de la gouvernance stratégique de l'IA"
+        }
+      ],
+      "engagement": {
+        "prompt": "Votre pays a-t-il une stratégie nationale d'IA ? Dans quelle mesure est-elle coordonnée entre les agences ?"
+      },
+      "citations": [],
+      "notes": "La gouvernance stratégique consiste à établir une direction. Des pays comme la Finlande et l'Estonie montrent qu'une vision claire—combinée à une coordination institutionnelle—crée les fondations pour une adoption responsable de l'IA. Sans stratégie, le déploiement de l'IA devient réactif et fragmenté."
+    },
+    {
+      "id": "seg-4",
+      "title": "Couche opérationnelle : Capacités et approvisionnement",
+      "subtitle": "L'approvisionnement est là où l'éthique de l'IA rencontre la bureaucratie",
+      "bullets": [
+        "Stratégie → Approvisionnement → Mise en œuvre → Évaluation",
+        "Préparation des données et interopérabilité",
+        "Lignes directrices pour un approvisionnement responsable",
+        "Cycles d'évaluation et d'audit"
+      ],
+      "keyMessage": "Transformer les principes en pratique nécessite une force opérationnelle",
+      "comparisonTable": [
+        {
+          "country": "Canada 🇨🇦",
+          "strength": "Directive précoce sur la prise de décision automatisée",
+          "limitation": "Application faible"
+        },
+        {
+          "country": "UE 🇪🇺",
+          "strength": "Cadre unifié pour l'IA à haut risque",
+          "limitation": "Mise en œuvre lente"
+        },
+        {
+          "country": "États-Unis 🇺🇸",
+          "strength": "Culture d'innovation rapide",
+          "limitation": "Supervision fragmentée"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/procurement_flow.svg",
+          "alt": "Diagramme de flux d'approvisionnement IA",
+          "caption": "Flux de la politique à la pratique"
+        }
+      ],
+      "engagement": {
+        "prompt": "Comment votre organisation évalue-t-elle les systèmes d'IA avant l'approvisionnement ?"
+      },
+      "citations": [],
+      "notes": "La gouvernance opérationnelle traduit la stratégie en action. L'approvisionnement est un levier critique : il détermine quels outils d'IA entrent dans le gouvernement, sous quelles conditions et avec quelle responsabilité. Des pays comme le Canada ont été pionniers dans les évaluations d'impact algorithmique, mais l'application reste un défi."
+    },
+    {
+      "id": "seg-5",
+      "title": "Couche éthique : Transparence et responsabilité",
+      "subtitle": "L'éthique n'est pas une contrainte — c'est le fondement de la légitimité",
+      "bullets": [
+        "Équité : éviter les biais systémiques",
+        "Transparence : explicabilité et traçabilité",
+        "Responsabilité : gouvernance avec humain dans la boucle"
+      ],
+      "keyMessage": "L'IA éthique dans le secteur public garantit légitimité, confiance et équité",
+      "implementationTools": [
+        "Évaluations d'impact algorithmique",
+        "Journaux d'audit ouverts et tableaux de bord de traçabilité",
+        "Mécanismes de surveillance citoyenne"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/ethics_triangle.svg",
+          "alt": "Triangle d'éthique de l'IA",
+          "caption": "Les trois piliers de la gouvernance éthique de l'IA"
+        }
+      ],
+      "engagement": {
+        "prompt": "Quels mécanismes votre organisation utilise-t-elle pour garantir la transparence et la responsabilité de l'IA ?"
+      },
+      "citations": [],
+      "notes": "L'éthique dans la gouvernance de l'IA ne sont pas des principes abstraits—ce sont des exigences opérationnelles. L'équité, la transparence et la responsabilité doivent être intégrées dans la conception des systèmes, l'approvisionnement et la supervision. Sans elles, l'IA érode la confiance du public au lieu de la construire."
+    },
+    {
+      "id": "seg-6",
+      "title": "Panorama latino-américain",
+      "subtitle": "L'Amérique latine peut faire un bond en avant — non pas en copiant, mais en co-créant",
+      "bullets": [
+        "Une région de contrastes : ressources limitées, haute créativité",
+        "Brésil : Stratégie nationale d'IA (EBIA) axée sur la valeur publique",
+        "Colombie : Innovation GovDigital / ESAP et développement de capacité institutionnelle",
+        "Chili : Données ouvertes et laboratoires d'innovation civique avec cadres éthiques précoces"
+      ],
+      "keyMessage": "La coopération régionale peut transformer les défis en opportunités",
+      "challengesOpportunities": {
+        "challenges": [
+          "Fracture numérique",
+          "Surveillance faible",
+          "Faible capacité"
+        ],
+        "opportunities": [
+          "Coopération régionale",
+          "Participation citoyenne",
+          "Infrastructure de données partagée"
+        ]
+      },
+      "media": [],
+      "engagement": {
+        "prompt": "Quelles opportunités uniques l'Amérique latine a-t-elle pour façonner différemment la gouvernance de l'IA ?"
+      },
+      "citations": [],
+      "notes": "L'Amérique latine fait face à des défis structurels—fractures numériques, institutions faibles, ressources limitées. Mais la région a aussi des opportunités uniques : société civile forte, mouvements innovants de technologie civique et potentiel de coopération régionale. En co-créant des cadres de gouvernance plutôt qu'en les important, l'Amérique latine peut faire un bond en avant."
+    },
+    {
+      "id": "seg-7",
+      "title": "Du battage à la politique durable",
+      "subtitle": "La gouvernance n'est pas une loi — c'est un système d'apprentissage",
+      "bullets": [
+        "Construire la capacité institutionnelle avant la capacité technologique",
+        "Réguler par des principes, pas par la panique",
+        "Traiter la gouvernance de l'IA comme un apprentissage continu, pas comme une loi unique"
+      ],
+      "keyMessage": "Stratégique + Opérationnel + Éthique → Valeur publique durable",
+      "closingMessage": "Le parcours du battage à la politique consiste en maturité et alignement",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/venn_sustainable_value.svg",
+          "alt": "Modèle d'intégration de la gouvernance IA",
+          "caption": "Intégration des dimensions stratégiques, opérationnelles et éthiques"
+        }
+      ],
+      "engagement": {
+        "prompt": "Quelle est la première étape que votre organisation peut franchir vers une gouvernance durable de l'IA ?"
+      },
+      "citations": [],
+      "notes": "Le chemin du battage à la politique durable nécessite une intégration : vision stratégique, capacité opérationnelle et fondement éthique. La gouvernance de l'IA ne consiste pas à créer des lois parfaites—il s'agit de construire des institutions adaptatives qui apprennent, s'ajustent et garantissent la valeur publique au fil du temps. Du battage médiatique à la politique publique durable."
     }
   ]
 }

@@ -14,16 +14,22 @@ interface MediaPlayerProps {
  */
 export function MediaPlayer({ media, className = '' }: MediaPlayerProps) {
   const baseClass = `w-full max-w-4xl mx-auto ${className}`;
+  
+  // Debug: log the constructed image path
+  if (media.type === 'image') {
+    const imagePath = `${import.meta.env.BASE_URL}${media.src}?v=2`;
+    console.log('Image path:', imagePath, 'BASE_URL:', import.meta.env.BASE_URL, 'media.src:', media.src);
+  }
 
   switch (media.type) {
     case 'image':
       return (
         <figure className={baseClass}>
           <img
-            src={media.src}
+            src={`${import.meta.env.BASE_URL}${media.src}?v=2`}
             alt={media.alt}
             className="w-full h-auto rounded-lg shadow-lg"
-            loading="lazy"
+            loading="eager"
           />
           {media.caption && (
             <figcaption className="mt-2 text-sm text-center text-gray-600 dark:text-gray-400">
@@ -37,8 +43,8 @@ export function MediaPlayer({ media, className = '' }: MediaPlayerProps) {
       return (
         <figure className={baseClass}>
           <video
-            src={media.src}
-            poster={media.poster}
+            src={`${import.meta.env.BASE_URL}${media.src}`}
+            poster={media.poster ? `${import.meta.env.BASE_URL}${media.poster}` : undefined}
             controls
             className="w-full h-auto rounded-lg shadow-lg"
             preload="metadata"

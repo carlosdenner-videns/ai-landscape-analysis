@@ -1,0 +1,141 @@
+# From Hype to Public Policy
+
+## Slide 1 — Title Page
+**From Hype to Public Policy**  
+*How to Govern AI in the Public Sector*  
+
+**Strategic** — Vision & Planning  
+**Operational** — Capabilities & Procurement  
+**Ethical** — Transparency & Accountability  
+
+> "From technological hype to sustainable public policy"
+
+📧 carlos.denner@videns.ai  
+Expert in AI — *Videns, propelled by COFOMO*  
+*Artificial Intelligence and Public Administration, Internationalization Week – ESAP*
+
+---
+
+## 🌍 Slide 2 — Why AI Governance Matters
+> **"The governance gap is now the biggest risk in AI adoption."**
+
+Governments rushed to deploy AI — but few built the institutions to govern it.
+
+**AI moves fast. Policy doesn’t.**
+
+### ⚡ The Gap
+- The *hype cycle* of AI peaks faster than policy cycles.
+- Public agencies often adopt AI tools before defining oversight.
+- Result: uncertainty, risk, and lost trust.
+
+### 📈 Visual Cue
+![AI Hype vs Policy Maturity](assets/hype_policy_curve.svg)
+
+🟣 Hype → 🚀 Early pilots → ⚖️ Regulatory Lag → 🧭 Governance alignment
+
+---
+
+## 🧭 Slide 3 — Strategic Layer: Vision & Planning
+> “Without vision, AI becomes automation without direction.”
+
+AI governance begins with a clear sense of purpose — linking innovation to **public value**.
+
+### 🔭 Key Strategic Dimensions
+1. **Vision & Coordination** — national AI strategies, cross-agency alignment  
+2. **Capacity Building** — training digital public servants  
+3. **Investment Alignment** — linking funding to measurable outcomes  
+
+### 🌍 Reference Cases
+🇪🇺 **European Union** — AI Act as umbrella framework  
+🇫🇮 **Finland** — National AI4Citizens plan  
+🇪🇪 **Estonia** — early AI governance by design  
+
+![Strategic Pillars](assets/strategy_pillars.svg)
+
+---
+
+## ⚙️ Slide 4 — Operational Layer: Capabilities & Procurement
+> “Procurement is where AI ethics meet bureaucracy.”
+
+Turning principles into practice requires operational muscle.
+
+### 🧩 Policy-to-Practice Pipeline
+**Strategy → Procurement → Implementation → Evaluation**
+
+![Operational Flow](assets/procurement_flow.svg)
+
+- Data readiness and interoperability  
+- Responsible procurement guidelines  
+- Evaluation & auditing cycles  
+
+### 🇨🇦 🇪🇺 🇺🇸 Comparative Insights
+| Country | Strength | Limitation |
+|----------|-----------|-------------|
+| **Canada** | Early directive on automated decision-making | Weak enforcement |
+| **EU** | Unified framework for high-risk AI | Slow implementation |
+| **USA** | Fast innovation culture | Fragmented oversight |
+
+---
+
+## ⚖️ Slide 5 — Ethical Layer: Transparency & Accountability
+> “Ethics are not a constraint — they are the foundation of legitimacy.”
+
+Ethical AI in the public sector ensures legitimacy, trust, and fairness.
+
+### ⚖️ Core Principles
+- **Fairness:** avoid systemic bias  
+- **Transparency:** explainability and traceability  
+- **Accountability:** human-in-the-loop governance  
+
+![Ethics Triangle](assets/ethics_triangle.svg)
+
+### 🧭 Implementation Tools
+- Algorithmic impact assessments  
+- Open audit logs and traceability dashboards  
+- Citizen oversight mechanisms  
+
+---
+
+## 🌐 Slide 6 — Latin American Outlook
+> “Latin America can leapfrog — not by copying, but by co-creating.”
+
+A region of contrasts: limited resources, high creativity.
+
+### 🇧🇷 🇨🇴 🇨🇱 Regional Highlights
+| Country | Initiative | Note |
+|----------|-------------|------|
+| **Brazil** | National AI Strategy (EBIA) | Focus on public value |
+| **Colombia** | GovDigital / ESAP innovation | Institutional capacity building |
+| **Chile** | Open data & civic innovation labs | Early ethical frameworks |
+
+### 🔍 Challenges vs. Opportunities
+| Challenges | Opportunities |
+|-------------|----------------|
+| Digital divide | Regional cooperation |
+| Weak oversight | Citizen participation |
+| Low capacity | Shared data infrastructure |
+
+![Latin America Map](assets/latam_map.png)
+
+---
+
+## 🧩 Slide 7 — From Hype to Sustainable Policy
+> “Governance is not a law — it’s a learning system.”
+
+The journey from hype to policy is about **maturity** and **alignment**.
+
+### 🔄 Integration Model
+**Strategic + Operational + Ethical → Sustainable Public Value**
+
+![AI Governance Venn Diagram](assets/venn_sustainable_value.svg)
+
+### 🧠 3 Key Takeaways
+1. Build **institutional capacity** before technological capacity.  
+2. Regulate through **principles**, not panic.  
+3. Treat **AI governance** as continuous learning, not a one-off law.  
+
+### ✨ Closing
+**From technological hype to sustainable public policy.**
+
+📧 carlos.denner@videns.ai  
+*Internationalization Week – ESAP, Manizales*

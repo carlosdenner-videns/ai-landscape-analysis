@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { SlideDeck } from './components/SlideDeck';
 import { LanguageToggle } from './components/LanguageToggle';
+import { LiveCaptionBar } from './components/LiveCaptionBar';
 import { useLanguage } from './hooks/useLanguage';
 import { useTheme } from './hooks/useTheme';
 import { Deck } from './types';
@@ -112,6 +113,13 @@ function App() {
       </button>
 
       <SlideDeck deck={deck} language={language} />
+
+      {/* Live Caption Bar - Real-time speech transcription and translation */}
+      <LiveCaptionBar 
+        targetLanguage={language === 'en' ? 'es' : language as 'es' | 'pt' | 'fr'}
+        sourceLanguage="en-US"
+        showOriginal={false}
+      />
     </div>
   );
 }

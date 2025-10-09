@@ -101,7 +101,7 @@ export function TitleSlide({ segment, showNotes, language }: TitleSlideProps) {
       <div className="h-full flex flex-col justify-center items-center px-safe py-safe text-center relative z-10">
         
         {/* VIDENS branding - top left */}
-        <div className="absolute top-24 left-8 animate-slideInLeft">
+        <div className="absolute top-28 left-8 animate-slideInLeft">
           <a 
             href="https://www.google.com/search?q=Videns+AI" 
             target="_blank" 
@@ -116,8 +116,8 @@ export function TitleSlide({ segment, showNotes, language }: TitleSlideProps) {
           </a>
         </div>
 
-        {/* ESAP Logo - top right (below language buttons) */}
-        <div className="absolute top-24 right-8 animate-slideInRight">
+        {/* ESAP Logo - top right (well below language buttons) */}
+        <div className="absolute top-28 right-8 animate-slideInRight">
           <div className="flex flex-col items-center space-y-1">
             <div className="relative w-16 h-16">
               {/* ESAP Logo - Pyramid of circles */}

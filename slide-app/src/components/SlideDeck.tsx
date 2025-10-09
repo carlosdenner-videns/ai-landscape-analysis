@@ -117,26 +117,26 @@ export function SlideDeck({ deck, language }: SlideDeckProps) {
 
       {/* Navigation Controls */}
       <nav
-        className="fixed bottom-4 left-1/2 transform -translate-x-1/2 flex items-center space-x-4 bg-white dark:bg-gray-800 rounded-lg shadow-lg px-6 py-3 z-40"
+        className="fixed bottom-4 left-1/2 transform -translate-x-1/2 flex items-center space-x-3 bg-white dark:bg-gray-800 rounded-lg shadow-lg px-4 py-2 z-40"
         aria-label="Slide navigation"
       >
         <button
           onClick={prevSlide}
           disabled={currentIndex === 0}
-          className="px-6 py-3 bg-primary-500 text-white rounded-lg font-medium disabled:opacity-50 disabled:cursor-not-allowed hover:bg-primary-600 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500"
+          className="px-4 py-2 bg-primary-500 text-white rounded-md text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed hover:bg-primary-600 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500"
           aria-label="Previous slide"
         >
           ← Previous
         </button>
 
-        <span className="text-gray-700 dark:text-gray-300 font-medium">
+        <span className="text-gray-700 dark:text-gray-300 font-medium text-sm">
           {currentIndex + 1} / {deck.segments.length}
         </span>
 
         <button
           onClick={nextSlide}
           disabled={currentIndex === deck.segments.length - 1}
-          className="px-6 py-3 bg-primary-500 text-white rounded-lg font-medium disabled:opacity-50 disabled:cursor-not-allowed hover:bg-primary-600 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500"
+          className="px-4 py-2 bg-primary-500 text-white rounded-md text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed hover:bg-primary-600 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500"
           aria-label="Next slide"
         >
           Next →

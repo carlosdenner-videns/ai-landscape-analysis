@@ -1,0 +1,40 @@
+
+<svg width="1400" height="800" viewBox="0 0 1400 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Inter, Arial, sans-serif; font-size: 48px; fill: #4B2DB7; font-weight: 800; }
+      .pillar { fill: #E9E2FF; stroke: #7C5CFF; stroke-width: 6; rx: 25; }
+      .label { font-family: Inter, Arial, sans-serif; font-size: 30px; fill: #3A2A8C; font-weight: 700; }
+      .note { font-family: Inter, Arial, sans-serif; font-size: 22px; fill: #2F2A55; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="700" y="90" text-anchor="middle" class="title">Strategic Layer: Vision &amp; Planning</text>
+
+  <!-- Three Pillars -->
+  <rect x="180" y="220" width="300" height="400" class="pillar"/>
+  <rect x="550" y="220" width="300" height="400" class="pillar"/>
+  <rect x="920" y="220" width="300" height="400" class="pillar"/>
+
+  <!-- Labels -->
+  <text x="330" y="660" text-anchor="middle" class="label">Vision &amp; Coordination</text>
+  <text x="700" y="660" text-anchor="middle" class="label">Capacity Building</text>
+  <text x="1070" y="660" text-anchor="middle" class="label">Investment Alignment</text>
+
+  <!-- Notes inside each pillar -->
+  <text x="330" y="320" text-anchor="middle" class="note">National AI Strategies</text>
+  <text x="330" y="360" text-anchor="middle" class="note">Cross-agency goals</text>
+  <text x="330" y="400" text-anchor="middle" class="note">Interoperability planning</text>
+
+  <text x="700" y="320" text-anchor="middle" class="note">Digital literacy</text>
+  <text x="700" y="360" text-anchor="middle" class="note">Public servants training</text>
+  <text x="700" y="400" text-anchor="middle" class="note">Innovation culture</text>
+
+  <text x="1070" y="320" text-anchor="middle" class="note">Funding alignment</text>
+  <text x="1070" y="360" text-anchor="middle" class="note">Evaluation frameworks</text>
+  <text x="1070" y="400" text-anchor="middle" class="note">Outcome metrics</text>
+
+  <!-- Base line -->
+  <rect x="160" y="640" width="1080" height="14" fill="#7C5CFF" />
+</svg>
