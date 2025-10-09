@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "author": "Carlos Denner - VIDENS Analytics",
+    "version": "4.0.0",
+    "description": "From Hype to Public Policy: How to Govern AI in the Public Sector",
+    "duration": "90 minutes",
+    "slides": 7
+  },
+  "segments": [
+    {
+      "id": "seg-1",
+      "title": "From Hype to Public Policy",
+      "subtitle": "How to Govern AI in the Public Sector",
+      "bullets": [],
+      "dimensions": [
+        {
+          "icon": "🎯",
+          "title": "Strategic",
+          "description": "Vision & Planning"
+        },
+        {
+          "icon": "⚙️",
+          "title": "Operational",
+          "description": "Capabilities & Procurement"
+        },
+        {
+          "icon": "⚖️",
+          "title": "Ethical",
+          "description": "Transparency & Accountability"
+        }
+      ],
+      "keyMessage": "From technological hype to sustainable public policy",
+      "media": [],
+      "engagement": {
+        "prompt": "How is your organization currently approaching AI governance?"
+      },
+      "citations": [],
+      "notes": "ABSTRACT: Artificial intelligence has moved from being a technological promise to becoming an everyday tool for governments and public administrations. However, the speed of its adoption exceeds institutional capacity to regulate, evaluate, and ensure alignment with the public interest. This conference proposes a critical journey from hype to public policy, exploring how States can govern AI from three dimensions: strategic (vision and planning), operational (capabilities and public procurement), and ethical (transparency, accountability, and equity). Drawing from international and Latin American experiences, guidelines for responsible and sustainable AI governance in the public sector will be presented.",
+      "presenter": {
+        "name": "carlos.denner@videns.ai",
+        "title": "Expert in AI",
+        "organization": "Videns, propulsed by COFOMO",
+        "date": "August 14, 2025",
+        "conference": "Artificial Intelligence and Public Administration, Internationalization Week of the Superior School of Public Administration – ESAP"
+      },
+      "isTitle": true
+    },
+    {
+      "id": "seg-2",
+      "title": "Why AI Governance Matters",
+      "subtitle": "The governance gap is now the biggest risk in AI adoption",
+      "bullets": [
+        "Governments rushed to deploy AI — but few built the institutions to govern it",
+        "AI moves fast. Policy doesn't",
+        "The hype cycle of AI peaks faster than policy cycles",
+        "Public agencies often adopt AI tools before defining oversight",
+        "Result: uncertainty, risk, and lost trust"
+      ],
+      "keyMessage": "🟣 Hype → 🚀 Early pilots → ⚖️ Regulatory Lag → 🧭 Governance alignment",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/hype_policy_curve.svg",
+          "alt": "AI Hype vs Policy Maturity Curve",
+          "caption": "The gap between AI hype cycle and policy maturity"
+        }
+      ],
+      "engagement": {
+        "prompt": "Has your organization experienced the gap between AI adoption and governance readiness?"
+      },
+      "citations": [],
+      "notes": "The Gap: Governments around the world have rushed to adopt AI technologies, but governance frameworks lag behind. This creates risks: algorithmic bias goes unchecked, accountability is unclear, and public trust erodes. The challenge is not just technical—it's institutional."
+    },
+    {
+      "id": "seg-3",
+      "title": "Strategic Layer: Vision & Planning",
+      "subtitle": "Without vision, AI becomes automation without direction",
+      "bullets": [
+        "Vision & Coordination — national AI strategies, cross-agency alignment",
+        "Capacity Building — training digital public servants",
+        "Investment Alignment — linking funding to measurable outcomes"
+      ],
+      "keyMessage": "AI governance begins with a clear sense of purpose — linking innovation to public value",
+      "stats": [
+        {
+          "flag": "🇪🇺",
+          "label": "European Union",
+          "value": "AI Act as umbrella framework"
+        },
+        {
+          "flag": "🇫🇮",
+          "label": "Finland",
+          "value": "National AI4Citizens plan"
+        },
+        {
+          "flag": "🇪🇪",
+          "label": "Estonia",
+          "value": "Early AI governance by design"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/strategy_pillars.svg",
+          "alt": "Strategic Governance Pillars",
+          "caption": "Three pillars of strategic AI governance"
+        }
+      ],
+      "engagement": {
+        "prompt": "Does your country have a national AI strategy? How well is it coordinated across agencies?"
+      },
+      "citations": [],
+      "notes": "Strategic governance is about setting direction. Countries like Finland and Estonia show that clear vision—combined with institutional coordination—creates the foundation for responsible AI adoption. Without strategy, AI deployment becomes reactive and fragmented."
+    },
+    {
+      "id": "seg-4",
+      "title": "Operational Layer: Capabilities & Procurement",
+      "subtitle": "Procurement is where AI ethics meet bureaucracy",
+      "bullets": [
+        "Strategy → Procurement → Implementation → Evaluation",
+        "Data readiness and interoperability",
+        "Responsible procurement guidelines",
+        "Evaluation & auditing cycles"
+      ],
+      "keyMessage": "Turning principles into practice requires operational muscle",
+      "comparisonTable": [
+        {
+          "country": "Canada 🇨🇦",
+          "strength": "Early directive on automated decision-making",
+          "limitation": "Weak enforcement"
+        },
+        {
+          "country": "EU 🇪🇺",
+          "strength": "Unified framework for high-risk AI",
+          "limitation": "Slow implementation"
+        },
+        {
+          "country": "USA 🇺🇸",
+          "strength": "Fast innovation culture",
+          "limitation": "Fragmented oversight"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/procurement_flow.svg",
+          "alt": "AI Procurement Flow Diagram",
+          "caption": "Policy-to-practice pipeline"
+        }
+      ],
+      "engagement": {
+        "prompt": "How does your organization evaluate AI systems before procurement?"
+      },
+      "citations": [],
+      "notes": "Operational governance translates strategy into action. Procurement is a critical lever: it determines which AI tools enter government, under what conditions, and with what accountability. Countries like Canada pioneered algorithmic impact assessments, but enforcement remains a challenge."
+    },
+    {
+      "id": "seg-5",
+      "title": "Ethical Layer: Transparency & Accountability",
+      "subtitle": "Ethics are not a constraint — they are the foundation of legitimacy",
+      "bullets": [
+        "Fairness: avoid systemic bias",
+        "Transparency: explainability and traceability",
+        "Accountability: human-in-the-loop governance"
+      ],
+      "keyMessage": "Ethical AI in the public sector ensures legitimacy, trust, and fairness",
+      "implementationTools": [
+        "Algorithmic impact assessments",
+        "Open audit logs and traceability dashboards",
+        "Citizen oversight mechanisms"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/ethics_triangle.svg",
+          "alt": "AI Ethics Triangle",
+          "caption": "The three pillars of ethical AI governance"
+        }
+      ],
+      "engagement": {
+        "prompt": "What mechanisms does your organization use to ensure AI transparency and accountability?"
+      },
+      "citations": [],
+      "notes": "Ethics in AI governance are not abstract principles—they are operational requirements. Fairness, transparency, and accountability must be embedded in systems design, procurement, and oversight. Without them, AI erodes public trust rather than building it."
+    },
+    {
+      "id": "seg-6",
+      "title": "Latin American Outlook",
+      "subtitle": "Latin America can leapfrog — not by copying, but by co-creating",
+      "bullets": [
+        "A region of contrasts: limited resources, high creativity",
+        "Brazil: National AI Strategy (EBIA) focused on public value",
+        "Colombia: GovDigital / ESAP innovation and institutional capacity building",
+        "Chile: Open data & civic innovation labs with early ethical frameworks"
+      ],
+      "keyMessage": "Regional cooperation can turn challenges into opportunities",
+      "challengesOpportunities": {
+        "challenges": [
+          "Digital divide",
+          "Weak oversight",
+          "Low capacity"
+        ],
+        "opportunities": [
+          "Regional cooperation",
+          "Citizen participation",
+          "Shared data infrastructure"
+        ]
+      },
+      "media": [],
+      "engagement": {
+        "prompt": "What unique opportunities does Latin America have to shape AI governance differently?"
+      },
+      "citations": [],
+      "notes": "Latin America faces structural challenges—digital divides, weak institutions, limited resources. But the region also has unique opportunities: strong civil society, innovative civic tech movements, and the potential for regional cooperation. By co-creating governance frameworks rather than importing them, Latin America can leapfrog."
+    },
+    {
+      "id": "seg-7",
+      "title": "From Hype to Sustainable Policy",
+      "subtitle": "Governance is not a law — it's a learning system",
+      "bullets": [
+        "Build institutional capacity before technological capacity",
+        "Regulate through principles, not panic",
+        "Treat AI governance as continuous learning, not a one-off law"
+      ],
+      "keyMessage": "Strategic + Operational + Ethical → Sustainable Public Value",
+      "closingMessage": "The journey from hype to policy is about maturity and alignment",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/venn_sustainable_value.svg",
+          "alt": "AI Governance Integration Model",
+          "caption": "Integration of strategic, operational, and ethical dimensions"
+        }
+      ],
+      "engagement": {
+        "prompt": "What is the first step your organization can take toward sustainable AI governance?"
+      },
+      "citations": [],
+      "notes": "The path from hype to sustainable policy requires integration: strategic vision, operational capability, and ethical foundation. AI governance is not about creating perfect laws—it's about building adaptive institutions that learn, adjust, and ensure public value over time. From technological hype to sustainable public policy."
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "author": "Carlos Denner - VIDENS Analytics",
+    "version": "4.0.0",
+    "description": "Del hype a la política pública: cómo gobernar la IA en el sector público",
+    "duration": "90 minutos",
+    "slides": 7
+  },
+  "segments": [
+    {
+      "id": "seg-1",
+      "title": "Del hype a la política pública",
+      "subtitle": "Cómo gobernar la IA en el sector público",
+      "bullets": [],
+      "dimensions": [
+        {
+          "icon": "🎯",
+          "title": "Estratégica",
+          "description": "Visión y Planificación"
+        },
+        {
+          "icon": "⚙️",
+          "title": "Operativa",
+          "description": "Capacidades y Contratación"
+        },
+        {
+          "icon": "⚖️",
+          "title": "Ética",
+          "description": "Transparencia y Rendición de Cuentas"
+        }
+      ],
+      "keyMessage": "Del hype tecnológico a la política pública sostenible",
+      "media": [],
+      "engagement": {
+        "prompt": "¿Cómo está abordando su organización la gobernanza de la IA actualmente?"
+      },
+      "citations": [],
+      "notes": "RESUMEN: La inteligencia artificial ha pasado de ser una promesa tecnológica a convertirse en una herramienta cotidiana para gobiernos y administraciones públicas. Sin embargo, la velocidad de su adopción supera la capacidad institucional para regularla, evaluarla y garantizar su alineación con el interés público. Esta conferencia propone un recorrido crítico del hype a la política pública, explorando cómo los Estados pueden gobernar la IA desde tres dimensiones: estratégica (visión y planificación), operativa (capacidades y contratación pública) y ética (transparencia, rendición de cuentas y equidad). A partir de experiencias internacionales y latinoamericanas, se presentarán lineamientos para una gobernanza responsable y sostenible de la IA en el sector público.",
+      "presenter": {
+        "name": "carlos.denner@videns.ai",
+        "title": "Experto en IA",
+        "organization": "Videns, propulsado por COFOMO",
+        "date": "14 de agosto, 2025",
+        "conference": "Inteligencia Artificial y Administración Pública, Semana de Internacionalización de la Escuela Superior de Administración Pública – ESAP"
+      },
+      "isTitle": true
+    },
+    {
+      "id": "seg-2",
+      "title": "Por qué importa la gobernanza de la IA",
+      "subtitle": "La brecha de gobernanza es ahora el mayor riesgo en la adopción de IA",
+      "bullets": [
+        "Los gobiernos se apresuraron a implementar IA — pero pocos construyeron las instituciones para gobernarla",
+        "La IA avanza rápido. Las políticas públicas no",
+        "El ciclo de hype de la IA alcanza su pico más rápido que los ciclos de políticas",
+        "Las agencias públicas a menudo adoptan herramientas de IA antes de definir la supervisión",
+        "Resultado: incertidumbre, riesgo y pérdida de confianza"
+      ],
+      "keyMessage": "🟣 Hype → 🚀 Pilotos iniciales → ⚖️ Retraso regulatorio → 🧭 Alineación de gobernanza",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/hype_policy_curve.svg",
+          "alt": "Curva de Hype de IA vs Madurez de Políticas",
+          "caption": "La brecha entre el ciclo de hype de IA y la madurez política"
+        }
+      ],
+      "engagement": {
+        "prompt": "¿Ha experimentado su organización la brecha entre la adopción de IA y la preparación de gobernanza?"
+      },
+      "citations": [],
+      "notes": "La Brecha: Los gobiernos de todo el mundo se han apresurado a adoptar tecnologías de IA, pero los marcos de gobernanza van rezagados. Esto crea riesgos: el sesgo algorítmico no se controla, la rendición de cuentas no es clara y la confianza pública se erosiona. El desafío no es sólo técnico—es institucional."
+    },
+    {
+      "id": "seg-3",
+      "title": "Capa Estratégica: Visión y Planificación",
+      "subtitle": "Sin visión, la IA se convierte en automatización sin dirección",
+      "bullets": [
+        "Visión y Coordinación — estrategias nacionales de IA, alineación interinstitucional",
+        "Desarrollo de Capacidades — formación de funcionarios públicos digitales",
+        "Alineación de Inversiones — vincular financiamiento con resultados medibles"
+      ],
+      "keyMessage": "La gobernanza de la IA comienza con un sentido claro de propósito — vinculando innovación con valor público",
+      "stats": [
+        {
+          "flag": "🇪🇺",
+          "label": "Unión Europea",
+          "value": "Ley de IA como marco general"
+        },
+        {
+          "flag": "🇫🇮",
+          "label": "Finlandia",
+          "value": "Plan nacional AI4Citizens"
+        },
+        {
+          "flag": "🇪🇪",
+          "label": "Estonia",
+          "value": "Gobernanza temprana de IA por diseño"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/strategy_pillars.svg",
+          "alt": "Pilares de Gobernanza Estratégica",
+          "caption": "Tres pilares de la gobernanza estratégica de IA"
+        }
+      ],
+      "engagement": {
+        "prompt": "¿Tiene su país una estrategia nacional de IA? ¿Qué tan bien está coordinada entre agencias?"
+      },
+      "citations": [],
+      "notes": "La gobernanza estratégica se trata de establecer dirección. Países como Finlandia y Estonia muestran que una visión clara—combinada con coordinación institucional—crea la base para una adopción responsable de IA. Sin estrategia, el despliegue de IA se vuelve reactivo y fragmentado."
+    },
+    {
+      "id": "seg-4",
+      "title": "Capa Operativa: Capacidades y Contratación",
+      "subtitle": "La contratación es donde la ética de IA se encuentra con la burocracia",
+      "bullets": [
+        "Estrategia → Contratación → Implementación → Evaluación",
+        "Preparación de datos e interoperabilidad",
+        "Lineamientos de contratación responsable",
+        "Ciclos de evaluación y auditoría"
+      ],
+      "keyMessage": "Convertir principios en práctica requiere músculo operativo",
+      "comparisonTable": [
+        {
+          "country": "Canadá 🇨🇦",
+          "strength": "Directiva temprana sobre toma de decisiones automatizada",
+          "limitation": "Aplicación débil"
+        },
+        {
+          "country": "UE 🇪🇺",
+          "strength": "Marco unificado para IA de alto riesgo",
+          "limitation": "Implementación lenta"
+        },
+        {
+          "country": "EE.UU. 🇺🇸",
+          "strength": "Cultura de innovación rápida",
+          "limitation": "Supervisión fragmentada"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/procurement_flow.svg",
+          "alt": "Diagrama de Flujo de Contratación de IA",
+          "caption": "Flujo de política a práctica"
+        }
+      ],
+      "engagement": {
+        "prompt": "¿Cómo evalúa su organización los sistemas de IA antes de la contratación?"
+      },
+      "citations": [],
+      "notes": "La gobernanza operativa traduce la estrategia en acción. La contratación es una palanca crítica: determina qué herramientas de IA ingresan al gobierno, bajo qué condiciones y con qué rendición de cuentas. Países como Canadá fueron pioneros en evaluaciones de impacto algorítmico, pero la aplicación sigue siendo un desafío."
+    },
+    {
+      "id": "seg-5",
+      "title": "Capa Ética: Transparencia y Rendición de Cuentas",
+      "subtitle": "La ética no es una restricción — es el fundamento de la legitimidad",
+      "bullets": [
+        "Equidad: evitar sesgos sistémicos",
+        "Transparencia: explicabilidad y trazabilidad",
+        "Rendición de cuentas: gobernanza con humanos en el bucle"
+      ],
+      "keyMessage": "La IA ética en el sector público asegura legitimidad, confianza y equidad",
+      "implementationTools": [
+        "Evaluaciones de impacto algorítmico",
+        "Registros de auditoría abiertos y tableros de trazabilidad",
+        "Mecanismos de supervisión ciudadana"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/ethics_triangle.svg",
+          "alt": "Triángulo de Ética de IA",
+          "caption": "Los tres pilares de la gobernanza ética de IA"
+        }
+      ],
+      "engagement": {
+        "prompt": "¿Qué mecanismos usa su organización para asegurar la transparencia y rendición de cuentas de la IA?"
+      },
+      "citations": [],
+      "notes": "La ética en la gobernanza de IA no son principios abstractos—son requisitos operacionales. Equidad, transparencia y rendición de cuentas deben estar integradas en el diseño de sistemas, contratación y supervisión. Sin ellas, la IA erosiona la confianza pública en lugar de construirla."
+    },
+    {
+      "id": "seg-6",
+      "title": "Panorama Latinoamericano",
+      "subtitle": "América Latina puede dar un salto — no copiando, sino co-creando",
+      "bullets": [
+        "Una región de contrastes: recursos limitados, alta creatividad",
+        "Brasil: Estrategia Nacional de IA (EBIA) enfocada en valor público",
+        "Colombia: Innovación GovDigital / ESAP y desarrollo de capacidad institucional",
+        "Chile: Datos abiertos y laboratorios de innovación cívica con marcos éticos tempranos"
+      ],
+      "keyMessage": "La cooperación regional puede convertir desafíos en oportunidades",
+      "challengesOpportunities": {
+        "challenges": [
+          "Brecha digital",
+          "Supervisión débil",
+          "Baja capacidad"
+        ],
+        "opportunities": [
+          "Cooperación regional",
+          "Participación ciudadana",
+          "Infraestructura de datos compartida"
+        ]
+      },
+      "media": [],
+      "engagement": {
+        "prompt": "¿Qué oportunidades únicas tiene América Latina para dar forma a la gobernanza de IA de manera diferente?"
+      },
+      "citations": [],
+      "notes": "América Latina enfrenta desafíos estructurales—brechas digitales, instituciones débiles, recursos limitados. Pero la región también tiene oportunidades únicas: sociedad civil fuerte, movimientos innovadores de tecnología cívica y el potencial para cooperación regional. Al co-crear marcos de gobernanza en lugar de importarlos, América Latina puede dar un salto adelante."
+    },
+    {
+      "id": "seg-7",
+      "title": "Del hype a la política sostenible",
+      "subtitle": "La gobernanza no es una ley — es un sistema de aprendizaje",
+      "bullets": [
+        "Construir capacidad institucional antes que capacidad tecnológica",
+        "Regular a través de principios, no de pánico",
+        "Tratar la gobernanza de IA como aprendizaje continuo, no como una ley única"
+      ],
+      "keyMessage": "Estratégico + Operativo + Ético → Valor Público Sostenible",
+      "closingMessage": "El camino del hype a la política es sobre madurez y alineación",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/venn_sustainable_value.svg",
+          "alt": "Modelo de Integración de Gobernanza de IA",
+          "caption": "Integración de dimensiones estratégicas, operativas y éticas"
+        }
+      ],
+      "engagement": {
+        "prompt": "¿Cuál es el primer paso que su organización puede dar hacia una gobernanza sostenible de IA?"
+      },
+      "citations": [],
+      "notes": "El camino del hype a la política sostenible requiere integración: visión estratégica, capacidad operativa y fundamento ético. La gobernanza de IA no se trata de crear leyes perfectas—se trata de construir instituciones adaptativas que aprendan, se ajusten y aseguren valor público a lo largo del tiempo. Del hype tecnológico a la política pública sostenible."
+    }
+  ]
+}
