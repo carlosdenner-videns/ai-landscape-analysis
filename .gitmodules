@@ -1,0 +1,3 @@
+[submodule "slide-app"]
+	path = slide-app
+	url = https://github.com/carlosdenner-videns/ai-policy-slides.git
