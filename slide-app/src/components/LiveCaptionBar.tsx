@@ -6,7 +6,6 @@ import { translateText, debounce } from '../utils/translation';
  * Props for LiveCaptionBar component
  */
 interface LiveCaptionBarProps {
-  targetLanguage?: 'es' | 'pt' | 'fr'; // Target language for translation
   showOriginal?: boolean; // Show original transcript alongside translation
 }
 
@@ -15,10 +14,10 @@ interface LiveCaptionBarProps {
  * Displays real-time speech transcription and translation in a discrete footer
  */
 export function LiveCaptionBar({
-  targetLanguage = 'es',
   showOriginal = true,
 }: LiveCaptionBarProps) {
   const [sourceLanguage, setSourceLanguage] = useState<string>('en-US');
+  const [targetLanguage, setTargetLanguage] = useState<'es' | 'pt' | 'fr'>('es');
   const [translatedText, setTranslatedText] = useState('');
   const [isTranslating, setIsTranslating] = useState(false);
   const [lastTranscript, setLastTranscript] = useState('');
@@ -54,6 +53,13 @@ export function LiveCaptionBar({
     { code: 'fr-FR', label: '🇫🇷 Français' },
   ];
 
+  // Target language options
+  const targetLanguageOptions: Array<{ code: 'es' | 'pt' | 'fr'; label: string }> = [
+    { code: 'es', label: '🇪🇸 Español' },
+    { code: 'pt', label: '🇧🇷 Português' },
+    { code: 'fr', label: '🇫🇷 Français' },
+  ];
+
   // Debounced translation function
   const debouncedTranslate = useRef(
     debounce(async (text: string) => {
@@ -76,11 +82,11 @@ export function LiveCaptionBar({
     }, 1500) // Wait 1.5s after speech stops before translating
   ).current;
 
-  // Clear transcript and translation when source language changes
+  // Clear transcript and translation when source or target language changes
   useEffect(() => {
     setTranslatedText('');
     setLastTranscript('');
-  }, [sourceLanguage]);
+  }, [sourceLanguage, targetLanguage]);
 
   // Monitor transcript changes and trigger translation
   useEffect(() => {
@@ -183,10 +189,21 @@ export function LiveCaptionBar({
                 {/* Arrow indicator */}
                 <span className="text-gray-500 text-xs">→</span>
 
-                {/* Target language indicator */}
-                <div className="flex items-center space-x-2 text-gray-300 text-xs">
-                  <span className="text-gray-400 font-medium">To:</span>
-                  <span className="font-medium">{targetLanguageLabels[targetLanguage]}</span>
+                {/* Target language selector */}
+                <div className="flex items-center space-x-2">
+                  <span className="text-gray-400 text-xs font-medium">To:</span>
+                  <select
+                    value={targetLanguage}
+                    onChange={(e) => setTargetLanguage(e.target.value as 'es' | 'pt' | 'fr')}
+                    className="bg-gray-700 text-white text-xs rounded px-2 py-1 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-videns-500 cursor-pointer"
+                    aria-label="Select target language"
+                  >
+                    {targetLanguageOptions.map(option => (
+                      <option key={option.code} value={option.code}>
+                        {option.label}
+                      </option>
+                    ))}
+                  </select>
                 </div>
               </div>
             </div>
