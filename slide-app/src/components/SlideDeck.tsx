@@ -21,6 +21,12 @@ export function SlideDeck({ deck, language }: SlideDeckProps) {
     return stored ? parseInt(stored, 10) : 0;
   });
   const [showNotes, setShowNotes] = useState(false);
+  const [segments, setSegments] = useState(deck.segments);
+
+  // Update segments when deck changes (e.g., language change)
+  useEffect(() => {
+    setSegments(deck.segments);
+  }, [deck.segments]);
 
   useEffect(() => {
     sessionStorage.setItem('currentSlide', currentIndex.toString());
@@ -29,8 +35,8 @@ export function SlideDeck({ deck, language }: SlideDeckProps) {
   // Preload next slide images
   useEffect(() => {
     const nextIndex = currentIndex + 1;
-    if (nextIndex < deck.segments.length) {
-      const nextSegment = deck.segments[nextIndex];
+    if (nextIndex < segments.length) {
+      const nextSegment = segments[nextIndex];
       nextSegment.media.forEach((media) => {
         if (media.type === 'image') {
           const img = new Image();
@@ -38,15 +44,34 @@ export function SlideDeck({ deck, language }: SlideDeckProps) {
         }
       });
     }
-  }, [currentIndex, deck.segments]);
+  }, [currentIndex, segments]);
 
   const navigate = useCallback(
     (index: number) => {
-      if (index >= 0 && index < deck.segments.length) {
+      if (index >= 0 && index < segments.length) {
         setCurrentIndex(index);
       }
     },
-    [deck.segments.length]
+    [segments.length]
+  );
+
+  const handleReorder = useCallback(
+    (fromIndex: number, toIndex: number) => {
+      const newSegments = [...segments];
+      const [movedSegment] = newSegments.splice(fromIndex, 1);
+      newSegments.splice(toIndex, 0, movedSegment);
+      setSegments(newSegments);
+      
+      // Adjust current index if needed
+      if (currentIndex === fromIndex) {
+        setCurrentIndex(toIndex);
+      } else if (fromIndex < currentIndex && toIndex >= currentIndex) {
+        setCurrentIndex(currentIndex - 1);
+      } else if (fromIndex > currentIndex && toIndex <= currentIndex) {
+        setCurrentIndex(currentIndex + 1);
+      }
+    },
+    [segments, currentIndex]
   );
 
   const nextSlide = useCallback(() => {
@@ -62,8 +87,8 @@ export function SlideDeck({ deck, language }: SlideDeckProps) {
   }, [navigate]);
 
   const goToLast = useCallback(() => {
-    navigate(deck.segments.length - 1);
-  }, [deck.segments.length, navigate]);
+    navigate(segments.length - 1);
+  }, [segments.length, navigate]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -105,11 +130,16 @@ export function SlideDeck({ deck, language }: SlideDeckProps) {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [nextSlide, prevSlide, goToFirst, goToLast]);
 
-  const currentSegment = deck.segments[currentIndex];
+  const currentSegment = segments[currentIndex];
 
   return (
     <div className="h-screen flex flex-col">
-      <ProgressBar currentIndex={currentIndex} total={deck.segments.length} onNavigate={navigate} />
+      <ProgressBar 
+        currentIndex={currentIndex} 
+        total={segments.length} 
+        onNavigate={navigate}
+        onReorder={handleReorder}
+      />
 
       <main className="flex-1 pt-14 overflow-hidden" role="main">
         <Slide segment={currentSegment} showNotes={showNotes} language={language} />

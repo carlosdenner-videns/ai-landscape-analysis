@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 /**
  * Props for ProgressBar component
  */
@@ -5,13 +7,53 @@ interface ProgressBarProps {
   currentIndex: number;
   total: number;
   onNavigate: (index: number) => void;
+  onReorder?: (fromIndex: number, toIndex: number) => void;
 }
 
 /**
  * ProgressBar component that shows segment progress
- * Allows clicking to jump to specific segments
+ * Allows clicking to jump to specific segments and drag-and-drop to reorder
  */
-export function ProgressBar({ currentIndex, total, onNavigate }: ProgressBarProps) {
+export function ProgressBar({ currentIndex, total, onNavigate, onReorder }: ProgressBarProps) {
+  const [draggedIndex, setDraggedIndex] = useState<number | null>(null);
+  const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
+
+  const handleDragStart = (e: React.DragEvent, index: number) => {
+    if (!onReorder) return;
+    setDraggedIndex(index);
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/plain', index.toString());
+  };
+
+  const handleDragOver = (e: React.DragEvent, index: number) => {
+    if (!onReorder || draggedIndex === null) return;
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    setDragOverIndex(index);
+  };
+
+  const handleDragLeave = () => {
+    setDragOverIndex(null);
+  };
+
+  const handleDrop = (e: React.DragEvent, toIndex: number) => {
+    e.preventDefault();
+    if (!onReorder || draggedIndex === null || draggedIndex === toIndex) {
+      setDraggedIndex(null);
+      setDragOverIndex(null);
+      return;
+    }
+    
+    onReorder(draggedIndex, toIndex);
+    setDraggedIndex(null);
+    setDragOverIndex(null);
+  };
+
+  const handleDragEnd = () => {
+    setDraggedIndex(null);
+    setDragOverIndex(null);
+  };
+
   return (
     <nav
       className="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 shadow-md z-40"
@@ -22,16 +64,29 @@ export function ProgressBar({ currentIndex, total, onNavigate }: ProgressBarProp
           {Array.from({ length: total }, (_, i) => (
             <button
               key={i}
+              draggable={onReorder !== undefined}
+              onDragStart={(e) => handleDragStart(e, i)}
+              onDragOver={(e) => handleDragOver(e, i)}
+              onDragLeave={handleDragLeave}
+              onDrop={(e) => handleDrop(e, i)}
+              onDragEnd={handleDragEnd}
               onClick={() => onNavigate(i)}
               className={`w-10 h-10 rounded-full font-semibold transition-all focus:outline-none focus:ring-2 focus:ring-primary-500 ${
-                i === currentIndex
+                draggedIndex === i
+                  ? 'opacity-50 scale-95'
+                  : dragOverIndex === i
+                  ? 'ring-2 ring-yellow-400 scale-105'
+                  : i === currentIndex
                   ? 'bg-primary-500 text-white scale-110'
                   : i < currentIndex
                   ? 'bg-primary-200 dark:bg-primary-700 text-primary-900 dark:text-primary-100 hover:bg-primary-300 dark:hover:bg-primary-600'
                   : 'bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-600'
+              } ${
+                onReorder ? 'cursor-move' : 'cursor-pointer'
               }`}
               aria-label={`Go to slide ${i + 1}`}
               aria-current={i === currentIndex ? 'true' : 'false'}
+              title={onReorder ? 'Click to navigate, drag to reorder' : `Go to slide ${i + 1}`}
             >
               {i + 1}
             </button>
