@@ -41,11 +41,11 @@ The presentation now uses a **template-based architecture** for consistent layou
 
 ### Key Features
 - **40/60 split**: Optimal visual balance between text and media
-- **Full viewport utilization**: Maximizes available screen space
+- **Live caption compatible**: Bottom padding ensures content stays above live captions
 - **Vertical centering**: Content is centered for better visual balance
-- **Larger media**: Images and charts use maximum available space
-- **Compact header**: Bold titles with minimal spacing
-- **Flexible bottom**: Optional engagement prompts or citations
+- **Constrained media**: Images sized to `max-w-2xl` for better readability
+- **Compact header**: Bold titles with clearance from UI controls (`pt-24`)
+- **Flexible bottom**: Optional engagement prompts positioned above captions
 - **Responsive overflow**: Handles long content gracefully
 
 ## Benefits
