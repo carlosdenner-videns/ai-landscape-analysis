@@ -1,10 +1,10 @@
 {
   "meta": {
     "author": "Carlos Denner - VIDENS Analytics",
-    "version": "4.1.0",
+    "version": "4.2.0",
     "description": "Do hype à política pública: como governar a IA no setor público",
     "duration": "90 minutos",
-    "slides": 8
+    "slides": 16
   },
   "segments": [
     {
@@ -44,6 +44,190 @@
         "conference": "Inteligência Artificial e Administração Pública, Semana da Internacionalização da Escola Superior de Administração Pública – ESAP"
       },
       "isTitle": true
+    },
+    {
+      "id": "seg-1-2",
+      "title": "Onde está a IA hoje?",
+      "subtitle": "IA na vida diária e no Estado",
+      "bullets": [
+        "Assistentes, busca, tradução, câmera",
+        "Chatbots e priorização de procedimentos",
+        "Tráfego, iluminação, segurança inteligente",
+        "Saúde, justiça e educação em mudança"
+      ],
+      "keyMessage": "A IA já está presente em múltiplos aspectos de nossa vida cotidiana e em serviços públicos",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/slide2_collage_8x_v2.svg",
+          "alt": "Colagem de 8 quadros mostrando usos de IA",
+          "caption": "IA cotidiana em serviços públicos"
+        }
+      ],
+      "engagement": {
+        "prompt": "Que caso local em Manizales/Caldas você poderia mapear para esses usos?"
+      },
+      "citations": [],
+      "notes": "Contar uma anedota própria de interação com IA (por exemplo, transcrição automática). Esclarecer que 'IA' inclui modelos generativos e ML tradicional."
+    },
+    {
+      "id": "seg-1-3",
+      "title": "Pesquisa relâmpago",
+      "subtitle": "Uso vs. confiança",
+      "bullets": [
+        "Quem usou IA hoje? (mãos ao alto)",
+        "Quem confiaria tanto quanto em um humano?",
+        "O contraste abre o tema da governança"
+      ],
+      "keyMessage": "Alta adoção, menor confiança → precisamos de marcos de governança",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/slide4_balanza_v2.svg",
+          "alt": "Ilustração de balança conceitual",
+          "caption": "Benefícios vs. questões abertas"
+        }
+      ],
+      "engagement": {
+        "prompt": "Que condições fariam você confiar em decisões automatizadas?"
+      },
+      "citations": [],
+      "notes": "Pedir mãos para 'uso' e 'confiança'. Comentar: alta adoção, menor confiança → precisamos de marcos de governança."
+    },
+    {
+      "id": "seg-1-4",
+      "title": "Oportunidades e preocupações",
+      "subtitle": "O \"duplo fio\" da adoção de IA",
+      "bullets": [
+        "Acesso 24/7 e melhor experiência",
+        "Eficiência e redução de tempos",
+        "Suporte a diagnóstico e antifraude",
+        "Transparência, vieses e privacidade importam"
+      ],
+      "keyMessage": "O duplo papel do público: usuários e reguladores/gestores",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/slide4_balanza_v2.svg",
+          "alt": "Balança de benefícios e riscos",
+          "caption": "Mapa mental para discutir trade-offs"
+        }
+      ],
+      "engagement": {
+        "prompt": "Qual risco é mais crítico em sua área e por quê?"
+      },
+      "citations": [],
+      "notes": "Enfatizar o duplo papel do público: usuários e reguladores/gestores. Introduzir perguntas guia: explicabilidade, proteção de dados, prestação de contas."
+    },
+    {
+      "id": "seg-1-5",
+      "title": "O impulso global por uma IA responsável",
+      "subtitle": "Tendências que importam para a Colômbia",
+      "bullets": [
+        "Abordagem baseada em risco por usos",
+        "Avaliações de impacto algorítmico",
+        "Governança de dados e auditorias",
+        "Capacidades estatais e sandboxes"
+      ],
+      "keyMessage": "Não é só regular: também habilitar inovação pública segura",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/slide6_mapa_politicas_v2.svg",
+          "alt": "Mapa abstrato com UE, Canadá, Brasil e Colômbia",
+          "caption": "Panorama comparado (atualize bullets conforme avanço)"
+        }
+      ],
+      "engagement": {
+        "prompt": "Que elemento você adotaria primeiro em sua entidade: AIA, auditorias ou sandbox?"
+      },
+      "citations": [],
+      "notes": "Não é só regular: também habilitar inovação pública segura. 15–20 s por região: o que cobre e por que importa para a Colômbia."
+    },
+    {
+      "id": "seg-1-6",
+      "title": "Mapa rápido: políticas e leis de IA",
+      "subtitle": "UE, Canadá, Brasil, Colômbia — panorama comparado",
+      "bullets": [
+        "UE: lei integral com abordagem por risco",
+        "Canadá: Diretiva ADM e AIA obrigatória",
+        "Brasil: PL de IA em trâmite",
+        "Colômbia: CONPES de IA e roteiro"
+      ],
+      "keyMessage": "Implementação gradual e supervisão são chave",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/slide6_mapa_politicas_v2.svg",
+          "alt": "Mapa com pins e mini-fichas",
+          "caption": "Situacional, não geograficamente exato"
+        }
+      ],
+      "engagement": {
+        "prompt": "Que convergências e diferenças você vê úteis para a Colômbia?"
+      },
+      "citations": [],
+      "notes": "Breves 15–20 s por região. Mencionar implementação gradual e supervisão."
+    },
+    {
+      "id": "seg-1-7",
+      "title": "A onda de adoção",
+      "subtitle": "Fatos rápidos",
+      "bullets": [
+        "Adoção organizacional acelera",
+        "O setor público já usa IA além de chatbots",
+        "Implicação: adaptar capacidades, riscos e métricas"
+      ],
+      "keyMessage": "Usar um dado contundente de adoção e aterrissá-lo em serviços públicos locais",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/slide7_dato_unico_v2.svg",
+          "alt": "Gráfico de 'dado único' 65%",
+          "caption": "Fonte: Pesquisa Global McKinsey sobre IA (2024)"
+        }
+      ],
+      "engagement": {
+        "prompt": "Que métrica você introduziria para avaliar adoção responsável?"
+      },
+      "citations": [],
+      "notes": "Usar um dado contundente de adoção e aterrissá-lo em serviços públicos locais (priorização de solicitações, assistência a funcionários)."
+    },
+    {
+      "id": "seg-1-8",
+      "title": "O que veremos hoje",
+      "subtitle": "Cinco temas, um fio condutor",
+      "bullets": [
+        "Política e regulação de IA",
+        "IA em saúde",
+        "Veículos autônomos",
+        "Equidade algorítmica",
+        "IA e sociedade"
+      ],
+      "keyMessage": "Tecnologia ↔ política pública ↔ implementação",
+      "media": [],
+      "engagement": {
+        "prompt": "Que bloco você quer aprofundar segundo seu trabalho atual?"
+      },
+      "citations": [],
+      "notes": "Explicar o fio: tecnologia ↔ política pública ↔ implementação. Perguntas ao final de cada bloco."
+    },
+    {
+      "id": "seg-1-9",
+      "title": "Expectativas e participação",
+      "subtitle": "Como trabalharemos",
+      "bullets": [
+        "Casos reais e mini-debates",
+        "Perguntas rápidas por bloco",
+        "Recursos e templates para levar"
+      ],
+      "keyMessage": "Relacionar cada tema com um serviço público local em Manizales/Caldas",
+      "media": [],
+      "engagement": {
+        "prompt": "Anote um serviço local que poderia se beneficiar de IA responsável."
+      },
+      "citations": [],
+      "notes": "Convidar a relacionar cada tema com um serviço público local em Manizales/Caldas."
     },
     {
       "id": "seg-2",
