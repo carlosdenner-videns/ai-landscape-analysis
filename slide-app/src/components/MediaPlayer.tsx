@@ -26,10 +26,14 @@ export function MediaPlayer({ media, className = '' }: MediaPlayerProps) {
       return (
         <figure className={baseClass}>
           <img
-            src={`${import.meta.env.BASE_URL}${media.src}?v=2`}
+            src={`${import.meta.env.BASE_URL}${media.src}?v=3`}
             alt={media.alt}
-            className="max-w-full max-h-full object-contain rounded-lg shadow-xl"
+            className="w-full h-full object-contain rounded-lg shadow-xl"
             loading="eager"
+            onError={(e) => {
+              console.error('Image failed to load:', media.src);
+              e.currentTarget.style.display = 'none';
+            }}
           />
           {media.caption && (
             <figcaption className="mt-3 text-xs text-center text-gray-500 dark:text-gray-400">

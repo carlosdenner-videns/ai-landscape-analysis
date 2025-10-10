@@ -52,16 +52,16 @@ export function ContentSlide({
       </header>
 
       {/* Main Content Grid - Full height utilization with 40/60 split */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 flex-1 min-h-0 overflow-hidden">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 flex-1 min-h-0 overflow-hidden">
         {/* Left Column: Text Content (40%) */}
-        <div className="lg:col-span-5 flex flex-col justify-center overflow-y-auto pr-4">
+        <div className="lg:col-span-5 flex flex-col justify-center overflow-y-auto pr-2">
           {leftContent}
         </div>
 
-        {/* Right Column: Visual Content (60%) - Reduced size */}
+        {/* Right Column: Visual Content (60%) - Full size */}
         {rightContent && (
-          <div className="lg:col-span-7 flex flex-col items-center justify-center overflow-hidden px-8">
-            <div className="w-full max-w-2xl">
+          <div className="lg:col-span-7 flex flex-col items-center justify-center overflow-hidden">
+            <div className="w-full h-full flex items-center justify-center">
               {rightContent}
             </div>
           </div>
