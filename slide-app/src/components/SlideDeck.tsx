@@ -111,7 +111,7 @@ export function SlideDeck({ deck, language }: SlideDeckProps) {
     <div className="h-screen flex flex-col">
       <ProgressBar currentIndex={currentIndex} total={deck.segments.length} onNavigate={navigate} />
 
-      <main className="flex-1 pt-16 overflow-hidden" role="main">
+      <main className="flex-1 pt-14 overflow-hidden" role="main">
         <Slide segment={currentSegment} showNotes={showNotes} language={language} />
       </main>
 

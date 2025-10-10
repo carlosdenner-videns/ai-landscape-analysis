@@ -38,29 +38,29 @@ export function ContentSlide({
   className = ''
 }: ContentSlideProps) {
   return (
-    <div className={`h-full flex flex-col px-8 py-6 overflow-y-auto ${className}`}>
-      {/* Header Section - More compact */}
-      <header className="mb-6">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-2">
+    <div className={`h-full flex flex-col px-12 py-8 overflow-hidden ${className}`}>
+      {/* Header Section - Compact and bold */}
+      <header className="mb-8 flex-shrink-0">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-2">
           {title}
         </h1>
         {subtitle && (
-          <h2 className="text-lg md:text-xl lg:text-2xl text-primary-600 dark:text-primary-400 leading-relaxed font-medium">
+          <h2 className="text-xl md:text-2xl lg:text-3xl text-primary-600 dark:text-primary-400 leading-tight font-medium">
             {subtitle}
           </h2>
         )}
       </header>
 
-      {/* Main Content Grid - Balanced 45/55 split with better alignment */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 flex-1 items-start">
-        {/* Left Column: Text Content (45%) */}
-        <div className="lg:col-span-5 flex flex-col justify-start h-full">
+      {/* Main Content Grid - Full height utilization with 40/60 split */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 flex-1 min-h-0">
+        {/* Left Column: Text Content (40%) */}
+        <div className="lg:col-span-5 flex flex-col justify-center overflow-y-auto pr-4">
           {leftContent}
         </div>
 
-        {/* Right Column: Visual Content (55%) */}
+        {/* Right Column: Visual Content (60%) */}
         {rightContent && (
-          <div className="lg:col-span-7 flex flex-col items-center justify-center h-full">
+          <div className="lg:col-span-7 flex flex-col items-center justify-center overflow-hidden">
             {rightContent}
           </div>
         )}
@@ -73,7 +73,7 @@ export function ContentSlide({
 
       {/* Bottom Section: Engagement/Citations */}
       {bottomContent && (
-        <div className="mt-6 pt-4">
+        <div className="mt-4 flex-shrink-0">
           {bottomContent}
         </div>
       )}

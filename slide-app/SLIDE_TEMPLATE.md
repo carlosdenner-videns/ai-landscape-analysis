@@ -40,10 +40,13 @@ The presentation now uses a **template-based architecture** for consistent layou
 ```
 
 ### Key Features
-- **45/55 split**: Better visual balance between text and media
-- **Vertical alignment**: Content starts at top for cleaner look
-- **Compact header**: More space for main content
+- **40/60 split**: Optimal visual balance between text and media
+- **Full viewport utilization**: Maximizes available screen space
+- **Vertical centering**: Content is centered for better visual balance
+- **Larger media**: Images and charts use maximum available space
+- **Compact header**: Bold titles with minimal spacing
 - **Flexible bottom**: Optional engagement prompts or citations
+- **Responsive overflow**: Handles long content gracefully
 
 ## Benefits
 

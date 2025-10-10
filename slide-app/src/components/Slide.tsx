@@ -103,16 +103,16 @@ export function Slide({ segment, showNotes, language }: SlideProps) {
 
   // Left column content: bullets
   const leftContent = (
-    <div className="space-y-4">
+    <div className="h-full flex flex-col justify-center">
       {segment.bullets.length > 0 && (
-        <ul className="space-y-3" role="list">
+        <ul className="space-y-5" role="list">
           {segment.bullets.map((bullet, index) => (
             <li
               key={index}
-              className="flex items-start text-base md:text-lg lg:text-xl text-gray-700 dark:text-gray-200 leading-relaxed animate-fadeIn"
+              className="flex items-start text-lg md:text-xl lg:text-2xl text-gray-700 dark:text-gray-200 leading-relaxed animate-fadeIn"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <span className="inline-block w-2.5 h-2.5 bg-primary-500 rounded-full mr-3 mt-2 flex-shrink-0" />
+              <span className="inline-block w-3 h-3 bg-primary-500 rounded-full mr-4 mt-2 flex-shrink-0" />
               <span className="flex-1">{bullet}</span>
             </li>
           ))}
@@ -153,11 +153,11 @@ export function Slide({ segment, showNotes, language }: SlideProps) {
 
   // Bottom content: engagement prompt
   const bottomContent = segment.engagement ? (
-    <div className="p-5 bg-primary-50 dark:bg-primary-900/20 rounded-lg border-l-4 border-primary-500">
-      <p className="text-base md:text-lg font-semibold text-primary-900 dark:text-primary-100 mb-1.5">
+    <div className="p-4 bg-primary-50 dark:bg-primary-900/20 rounded-lg border-l-4 border-primary-500">
+      <p className="text-sm md:text-base font-semibold text-primary-900 dark:text-primary-100 mb-1">
         💭 Think About This
       </p>
-      <p className="text-sm md:text-base text-primary-800 dark:text-primary-200 leading-relaxed">
+      <p className="text-sm md:text-base text-primary-800 dark:text-primary-200 leading-snug">
         {segment.engagement.prompt}
       </p>
     </div>

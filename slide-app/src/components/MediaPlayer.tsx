@@ -13,7 +13,7 @@ interface MediaPlayerProps {
  * Supports images, local videos, YouTube embeds, and custom HTML
  */
 export function MediaPlayer({ media, className = '' }: MediaPlayerProps) {
-  const baseClass = `w-full max-w-4xl mx-auto ${className}`;
+  const baseClass = `w-full h-full flex flex-col items-center justify-center ${className}`;
   
   // Debug: log the constructed image path
   if (media.type === 'image') {
@@ -28,11 +28,11 @@ export function MediaPlayer({ media, className = '' }: MediaPlayerProps) {
           <img
             src={`${import.meta.env.BASE_URL}${media.src}?v=2`}
             alt={media.alt}
-            className="w-full h-auto rounded-lg shadow-lg"
+            className="max-w-full max-h-full object-contain rounded-lg shadow-xl"
             loading="eager"
           />
           {media.caption && (
-            <figcaption className="mt-2 text-sm text-center text-gray-600 dark:text-gray-400">
+            <figcaption className="mt-3 text-xs text-center text-gray-500 dark:text-gray-400">
               {media.caption}
             </figcaption>
           )}
