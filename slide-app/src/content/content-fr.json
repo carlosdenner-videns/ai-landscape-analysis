@@ -53,31 +53,36 @@
         "Assistants, recherche, traduction, caméra",
         "Chatbots et priorisation des procédures",
         "Trafic, éclairage, sécurité intelligente",
-        "Santé, justice et éducation en changement"
+        "Santé, justice et éducation en changement",
+        "ML + génératif sous 'IA' ici",
+        "L'adoption dépasse la capacité institutionnelle"
       ],
       "keyMessage": "L'IA est déjà présente dans de multiples aspects de notre vie quotidienne et des services publics",
       "media": [
         {
           "type": "image",
-          "src": "assets/slide2_collage_8x_v2.svg",
-          "alt": "Collage de 8 cases montrant les utilisations de l'IA",
-          "caption": "IA quotidienne dans les services publics"
+          "src": "assets/slide2_photo_strip.svg",
+          "alt": "Bande de 4 photos avec étiquettes",
+          "caption": "Remplacez les placeholders par des photos/icônes locales libres d'usage"
         }
       ],
       "engagement": {
-        "prompt": "Quel cas local à Manizales/Caldas pourriez-vous associer à ces utilisations ?"
+        "prompt": "Un processus de votre entité qui utilise déjà l'automatisation 'type IA'."
       },
       "citations": [],
-      "notes": "Raconter une anecdote personnelle d'interaction avec l'IA (par exemple, transcription automatique). Clarifier que 'IA' inclut les modèles génératifs et le ML traditionnel."
+      "notes": "Exemples locaux à Manizales/Caldas. Connecter avec le besoin de capacités publiques."
     },
     {
       "id": "seg-1-3",
-      "title": "Sondage éclair",
+      "title": "Dynamique éclair",
       "subtitle": "Utilisation vs. confiance",
       "bullets": [
         "Qui a utilisé l'IA aujourd'hui ? (levez la main)",
-        "Qui lui ferait autant confiance qu'à un humain ?",
-        "Le contraste ouvre le sujet de la gouvernance"
+        "Qui lui ferait confiance comme à un humain ?",
+        "Attendu : usage≫confiance → écart de gouvernance",
+        "Qu'est-ce qui construit la confiance ?",
+        "Indices : transparence, appel, supervision",
+        "Vos réponses guideront la discussion"
       ],
       "keyMessage": "Adoption élevée, confiance moindre → nous avons besoin de cadres de gouvernance",
       "media": [

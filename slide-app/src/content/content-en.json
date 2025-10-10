@@ -53,181 +53,213 @@
         "Assistants, search, translation, camera",
         "Chatbots and prioritization of procedures",
         "Traffic, lighting, intelligent security",
-        "Health, justice and education in change"
+        "Health, justice and education in change",
+        "ML + generative under 'AI' here",
+        "Adoption exceeds institutional capacity"
       ],
       "keyMessage": "AI is already present in multiple aspects of our daily life and public services",
       "media": [
         {
           "type": "image",
-          "src": "assets/slide2_collage_8x_v2.svg",
-          "alt": "Collage of 8 boxes showing AI uses",
-          "caption": "Everyday AI in public services"
+          "src": "assets/slide2_photo_strip.svg",
+          "alt": "Strip of 4 photos with labels",
+          "caption": "Replace placeholders with local photos/icons free to use"
         }
       ],
       "engagement": {
-        "prompt": "What local case in Manizales/Caldas could you map to these uses?"
+        "prompt": "A process in your entity that already uses 'AI-type' automation."
       },
       "citations": [],
-      "notes": "Share a personal anecdote of interaction with AI (e.g., automatic transcription). Clarify that 'AI' includes generative models and traditional ML."
+      "notes": "Local examples in Manizales/Caldas. Connect with need for public capabilities."
     },
     {
       "id": "seg-1-3",
-      "title": "Lightning survey",
+      "title": "Lightning dynamics",
       "subtitle": "Use vs. trust",
       "bullets": [
         "Who used AI today? (hands up)",
-        "Who would trust it as much as a human?",
-        "The contrast opens the governance topic"
+        "Who would trust it like a human?",
+        "Expected: use≫trust → governance gap",
+        "What builds trust?",
+        "Clues: transparency, appeal, oversight",
+        "Your answers will guide the talk"
       ],
       "keyMessage": "High adoption, lower trust → we need governance frameworks",
       "media": [
         {
           "type": "image",
-          "src": "assets/slide4_balanza_v2.svg",
-          "alt": "Conceptual balance illustration",
-          "caption": "Benefits vs. open questions"
+          "src": "assets/slide3_yes_no_cards.svg",
+          "alt": "Yes/No cards for survey",
+          "caption": "Eye count to open discussion"
         }
       ],
       "engagement": {
-        "prompt": "What conditions would make you trust automated decisions?"
+        "prompt": "What would you need to see to trust an automated decision?"
       },
       "citations": [],
-      "notes": "Ask for hands for 'use' and 'trust'. Comment: high adoption, lower trust → we need governance frameworks."
+      "notes": "Contrast hands. Introduce 'operational trust'. Anticipate impact assessment and audits."
     },
     {
       "id": "seg-1-4",
       "title": "Opportunities and concerns",
-      "subtitle": "The \"double edge\" of AI adoption",
+      "subtitle": "The double edge of adoption",
       "bullets": [
-        "24/7 access and better experience",
-        "Efficiency and time reduction",
-        "Support for diagnosis and anti-fraud",
-        "Transparency, bias and privacy matter"
+        "24/7 access, linguistic support, inclusion",
+        "Efficiency: triage, case prioritization",
+        "Quality: decision support, anti-fraud",
+        "Risks: opacity, bias, privacy, security",
+        "Accountability: who responds?",
+        "Governance must scale with adoption"
       ],
       "keyMessage": "The dual role of the public: users and regulators/managers",
       "media": [
         {
           "type": "image",
-          "src": "assets/slide4_balanza_v2.svg",
-          "alt": "Balance of benefits and risks",
-          "caption": "Mind map to discuss trade-offs"
+          "src": "assets/slide4_balanza.svg",
+          "alt": "Balance scheme benefits vs risks",
+          "caption": "Living list to discuss trade-offs"
         }
       ],
       "engagement": {
-        "prompt": "Which risk is most critical in your area and why?"
+        "prompt": "Which risk is most material in your domain and why?"
       },
       "citations": [],
-      "notes": "Emphasize the dual role of the public: users and regulators/managers. Introduce guiding questions: explainability, data protection, accountability."
+      "notes": "Link each benefit with a correlative risk. Without governance, trust falls."
     },
     {
       "id": "seg-1-5",
-      "title": "The global push for responsible AI",
+      "title": "Global push for responsible AI",
       "subtitle": "Trends that matter for Colombia",
       "bullets": [
-        "Risk-based approach by uses",
-        "Algorithmic impact assessments",
+        "Obligations by use (risk approach)",
+        "Algorithmic Impact Assessments (AIA)",
         "Data governance and audits",
-        "State capabilities and sandboxes"
+        "AI offices and sandboxes",
+        "Gradual implementation with oversight",
+        "Convergence with local priorities"
       ],
       "keyMessage": "It's not just about regulating: also enabling safe public innovation",
       "media": [
         {
           "type": "image",
-          "src": "assets/slide6_mapa_politicas_v2.svg",
-          "alt": "Abstract map with EU, Canada, Brazil and Colombia",
-          "caption": "Comparative overview (update bullets as progress)"
+          "src": "assets/slide5_timeline.svg",
+          "alt": "Timeline with 4 milestones",
+          "caption": "Update labels if there are regulatory changes"
         }
       ],
       "engagement": {
-        "prompt": "What element would you adopt first in your entity: AIA, audits or sandbox?"
+        "prompt": "What element (AIA, audits, sandbox) would you adopt first?"
       },
       "citations": [],
-      "notes": "It's not just about regulating: also enabling safe public innovation. 15–20 s per region: what it covers and why it matters for Colombia."
+      "notes": "15–20 s per region: what it demands and why it matters. Not just restrict; also enable."
     },
     {
       "id": "seg-1-6",
-      "title": "Quick map: AI policies and laws",
-      "subtitle": "EU, Canada, Brazil, Colombia — comparative overview",
+      "title": "Quick map: policies and laws",
+      "subtitle": "EU · Canada · Brazil · Colombia",
       "bullets": [
-        "EU: comprehensive law with risk-based approach",
-        "Canada: ADM Directive and mandatory AIA",
-        "Brazil: AI bill in process",
-        "Colombia: AI CONPES and roadmap"
+        "EU: comprehensive law with risk approach",
+        "Canada: ADM Directive; AIA in government",
+        "Brazil: national AI project in process",
+        "Colombia: AI CONPES; 2019→2025",
+        "Implementation > headlines",
+        "Align with sectoral rules"
       ],
       "keyMessage": "Gradual implementation and oversight are key",
       "media": [
         {
           "type": "image",
-          "src": "assets/slide6_mapa_politicas_v2.svg",
-          "alt": "Map with pins and mini-cards",
-          "caption": "Situational, not geographically exact"
+          "src": "assets/slide6_mapa_politicas.svg",
+          "alt": "Map with four callouts",
+          "caption": "Situational scheme (not geographically exact)"
         }
       ],
       "engagement": {
-        "prompt": "What convergences and differences do you see useful for Colombia?"
+        "prompt": "Where do you see quick wins for the Colombian public sector."
       },
       "citations": [],
-      "notes": "Brief 15–20 s per region. Mention gradual implementation and oversight."
+      "notes": "Contrast scope and institutional maturity. What's missing in Colombia? Capabilities, metrics, practical transparency."
     },
     {
       "id": "seg-1-7",
       "title": "The wave of adoption",
       "subtitle": "Quick facts",
       "bullets": [
-        "Organizational adoption accelerates",
-        "The public sector already uses AI beyond chatbots",
-        "Implication: adapt capabilities, risks and metrics"
+        "Organizational adoption keeps rising",
+        "Public sector goes beyond chatbots",
+        "Implication: skills and controls",
+        "Measure value, equity and security",
+        "Pilot → evaluate → scale (or stop)",
+        "Feedback loops with citizens"
       ],
       "keyMessage": "Use a compelling adoption data point and ground it in local public services",
       "media": [
         {
           "type": "image",
-          "src": "assets/slide7_dato_unico_v2.svg",
+          "src": "assets/slide7_dato_unico.svg",
           "alt": "Chart of 'single data point' 65%",
-          "caption": "Source: McKinsey Global AI Survey (2024)"
+          "caption": "Replace % with more recent data when available"
         }
       ],
       "engagement": {
-        "prompt": "What metric would you introduce to evaluate responsible adoption?"
+        "prompt": "What metric would you add to track responsible adoption?"
       },
       "citations": [],
-      "notes": "Use a compelling adoption data point and ground it in local public services (request prioritization, assistance to officials)."
+      "notes": "Connect the data with concrete actions: training, procurement guides, metrics and dashboards."
     },
     {
       "id": "seg-1-8",
       "title": "What we'll see today",
-      "subtitle": "Five themes, one common thread",
+      "subtitle": "Five themes, one thread",
       "bullets": [
         "AI policy and regulation",
         "AI in health",
         "Autonomous vehicles",
         "Algorithmic equity",
-        "AI and society"
+        "AI and society",
+        "Link: technology ↔ policy ↔ implementation"
       ],
       "keyMessage": "Technology ↔ public policy ↔ implementation",
-      "media": [],
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/slide8_temas_conectados.svg",
+          "alt": "Five themes connected by lines",
+          "caption": "Visual agenda (linked themes)"
+        }
+      ],
       "engagement": {
-        "prompt": "Which block do you want to deepen according to your current work?"
+        "prompt": "What theme should we deepen for your context?"
       },
       "citations": [],
-      "notes": "Explain the thread: technology ↔ public policy ↔ implementation. Questions at the end of each block."
+      "notes": "Explain the connecting thread and the dynamics of brief questions per block."
     },
     {
       "id": "seg-1-9",
       "title": "Expectations and participation",
       "subtitle": "How we'll work",
       "bullets": [
-        "Real cases and mini-debates",
-        "Quick questions per block",
-        "Resources and templates to take away"
+        "Real cases and mini‑debates",
+        "Quick surveys to detect doubts",
+        "Reusable tools and templates",
+        "Bring a local example to test",
+        "Notes and links at the end",
+        "Feedback to prioritize next steps"
       ],
       "keyMessage": "Relate each topic to a local public service in Manizales/Caldas",
-      "media": [],
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/slide9_badges.svg",
+          "alt": "Badges for debate, case and task",
+          "caption": "Signage for participatory dynamics"
+        }
+      ],
       "engagement": {
-        "prompt": "Note a local service that could benefit from responsible AI."
+        "prompt": "A local service that could benefit from responsible AI."
       },
       "citations": [],
-      "notes": "Invite to relate each topic to a local public service in Manizales/Caldas."
+      "notes": "Invite to link each idea with a local service. Close with expectations and deliverables."
     },
     {
       "id": "seg-2",
