@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Segment, Language } from '../types';
 import { MediaPlayer } from './MediaPlayer';
 import { TitleSlide } from './TitleSlide';
+import { ContentSlide } from './ContentSlide';
 
 /**
  * Props for Slide component
@@ -100,82 +101,77 @@ export function Slide({ segment, showNotes, language }: SlideProps) {
     setCurrentMediaIndex((prev) => (prev - 1 + segment.media.length) % segment.media.length);
   };
 
-  return (
-    <div className="h-full flex flex-col px-safe py-safe overflow-y-auto">
-      {/* Header */}
-      <header className="mb-8">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-4">
-          {segment.title}
-        </h1>
-        {segment.subtitle && (
-          <h2 className="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 leading-projector">
-            {segment.subtitle}
-          </h2>
-        )}
-      </header>
+  // Left column content: bullets
+  const leftContent = (
+    <div className="space-y-4">
+      {segment.bullets.length > 0 && (
+        <ul className="space-y-3" role="list">
+          {segment.bullets.map((bullet, index) => (
+            <li
+              key={index}
+              className="flex items-start text-base md:text-lg lg:text-xl text-gray-700 dark:text-gray-200 leading-relaxed animate-fadeIn"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <span className="inline-block w-2.5 h-2.5 bg-primary-500 rounded-full mr-3 mt-2 flex-shrink-0" />
+              <span className="flex-1">{bullet}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
 
-      {/* Content Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 flex-1">
-        {/* Left Column: Bullets and Engagement */}
-        <div className="space-y-6">
-          {segment.bullets.length > 0 && (
-            <ul className="space-y-4" role="list">
-              {segment.bullets.map((bullet, index) => (
-                <li
-                  key={index}
-                  className="text-xl md:text-2xl text-gray-700 dark:text-gray-200 leading-projector animate-fadeIn"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <span className="inline-block w-3 h-3 bg-primary-500 rounded-full mr-4" />
-                  {bullet}
-                </li>
-              ))}
-            </ul>
-          )}
+  // Right column content: media
+  const rightContent = segment.media.length > 0 ? (
+    <div className="flex flex-col items-center justify-center w-full h-full">
+      {currentMedia && <MediaPlayer media={currentMedia} />}
 
-          {segment.engagement && (
-            <div className="mt-8 p-6 bg-primary-50 dark:bg-primary-900/20 rounded-lg border-l-4 border-primary-500">
-              <p className="text-lg md:text-xl font-semibold text-primary-900 dark:text-primary-100 mb-2">
-                💭 Think About This
-              </p>
-              <p className="text-lg md:text-xl text-primary-800 dark:text-primary-200">
-                {segment.engagement.prompt}
-              </p>
-            </div>
-          )}
-
+      {/* Media Navigation */}
+      {hasMultipleMedia && (
+        <div className="mt-4 flex items-center gap-4">
+          <button
+            onClick={prevMedia}
+            className="px-4 py-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500"
+            aria-label="Previous media"
+          >
+            ← Prev
+          </button>
+          <span className="text-gray-700 dark:text-gray-300">
+            {currentMediaIndex + 1} / {segment.media.length}
+          </span>
+          <button
+            onClick={nextMedia}
+            className="px-4 py-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500"
+            aria-label="Next media"
+          >
+            Next →
+          </button>
         </div>
+      )}
+    </div>
+  ) : undefined;
 
-        {/* Right Column: Media */}
-        {segment.media.length > 0 && (
-          <div className="flex flex-col items-center justify-center">
-            {currentMedia && <MediaPlayer media={currentMedia} />}
+  // Bottom content: engagement prompt
+  const bottomContent = segment.engagement ? (
+    <div className="p-5 bg-primary-50 dark:bg-primary-900/20 rounded-lg border-l-4 border-primary-500">
+      <p className="text-base md:text-lg font-semibold text-primary-900 dark:text-primary-100 mb-1.5">
+        💭 Think About This
+      </p>
+      <p className="text-sm md:text-base text-primary-800 dark:text-primary-200 leading-relaxed">
+        {segment.engagement.prompt}
+      </p>
+    </div>
+  ) : undefined;
 
-            {/* Media Navigation */}
-            {hasMultipleMedia && (
-              <div className="mt-4 flex items-center gap-4">
-                <button
-                  onClick={prevMedia}
-                  className="px-4 py-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500"
-                  aria-label="Previous media"
-                >
-                  ← Prev
-                </button>
-                <span className="text-gray-700 dark:text-gray-300">
-                  {currentMediaIndex + 1} / {segment.media.length}
-                </span>
-                <button
-                  onClick={nextMedia}
-                  className="px-4 py-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500"
-                  aria-label="Next media"
-                >
-                  Next →
-                </button>
-              </div>
-            )}
-          </div>
-        )}
-      </div>
+  return (
+    <>
+      <ContentSlide
+        title={segment.title}
+        subtitle={segment.subtitle}
+        leftContent={leftContent}
+        rightContent={rightContent}
+        bottomContent={bottomContent}
+      />
 
       {/* Speaker Notes Overlay with Text-to-Speech - Always on top */}
       {showNotes && segment.notes && (
@@ -212,22 +208,6 @@ export function Slide({ segment, showNotes, language }: SlideProps) {
         </div>
       )}
 
-      {/* Citations section - simplified for now */}
-      {segment.citations && segment.citations.length > 0 && (
-        <div className="mt-6 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
-          <h4 className="font-semibold mb-2">Referencias:</h4>
-          <ul className="space-y-1 text-sm">
-            {segment.citations.map((citation, index) => (
-              <li key={index}>
-                <a href={citation.url} target="_blank" rel="noopener noreferrer" 
-                   className="text-primary-600 hover:text-primary-800 underline">
-                  {citation.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </div>
+    </>
   );
 }
