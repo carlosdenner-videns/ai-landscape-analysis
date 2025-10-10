@@ -1,0 +1,49 @@
+
+<svg width="1400" height="700" viewBox="0 0 1400 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Inter, Arial, sans-serif; font-size: 44px; fill: #4B2DB7; font-weight: 800; }
+      .box { fill: #F5F2FF; stroke: #7C5CFF; stroke-width: 4; rx: 20; }
+      .label { font-family: Inter, Arial, sans-serif; font-size: 28px; fill: #3A2A8C; font-weight: 700; }
+      .note { font-family: Inter, Arial, sans-serif; font-size: 20px; fill: #2F2A55; }
+      .arrow { stroke: #B9AFFF; stroke-width: 6; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 12 6, 0 12" fill="#B9AFFF"/>
+    </marker>
+  </defs>
+
+  <text x="700" y="70" text-anchor="middle" class="title">Policy → Procurement → Implementation → Evaluation</text>
+
+  <!-- Boxes -->
+  <rect x="80"  y="200" width="300" height="200" class="box"/>
+  <rect x="400" y="200" width="300" height="200" class="box"/>
+  <rect x="720" y="200" width="300" height="200" class="box"/>
+  <rect x="1040" y="200" width="300" height="200" class="box"/>
+
+  <!-- Labels -->
+  <text x="230" y="255" text-anchor="middle" class="label">Strategy</text>
+  <text x="230" y="300" text-anchor="middle" class="note">Vision, coordination</text>
+  <text x="230" y="330" text-anchor="middle" class="note">Risk appetite</text>
+
+  <text x="550" y="255" text-anchor="middle" class="label">Procurement</text>
+  <text x="550" y="300" text-anchor="middle" class="note">Data &amp; model criteria</text>
+  <text x="550" y="330" text-anchor="middle" class="note">Ethical clauses</text>
+
+  <text x="870" y="255" text-anchor="middle" class="label">Implementation</text>
+  <text x="870" y="300" text-anchor="middle" class="note">MLOps &amp; security</text>
+  <text x="870" y="330" text-anchor="middle" class="note">Human oversight</text>
+
+  <text x="1190" y="255" text-anchor="middle" class="label">Evaluation</text>
+  <text x="1190" y="300" text-anchor="middle" class="note">Impact metrics</text>
+  <text x="1190" y="330" text-anchor="middle" class="note">Audits &amp; A/B tests</text>
+
+  <!-- Arrows -->
+  <line x1="380" y1="300" x2="400" y2="300" class="arrow"/>
+  <line x1="700" y1="300" x2="720" y2="300" class="arrow"/>
+  <line x1="1020" y1="300" x2="1040" y2="300" class="arrow"/>
+
+  <!-- Feedback loop -->
+  <path d="M 1220 420 C 1220 520, 600 560, 230 520" fill="none" class="arrow"/>
+  <text x="720" y="545" text-anchor="middle" class="note">Continuous learning &amp; improvement</text>
+</svg>
