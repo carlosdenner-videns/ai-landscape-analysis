@@ -51,6 +51,14 @@ export function Slide({ segment, showNotes, language }: SlideProps) {
     'fr': '📝 Notes du Présentateur:'
   };
 
+  // Engagement prompt header translations
+  const engagementHeader: Record<Language, string> = {
+    'en': '💭 Think About This',
+    'es': '💭 Piensa en Esto',
+    'pt': '💭 Pense Nisso',
+    'fr': '💭 Réfléchissez à Ceci'
+  };
+
   // Text-to-speech function for reading notes in selected language
   const speakNotes = () => {
     if (!segment.notes) return;
@@ -155,7 +163,7 @@ export function Slide({ segment, showNotes, language }: SlideProps) {
   const bottomContent = segment.engagement ? (
     <div className="p-4 bg-primary-50 dark:bg-primary-900/20 rounded-lg border-l-4 border-primary-500">
       <p className="text-sm md:text-base font-semibold text-primary-900 dark:text-primary-100 mb-1">
-        💭 Think About This
+        {engagementHeader[language]}
       </p>
       <p className="text-sm md:text-base text-primary-800 dark:text-primary-200 leading-snug">
         {segment.engagement.prompt}

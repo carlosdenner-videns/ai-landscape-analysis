@@ -38,9 +38,9 @@ export function ContentSlide({
   className = ''
 }: ContentSlideProps) {
   return (
-    <div className={`h-full flex flex-col px-12 py-8 overflow-hidden ${className}`}>
-      {/* Header Section - Compact and bold */}
-      <header className="mb-8 flex-shrink-0">
+    <div className={`h-full flex flex-col px-12 pt-20 pb-6 overflow-hidden ${className}`}>
+      {/* Header Section - Compact and bold, with top margin to avoid buttons */}
+      <header className="mb-6 flex-shrink-0">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-2">
           {title}
         </h1>
@@ -52,7 +52,7 @@ export function ContentSlide({
       </header>
 
       {/* Main Content Grid - Full height utilization with 40/60 split */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 flex-1 min-h-0">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 flex-1 min-h-0 overflow-hidden">
         {/* Left Column: Text Content (40%) */}
         <div className="lg:col-span-5 flex flex-col justify-center overflow-y-auto pr-4">
           {leftContent}
@@ -71,9 +71,9 @@ export function ContentSlide({
         )}
       </div>
 
-      {/* Bottom Section: Engagement/Citations */}
+      {/* Bottom Section: Engagement/Citations - Always visible */}
       {bottomContent && (
-        <div className="mt-4 flex-shrink-0">
+        <div className="mt-3 mb-16 flex-shrink-0">
           {bottomContent}
         </div>
       )}
