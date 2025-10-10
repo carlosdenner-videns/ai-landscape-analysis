@@ -1,10 +1,10 @@
 {
   "meta": {
     "author": "Carlos Denner - VIDENS Analytics",
-    "version": "4.0.0",
+    "version": "4.1.0",
     "description": "From Hype to Public Policy: How to Govern AI in the Public Sector",
     "duration": "90 minutes",
-    "slides": 7
+    "slides": 8
   },
   "segments": [
     {
@@ -237,6 +237,24 @@
       },
       "citations": [],
       "notes": "The path from hype to sustainable policy requires integration: strategic vision, operational capability, and ethical foundation. AI governance is not about creating perfect laws—it's about building adaptive institutions that learn, adjust, and ensure public value over time. From technological hype to sustainable public policy."
+    },
+    {
+      "id": "seg-8",
+      "title": "Summary",
+      "subtitle": "Key Takeaways from Our Discussion",
+      "bullets": [],
+      "media": [
+        {
+          "type": "videoLocal",
+          "src": "assets/videos/intro.mp4",
+          "caption": "Video summary of the presentation"
+        }
+      ],
+      "engagement": {
+        "prompt": "Thank you for your attention! Questions?"
+      },
+      "citations": [],
+      "notes": "This video summarizes the key points discussed in the presentation: the governance gap, the three dimensions of AI governance (strategic, operational, ethical), and the path from hype to sustainable public policy."
     }
   ]
 }

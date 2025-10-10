@@ -1,10 +1,10 @@
 {
   "meta": {
     "author": "Carlos Denner - VIDENS Analytics",
-    "version": "4.0.0",
+    "version": "4.1.0",
     "description": "Du battage médiatique aux politiques publiques : comment gouverner l'IA dans le secteur public",
     "duration": "90 minutes",
-    "slides": 7
+    "slides": 8
   },
   "segments": [
     {
@@ -236,7 +236,25 @@
         "prompt": "Quelle est la première étape que votre organisation peut franchir vers une gouvernance durable de l'IA ?"
       },
       "citations": [],
-      "notes": "Le chemin du battage à la politique durable nécessite une intégration : vision stratégique, capacité opérationnelle et fondement éthique. La gouvernance de l'IA ne consiste pas à créer des lois parfaites—il s'agit de construire des institutions adaptatives qui apprennent, s'ajustent et garantissent la valeur publique au fil du temps. Du battage médiatique à la politique publique durable."
+      "notes": "Le chemin du hype à la politique durable nécessite l'intégration : vision stratégique, capacité opérationnelle et fondement éthique. La gouvernance de l'IA ne consiste pas à créer des lois parfaites—il s'agit de construire des institutions adaptatives qui apprennent, s'ajustent et assurent une valeur publique dans le temps. Du hype technologique à la politique publique durable."
+    },
+    {
+      "id": "seg-8",
+      "title": "Résumé",
+      "subtitle": "Points Clés de Notre Discussion",
+      "bullets": [],
+      "media": [
+        {
+          "type": "videoLocal",
+          "src": "assets/videos/intro.mp4",
+          "caption": "Vidéo résumé de la présentation"
+        }
+      ],
+      "engagement": {
+        "prompt": "Merci pour votre attention! Des questions?"
+      },
+      "citations": [],
+      "notes": "Cette vidéo résume les points clés discutés dans la présentation : l'écart de gouvernance, les trois dimensions de la gouvernance de l'IA (stratégique, opérationnelle, éthique), et le chemin du hype à la politique publique durable."
     }
   ]
 }

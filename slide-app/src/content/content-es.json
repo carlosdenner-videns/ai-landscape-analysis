@@ -1,10 +1,10 @@
 {
   "meta": {
     "author": "Carlos Denner - VIDENS Analytics",
-    "version": "4.0.0",
+    "version": "4.1.0",
     "description": "Del hype a la política pública: cómo gobernar la IA en el sector público",
     "duration": "90 minutos",
-    "slides": 7
+    "slides": 8
   },
   "segments": [
     {
@@ -237,6 +237,24 @@
       },
       "citations": [],
       "notes": "El camino del hype a la política sostenible requiere integración: visión estratégica, capacidad operativa y fundamento ético. La gobernanza de IA no se trata de crear leyes perfectas—se trata de construir instituciones adaptativas que aprendan, se ajusten y aseguren valor público a lo largo del tiempo. Del hype tecnológico a la política pública sostenible."
+    },
+    {
+      "id": "seg-8",
+      "title": "Resumen",
+      "subtitle": "Conclusiones Clave de Nuestra Discusión",
+      "bullets": [],
+      "media": [
+        {
+          "type": "videoLocal",
+          "src": "assets/videos/intro.mp4",
+          "caption": "Video resumen de la presentación"
+        }
+      ],
+      "engagement": {
+        "prompt": "¡Gracias por su atención! ¿Preguntas?"
+      },
+      "citations": [],
+      "notes": "Este video resume los puntos clave discutidos en la presentación: la brecha de gobernanza, las tres dimensiones de la gobernanza de IA (estratégica, operativa, ética), y el camino del hype a la política pública sostenible."
     }
   ]
 }
