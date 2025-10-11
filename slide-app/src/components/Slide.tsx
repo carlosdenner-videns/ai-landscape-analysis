@@ -3,7 +3,6 @@ import { Segment, Language } from '../types';
 import { MediaPlayer } from './MediaPlayer';
 import { TitleSlide } from './TitleSlide';
 import { ContentSlide } from './ContentSlide';
-import { EditableBullets } from './EditableBullets';
 
 /**
  * Props for Slide component
@@ -12,17 +11,15 @@ interface SlideProps {
   segment: Segment;
   showNotes: boolean;
   language: Language;
-  onUpdateBullets?: (segmentId: string, bullets: string[]) => void;
 }
 
 /**
  * Slide component that displays a single segment
  * Includes title, subtitle, bullets, media gallery, engagement prompt, and citations
  */
-export function Slide({ segment, showNotes, language, onUpdateBullets }: SlideProps) {
+export function Slide({ segment, showNotes, language }: SlideProps) {
   const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
   const [isSpeaking, setIsSpeaking] = useState(false);
-  const [isEditingBullets, setIsEditingBullets] = useState(false);
 
   // Check if this is a title slide
   const isTitle = (segment as any).isTitle;
@@ -112,21 +109,8 @@ export function Slide({ segment, showNotes, language, onUpdateBullets }: SlidePr
     setCurrentMediaIndex((prev) => (prev - 1 + segment.media.length) % segment.media.length);
   };
 
-  const handleSaveBullets = (bullets: string[]) => {
-    if (onUpdateBullets) {
-      onUpdateBullets(segment.id, bullets);
-    }
-  };
-
-  // Left column content: bullets (editable if onUpdateBullets is provided)
-  const leftContent = onUpdateBullets ? (
-    <EditableBullets
-      bullets={segment.bullets}
-      onSave={handleSaveBullets}
-      isEditing={isEditingBullets}
-      onToggleEdit={() => setIsEditingBullets(!isEditingBullets)}
-    />
-  ) : (
+  // Left column content: bullets
+  const leftContent = (
     <div className="h-full flex flex-col justify-center">
       {segment.bullets.length > 0 && (
         <ul className="space-y-4" role="list">

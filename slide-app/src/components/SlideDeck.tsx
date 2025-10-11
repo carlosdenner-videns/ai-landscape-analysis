@@ -22,84 +22,44 @@ export function SlideDeck({ deck, language }: SlideDeckProps) {
   });
   const [showNotes, setShowNotes] = useState(false);
   
-  // Load segments with persisted order, deletions, and content edits
+  // Load segments with persisted order and deletions
   const [segments, setSegments] = useState(() => {
     const storageKey = `slideOrder_${language}`;
-    const contentKey = `slideContent_${language}`;
     const stored = localStorage.getItem(storageKey);
-    const contentStored = localStorage.getItem(contentKey);
     
-    let workingSegments = [...deck.segments];
-    
-    // Apply content edits first
-    if (contentStored) {
-      try {
-        const contentEdits = JSON.parse(contentStored);
-        workingSegments = workingSegments.map((seg: any) => {
-          if (contentEdits[seg.id]) {
-            return { ...seg, ...contentEdits[seg.id] };
-          }
-          return seg;
-        });
-      } catch {
-        // Ignore errors
-      }
-    }
-    
-    // Apply order and deletions
     if (stored) {
       try {
         const { order, deletedIds } = JSON.parse(stored);
-        const filteredSegments = workingSegments.filter((seg: any) => !deletedIds.includes(seg.id));
+        const filteredSegments = deck.segments.filter((seg: any) => !deletedIds.includes(seg.id));
         const orderedSegments = order
           .map((id: string) => filteredSegments.find((seg: any) => seg.id === id))
           .filter(Boolean);
-        return orderedSegments.length > 0 ? orderedSegments : workingSegments;
+        return orderedSegments.length > 0 ? orderedSegments : deck.segments;
       } catch {
-        return workingSegments;
+        return deck.segments;
       }
     }
-    return workingSegments;
+    return deck.segments;
   });
 
   // Update segments when deck changes (e.g., language change)
   useEffect(() => {
     const storageKey = `slideOrder_${language}`;
-    const contentKey = `slideContent_${language}`;
     const stored = localStorage.getItem(storageKey);
-    const contentStored = localStorage.getItem(contentKey);
     
-    let workingSegments = [...deck.segments];
-    
-    // Apply content edits first
-    if (contentStored) {
-      try {
-        const contentEdits = JSON.parse(contentStored);
-        workingSegments = workingSegments.map((seg: any) => {
-          if (contentEdits[seg.id]) {
-            return { ...seg, ...contentEdits[seg.id] };
-          }
-          return seg;
-        });
-      } catch {
-        // Ignore errors
-      }
-    }
-    
-    // Apply order and deletions
     if (stored) {
       try {
         const { order, deletedIds } = JSON.parse(stored);
-        const filteredSegments = workingSegments.filter((seg: any) => !deletedIds.includes(seg.id));
+        const filteredSegments = deck.segments.filter((seg: any) => !deletedIds.includes(seg.id));
         const orderedSegments = order
           .map((id: string) => filteredSegments.find((seg: any) => seg.id === id))
           .filter(Boolean);
-        setSegments(orderedSegments.length > 0 ? orderedSegments : workingSegments);
+        setSegments(orderedSegments.length > 0 ? orderedSegments : deck.segments);
       } catch {
-        setSegments(workingSegments);
+        setSegments(deck.segments);
       }
     } else {
-      setSegments(workingSegments);
+      setSegments(deck.segments);
     }
   }, [deck.segments, language]);
 
@@ -177,31 +137,6 @@ export function SlideDeck({ deck, language }: SlideDeckProps) {
     [segments, currentIndex, saveToStorage]
   );
 
-  const handleReset = useCallback(() => {
-    if (window.confirm('Reset all slides to original order and restore deleted slides?')) {
-      const storageKey = `slideOrder_${language}`;
-      const contentKey = `slideContent_${language}`;
-      localStorage.removeItem(storageKey);
-      localStorage.removeItem(contentKey);
-      setSegments(deck.segments);
-      setCurrentIndex(0);
-    }
-  }, [language, deck.segments]);
-
-  const handleUpdateBullets = useCallback((segmentId: string, bullets: string[]) => {
-    // Update the segment in state
-    const newSegments = segments.map((seg: any) => 
-      seg.id === segmentId ? { ...seg, bullets } : seg
-    );
-    setSegments(newSegments);
-
-    // Persist content changes to localStorage
-    const contentKey = `slideContent_${language}`;
-    const stored = localStorage.getItem(contentKey);
-    const contentEdits = stored ? JSON.parse(stored) : {};
-    contentEdits[segmentId] = { bullets };
-    localStorage.setItem(contentKey, JSON.stringify(contentEdits));
-  }, [segments, language]);
 
   const nextSlide = useCallback(() => {
     navigate(currentIndex + 1);
@@ -276,7 +211,6 @@ export function SlideDeck({ deck, language }: SlideDeckProps) {
           segment={currentSegment} 
           showNotes={showNotes} 
           language={language}
-          onUpdateBullets={handleUpdateBullets}
         />
       </main>
 
@@ -316,16 +250,6 @@ export function SlideDeck({ deck, language }: SlideDeckProps) {
           <kbd className="px-1 py-0.5 bg-gray-200 dark:bg-gray-700 rounded">T</kbd> Theme
         </p>
       </div>
-
-      {/* Reset Button */}
-      <button
-        onClick={handleReset}
-        className="fixed top-32 left-4 bg-orange-500 hover:bg-orange-600 text-white rounded-lg shadow-lg px-3 py-2 z-40 transition-colors text-sm font-medium focus:outline-none focus:ring-2 focus:ring-orange-500"
-        aria-label="Reset slides to original order"
-        title="Reset slides to original order"
-      >
-        🔄 Reset Slides
-      </button>
     </div>
   );
 }
