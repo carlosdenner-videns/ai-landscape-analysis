@@ -21,6 +21,7 @@ export function SlideDeck({ deck, language }: SlideDeckProps) {
     return stored ? parseInt(stored, 10) : 0;
   });
   const [showNotes, setShowNotes] = useState(false);
+  const [showProgressBar, setShowProgressBar] = useState(true);
   
   // Load segments with persisted order and deletions
   const [segments, setSegments] = useState(() => {
@@ -187,6 +188,11 @@ export function SlideDeck({ deck, language }: SlideDeckProps) {
           e.preventDefault();
           setShowNotes((prev) => !prev);
           break;
+        case 'b':
+        case 'B':
+          e.preventDefault();
+          setShowProgressBar((prev) => !prev);
+          break;
       }
     };
 
@@ -198,13 +204,15 @@ export function SlideDeck({ deck, language }: SlideDeckProps) {
 
   return (
     <div className="h-screen flex flex-col">
-      <ProgressBar 
-        currentIndex={currentIndex} 
-        total={segments.length} 
-        onNavigate={navigate}
-        onReorder={handleReorder}
-        onDelete={handleDelete}
-      />
+      {showProgressBar && (
+        <ProgressBar 
+          currentIndex={currentIndex} 
+          total={segments.length} 
+          onNavigate={navigate}
+          onReorder={handleReorder}
+          onDelete={handleDelete}
+        />
+      )}
 
       <main className="flex-1 pt-14 overflow-hidden" role="main">
         <Slide 
@@ -247,7 +255,8 @@ export function SlideDeck({ deck, language }: SlideDeckProps) {
         <p>
           <kbd className="px-1 py-0.5 bg-gray-200 dark:bg-gray-700 rounded">←→</kbd> Navigate |{' '}
           <kbd className="px-1 py-0.5 bg-gray-200 dark:bg-gray-700 rounded">P</kbd> Notes |{' '}
-          <kbd className="px-1 py-0.5 bg-gray-200 dark:bg-gray-700 rounded">T</kbd> Theme
+          <kbd className="px-1 py-0.5 bg-gray-200 dark:bg-gray-700 rounded">T</kbd> Theme |{' '}
+          <kbd className="px-1 py-0.5 bg-gray-200 dark:bg-gray-700 rounded">B</kbd> Bar
         </p>
       </div>
     </div>
