@@ -23,16 +23,35 @@ The app will be available at `http://localhost:5173`
 
 ## ✨ Features
 
-- **Multilingual Support**: Switch between English, Spanish, and Portuguese
+### Core Features
+- **Multilingual Support**: Switch between English, Spanish, Portuguese, and French
 - **Rich Media**: Images, local videos, YouTube embeds, and custom HTML
 - **Keyboard Navigation**: Arrow keys, Home/End, and shortcuts
-- **Presenter Mode**: Press `P` to toggle speaker notes
+- **Presenter Mode**: Press `P` to toggle speaker notes with text-to-speech
 - **Dark/Light Theme**: Press `T` to toggle theme
 - **Progress Tracking**: Visual progress bar with clickable navigation
 - **Citation Management**: Collapsible drawer for sources and references
 - **Accessibility**: WCAG AA compliant with semantic HTML and ARIA labels
 - **Responsive Design**: Optimized for projectors (1280×720, 1920×1080)
 - **Performance**: Lazy loading, code splitting, and media preloading
+
+### 🆕 Slide Management Features (NEW!)
+- **Drag-and-Drop Reordering**: Reorder slides by dragging in the progress bar
+- **Slide Deletion**: Remove slides with hover delete button (×)
+- **Content Editing**: Edit bullet points directly in presentation mode
+- **Persistent Storage**: All changes saved to localStorage per language
+- **Reset Functionality**: Restore original order and content with one click
+- **Live Captions**: Real-time speech transcription and translation
+
+📖 **See [SLIDE_MANAGEMENT_FEATURES.md](./SLIDE_MANAGEMENT_FEATURES.md) for detailed documentation**
+
+### 🌐 External Content Loading (NEW!)
+- **CDN/Server Support**: Load JSON content from external URLs
+- **No Rebuild Required**: Update content without redeploying the app
+- **Flexible Configuration**: Use GitHub, AWS S3, Netlify, or custom API
+- **Easy Setup**: Just set `VITE_CONTENT_BASE_URL` environment variable
+
+📖 **See [EXTERNAL_CONTENT_SETUP.md](./EXTERNAL_CONTENT_SETUP.md) for setup guide**
 
 ## 📁 Project Structure
 

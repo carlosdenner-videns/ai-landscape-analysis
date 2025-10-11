@@ -23,7 +23,13 @@ function App() {
       setLoading(true);
       setError(null);
       try {
-        const response = await fetch(`${import.meta.env.BASE_URL}content/content-${language}.json`);
+        // Use external content URL if configured, otherwise use local content
+        const contentBaseUrl = import.meta.env.VITE_CONTENT_BASE_URL;
+        const contentUrl = contentBaseUrl 
+          ? `${contentBaseUrl}/content-${language}.json`
+          : `${import.meta.env.BASE_URL}content/content-${language}.json`;
+        
+        const response = await fetch(contentUrl);
         if (!response.ok) {
           throw new Error(`Failed to load content: ${response.statusText}`);
         }
