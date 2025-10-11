@@ -25,11 +25,12 @@ function App() {
       try {
         // Use external content URL if configured, otherwise use local content
         const contentBaseUrl = import.meta.env.VITE_CONTENT_BASE_URL;
+        const cacheBuster = Date.now(); // Force fresh content
         const contentUrl = contentBaseUrl 
-          ? `${contentBaseUrl}/content-${language}.json`
+          ? `${contentBaseUrl}/content-${language}.json?v=${cacheBuster}`
           : `${import.meta.env.BASE_URL}content/content-${language}.json`;
         
-        const response = await fetch(contentUrl);
+        const response = await fetch(contentUrl, { cache: 'no-cache' });
         if (!response.ok) {
           throw new Error(`Failed to load content: ${response.statusText}`);
         }
