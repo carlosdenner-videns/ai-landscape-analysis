@@ -256,7 +256,8 @@ export function SlideDeck({ deck, language }: SlideDeckProps) {
           <kbd className="px-1 py-0.5 bg-gray-200 dark:bg-gray-700 rounded">←→</kbd> Navigate |{' '}
           <kbd className="px-1 py-0.5 bg-gray-200 dark:bg-gray-700 rounded">P</kbd> Notes |{' '}
           <kbd className="px-1 py-0.5 bg-gray-200 dark:bg-gray-700 rounded">T</kbd> Theme |{' '}
-          <kbd className="px-1 py-0.5 bg-gray-200 dark:bg-gray-700 rounded">B</kbd> Bar
+          <kbd className="px-1 py-0.5 bg-gray-200 dark:bg-gray-700 rounded">B</kbd> Bar |{' '}
+          <kbd className="px-1 py-0.5 bg-gray-200 dark:bg-gray-700 rounded">C</kbd> Captions
         </p>
       </div>
     </div>

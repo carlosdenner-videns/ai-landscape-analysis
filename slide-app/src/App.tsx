@@ -2,20 +2,20 @@ import { useState, useEffect } from 'react';
 import { SlideDeck } from './components/SlideDeck';
 import { LanguageToggle } from './components/LanguageToggle';
 import { LiveCaptionBar } from './components/LiveCaptionBar';
-import { useLanguage } from './hooks/useLanguage';
 import { useTheme } from './hooks/useTheme';
-import { Deck } from './types';
+import { Deck, Language } from './types';
 
 /**
  * Main App component
  * Manages language selection, theme toggling, and content loading
  */
 function App() {
-  const [language, setLanguage] = useLanguage();
+  const [language, setLanguage] = useState<Language>('en');
   const [theme, toggleTheme] = useTheme();
   const [deck, setDeck] = useState<Deck | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [showCaptions, setShowCaptions] = useState(false);
 
   // Load content based on selected language
   useEffect(() => {
@@ -45,20 +45,22 @@ function App() {
     loadContent();
   }, [language]);
 
-  // Theme toggle keyboard shortcut
+  // Keyboard shortcuts
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 't' || e.key === 'T') {
-        if (!(e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement)) {
-          e.preventDefault();
-          toggleTheme();
-        }
+        e.preventDefault();
+        toggleTheme();
+      }
+      if (e.key === 'c' || e.key === 'C') {
+        e.preventDefault();
+        setShowCaptions((prev) => !prev);
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [toggleTheme]);
+  }, [toggleTheme, setShowCaptions]);
 
   if (loading) {
     return (
@@ -121,9 +123,11 @@ function App() {
       <SlideDeck deck={deck} language={language} />
 
       {/* Live Caption Bar - Real-time speech transcription and translation */}
-      <LiveCaptionBar 
-        showOriginal={false}
-      />
+      {showCaptions && (
+        <LiveCaptionBar 
+          showOriginal={false}
+        />
+      )}
     </div>
   );
 }
