@@ -30,14 +30,7 @@
         }
       ],
       "keyMessage": "From technological hype to sustainable public policy",
-      "media": [
-        {
-          "type": "image",
-          "src": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Brasilia_National_Congress_Buildings.jpg",
-          "alt": "Brazil’s National Congress with flag under blue sky",
-          "caption": "Modern governance in view—bridging tech hype and public policy in Brazil"
-        }
-      ],
+      "media": [],
       "engagement": {
         "prompt": "How is your organization currently approaching AI governance?"
       },
@@ -66,9 +59,9 @@
       "media": [
         {
           "type": "image",
-          "src": "https://images.pexels.com/photos/6146957/pexels-photo-6146957.jpeg",
-          "alt": "Citizen on a bench using a smartphone",
-          "caption": "Everyday AI: citizens use mobile services for learning and public information"
+          "src": "assets/slide2_collage_8x_v2.svg",
+          "alt": "Collage of 8 boxes showing AI uses",
+          "caption": "Everyday AI in public services"
         }
       ],
       "engagement": {
@@ -90,9 +83,9 @@
       "media": [
         {
           "type": "image",
-          "src": "https://images.pexels.com/photos/9301306/pexels-photo-9301306.jpeg",
-          "alt": "Participants in a training raise their hands",
-          "caption": "Pulse-check: high AI use, lower trust—set up the governance discussion"
+          "src": "assets/slide4_balanza_v2.svg",
+          "alt": "Conceptual balance illustration",
+          "caption": "Benefits vs. open questions"
         }
       ],
       "engagement": {
@@ -115,9 +108,9 @@
       "media": [
         {
           "type": "image",
-          "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Balance_scale_IMGP9755.jpg",
-          "alt": "Two-pan balance scale with brass weights",
-          "caption": "Balancing public value and risk in AI adoption"
+          "src": "assets/slide4_balanza_v2.svg",
+          "alt": "Balance of benefits and risks",
+          "caption": "Mind map to discuss trade-offs"
         }
       ],
       "engagement": {
@@ -140,9 +133,9 @@
       "media": [
         {
           "type": "image",
-          "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/UNflags.jpg",
-          "alt": "Row of national flags at United Nations",
-          "caption": "Global push: Canada, Brazil, and Colombia engage in responsible AI governance"
+          "src": "assets/slide6_mapa_politicas_v2.svg",
+          "alt": "Abstract map with EU, Canada, Brazil and Colombia",
+          "caption": "Comparative overview (update bullets as progress)"
         }
       ],
       "engagement": {
@@ -165,9 +158,9 @@
       "media": [
         {
           "type": "image",
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Blank_Map_World_Secondary_Political_Divisions.svg/2560px-Blank_Map_World_Secondary_Political_Divisions.svg.png",
-          "alt": "Blank world political map with country outlines",
-          "caption": "AI policy landscape—locate EU, Canada, Brazil, and Colombia on the map"
+          "src": "assets/slide6_mapa_politicas_v2.svg",
+          "alt": "Map with pins and mini-cards",
+          "caption": "Situational, not geographically exact"
         }
       ],
       "engagement": {
@@ -189,9 +182,9 @@
       "media": [
         {
           "type": "image",
-          "src": "https://images.pexels.com/photos/12969403/pexels-photo-12969403.jpeg",
-          "alt": "Laptop screen with analytics dashboard charts",
-          "caption": "Adoption wave: dashboards and open data signal AI-in-use across services"
+          "src": "assets/slide7_dato_unico_v2.svg",
+          "alt": "Chart of 'single data point' 65%",
+          "caption": "Source: McKinsey Global AI Survey (2024)"
         }
       ],
       "engagement": {
@@ -212,14 +205,7 @@
         "AI and society"
       ],
       "keyMessage": "Technology ↔ public policy ↔ implementation",
-      "media": [
-        {
-          "type": "image",
-          "src": "https://pixabay.com/get/gff2e29a4b7ea36f23bc985c637dc7cda8e6c32f8c35d8da92f435a3ae5e3f0616fdb4c5cfe25095ea8d86394130212c7_1280.jpg",
-          "alt": "Multi-directional signpost indicating several routes",
-          "caption": "Roadmap: policy, health, mobility, fairness, society—our themes for today"
-        }
-      ],
+      "media": [],
       "engagement": {
         "prompt": "Which block do you want to deepen according to your current work?"
       },
@@ -236,14 +222,7 @@
         "Resources and templates to take away"
       ],
       "keyMessage": "Relate each topic to a local public service in Manizales/Caldas",
-      "media": [
-        {
-          "type": "image",
-          "src": "https://images.pexels.com/photos/15505432/pexels-photo-15505432.jpeg",
-          "alt": "Sticky notes on whiteboard during a workshop",
-          "caption": "Participation first: co-creation and consultation in public policy design"
-        }
-      ],
+      "media": [],
       "engagement": {
         "prompt": "Note a local service that could benefit from responsible AI."
       },
@@ -460,6 +439,101 @@
       },
       "citations": [],
       "notes": "This video summarizes the key points discussed in the presentation: the governance gap, the three dimensions of AI governance (strategic, operational, ethical), and the path from hype to sustainable public policy."
+    },
+    {
+      "id": "seg-1-10",
+      "title": "Why it matters (students & public officials)",
+      "subtitle": "Two hats: users and stewards of AI in government",
+      "keyMessage": "You will both use AI and shape how it is used in the public sector.",
+      "bullets": [
+        "Decisions today set norms, capacity and trust for years",
+        "Public value lens: equity, transparency, accountability",
+        "Bring local services: Manizales/Caldas examples"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Esap_C%C3%BAcuta_abril_2021.jpg",
+          "alt": "ESAP campus building in Cúcuta, Colombia",
+          "caption": "ESAP: training the next generation of public administrators in Colombia"
+        }
+      ],
+      "engagement": {
+        "prompt": "Name one service you touch that could change with AI—what would ‘good’ look like?"
+      },
+      "citations": [],
+      "notes": "Anchor the audience’s dual role. Invite a 1–2 sentence example from the room (education, health, transport)."
+    },
+    {
+      "id": "seg-1-11",
+      "title": "AI is already here (regional snapshots)",
+      "subtitle": "Everyday and city-scale uses in Colombia",
+      "keyMessage": "From mobility to case triage, AI-enabled systems already shape daily experience.",
+      "bullets": [
+        "Bogotá BRT analytics & operations assist mobility decisions",
+        "Case prioritization and chatbots in public services",
+        "Computer vision & language tools in classrooms and clinics"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/8/83/Transmilenio_vehicle_interior.jpg",
+          "alt": "Crowded interior of a TransMilenio bus in Bogotá",
+          "caption": "TransMilenio: an emblem of data-driven urban mobility in Colombia"
+        }
+      ],
+      "engagement": {
+        "prompt": "What’s one benefit and one risk you notice from these uses?"
+      },
+      "citations": [],
+      "notes": "Use this to segue into the ‘opportunities vs. concerns’ slide."
+    },
+    {
+      "id": "seg-1-12",
+      "title": "A quick stat to ground us",
+      "subtitle": "Adoption is accelerating across sectors",
+      "keyMessage": "Adoption and experimentation are up; governance capacity must keep pace.",
+      "bullets": [
+        "Use a fresh, local stat (e.g., national or sector survey) to anchor discussion",
+        "Discuss what ‘responsible adoption’ requires: risk assessment, data governance, oversight"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Noun_project_8252_-_Bar_graph.svg",
+          "alt": "Simple bar chart icon",
+          "caption": "Insert a local adoption datapoint (source visible on the slide)"
+        }
+      ],
+      "engagement": {
+        "prompt": "If adoption doubles next year, what must your agency strengthen first?"
+      },
+      "citations": [],
+      "notes": "Replace this icon with a one-number chart if you add a concrete statistic later."
+    },
+    {
+      "id": "seg-1-13",
+      "title": "Institutions set the rules of the game",
+      "subtitle": "Policy signals from Canada, Brazil and Colombia",
+      "keyMessage": "National institutions and directives guide responsible AI in the public sector.",
+      "bullets": [
+        "Canada: federal guidance & testing frameworks for emerging tech",
+        "Brazil: SUS-scale digitization; national AI bill in debate",
+        "Colombia: CONPES AI policy and sector pilots"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Parliament_Hill%2C_Ottawa.jpg",
+          "alt": "Parliament Hill in Ottawa, Canada",
+          "caption": "Institutions matter: rules, capacity and accountability enable safe innovation"
+        }
+      ],
+      "engagement": {
+        "prompt": "Which policy tool would most help your team in the next 6 months?"
+      },
+      "citations": [],
+      "notes": "Point to upcoming slides on global approaches and the quick map of laws."
     }
   ]
 }
