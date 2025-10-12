@@ -33,7 +33,7 @@
       "media": [
         {
           "type": "image",
-          "src": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Brasilia_National_Congress_Buildings.jpg",
+          "src": "assets/downloaded_images/Brasilia_National_Congress_Buildings.jpg",
           "alt": "Brazil’s National Congress with national flag",
           "caption": "From hype to governance: Brazil’s National Congress, symbol of public decision-making"
         }
@@ -66,7 +66,7 @@
       "media": [
         {
           "type": "image",
-          "src": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Smartphone_with_ChatGPT_app_(52917381673).jpg",
+          "src": "assets/downloaded_images/Smartphone_with_ChatGPT_app_(52917381673).jpg",
           "alt": "Hand holding a smartphone showing ChatGPT interface",
           "caption": "Everyday AI: assistants and public apps transforming daily life"
         }
@@ -90,7 +90,7 @@
       "media": [
         {
           "type": "image",
-          "src": "https://images.pexels.com/photos/9301306/pexels-photo-9301306.jpeg",
+          "src": "assets/downloaded_images/pexels-photo-9301306.jpeg",
           "alt": "Students and professionals raising hands in a training session",
           "caption": "Interactive moment: how many have used or trusted AI today?"
         }
@@ -115,7 +115,7 @@
       "media": [
         {
           "type": "image",
-          "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Balance_scale_IMGP9755.jpg",
+          "src": "assets/downloaded_images/Balance_scale_IMGP9755.jpg",
           "alt": "Classic brass balance scale with weights",
           "caption": "Balancing benefits and risks: efficiency versus accountability"
         }
@@ -140,7 +140,7 @@
       "media": [
         {
           "type": "image",
-          "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/UNflags.jpg",
+          "src": "assets/downloaded_images/UNflags.jpg",
           "alt": "Rows of national flags outside United Nations headquarters",
           "caption": "Global momentum: Canada, Brazil, and Colombia shape responsible AI"
         }
@@ -165,7 +165,7 @@
       "media": [
         {
           "type": "image",
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Blank_Map_World_Secondary_Political_Divisions.svg/2560px-Blank_Map_World_Secondary_Political_Divisions.svg.png",
+          "src": "assets/downloaded_images/2560px-Blank_Map_World_Secondary_Political_Divisions.svg.png",
           "alt": "Blank world political map",
           "caption": "AI policy map highlighting EU, Canada, Brazil, and Colombia"
         }
@@ -189,7 +189,7 @@
       "media": [
         {
           "type": "image",
-          "src": "https://images.pexels.com/photos/12969403/pexels-photo-12969403.jpeg",
+          "src": "assets/downloaded_images/pexels-photo-12969403.jpeg",
           "alt": "Laptop displaying analytics charts and dashboards",
           "caption": "Adoption wave: open data and AI dashboards spreading in public agencies"
         }
@@ -239,7 +239,7 @@
       "media": [
         {
           "type": "image",
-          "src": "https://images.pexels.com/photos/15505432/pexels-photo-15505432.jpeg",
+          "src": "assets/downloaded_images/pexels-photo-15505432.jpeg",
           "alt": "Workshop table with sticky notes and ideas",
           "caption": "Participation and collaboration drive better AI governance"
         }
