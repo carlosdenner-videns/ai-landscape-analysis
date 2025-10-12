@@ -31,6 +31,7 @@ humaint_pdfs/
 # Large data files
 *.json
 !slide-app/**/*.json
+!presentation-content/*.json
 landscape_analysis_output/data/extracted_texts.json
 
 # Temporary files

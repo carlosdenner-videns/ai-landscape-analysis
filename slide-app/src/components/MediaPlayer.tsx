@@ -14,12 +14,6 @@ interface MediaPlayerProps {
  */
 export function MediaPlayer({ media, className = '' }: MediaPlayerProps) {
   const baseClass = `w-full h-full flex flex-col items-center justify-center ${className}`;
-  
-  // Debug: log the constructed image path
-  if (media.type === 'image') {
-    const imagePath = `${import.meta.env.BASE_URL}${media.src}?v=2`;
-    console.log('Image path:', imagePath, 'BASE_URL:', import.meta.env.BASE_URL, 'media.src:', media.src);
-  }
 
   // Helper function to get the correct image URL
   const getImageUrl = (src: string) => {
@@ -28,7 +22,7 @@ export function MediaPlayer({ media, className = '' }: MediaPlayerProps) {
       return src;
     }
     // Otherwise, prepend BASE_URL for relative paths
-    return `${import.meta.env.BASE_URL}${src}?v=3`;
+    return `${import.meta.env.BASE_URL}${src}`;
   };
 
   switch (media.type) {
