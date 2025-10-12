@@ -30,7 +30,14 @@
         }
       ],
       "keyMessage": "From technological hype to sustainable public policy",
-      "media": [],
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Brasilia_National_Congress_Buildings.jpg",
+          "alt": "Brazil’s National Congress with national flag",
+          "caption": "From hype to governance: Brazil’s National Congress, symbol of public decision-making"
+        }
+      ],
       "engagement": {
         "prompt": "How is your organization currently approaching AI governance?"
       },
@@ -59,9 +66,9 @@
       "media": [
         {
           "type": "image",
-          "src": "assets/slide2_collage_8x_v2.svg",
-          "alt": "Collage of 8 boxes showing AI uses",
-          "caption": "Everyday AI in public services"
+          "src": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Smartphone_with_ChatGPT_app_(52917381673).jpg",
+          "alt": "Hand holding a smartphone showing ChatGPT interface",
+          "caption": "Everyday AI: assistants and public apps transforming daily life"
         }
       ],
       "engagement": {
@@ -83,9 +90,9 @@
       "media": [
         {
           "type": "image",
-          "src": "assets/slide4_balanza_v2.svg",
-          "alt": "Conceptual balance illustration",
-          "caption": "Benefits vs. open questions"
+          "src": "https://images.pexels.com/photos/9301306/pexels-photo-9301306.jpeg",
+          "alt": "Students and professionals raising hands in a training session",
+          "caption": "Interactive moment: how many have used or trusted AI today?"
         }
       ],
       "engagement": {
@@ -108,9 +115,9 @@
       "media": [
         {
           "type": "image",
-          "src": "assets/slide4_balanza_v2.svg",
-          "alt": "Balance of benefits and risks",
-          "caption": "Mind map to discuss trade-offs"
+          "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Balance_scale_IMGP9755.jpg",
+          "alt": "Classic brass balance scale with weights",
+          "caption": "Balancing benefits and risks: efficiency versus accountability"
         }
       ],
       "engagement": {
@@ -133,9 +140,9 @@
       "media": [
         {
           "type": "image",
-          "src": "assets/slide6_mapa_politicas_v2.svg",
-          "alt": "Abstract map with EU, Canada, Brazil and Colombia",
-          "caption": "Comparative overview (update bullets as progress)"
+          "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/UNflags.jpg",
+          "alt": "Rows of national flags outside United Nations headquarters",
+          "caption": "Global momentum: Canada, Brazil, and Colombia shape responsible AI"
         }
       ],
       "engagement": {
@@ -158,9 +165,9 @@
       "media": [
         {
           "type": "image",
-          "src": "assets/slide6_mapa_politicas_v2.svg",
-          "alt": "Map with pins and mini-cards",
-          "caption": "Situational, not geographically exact"
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Blank_Map_World_Secondary_Political_Divisions.svg/2560px-Blank_Map_World_Secondary_Political_Divisions.svg.png",
+          "alt": "Blank world political map",
+          "caption": "AI policy map highlighting EU, Canada, Brazil, and Colombia"
         }
       ],
       "engagement": {
@@ -182,9 +189,9 @@
       "media": [
         {
           "type": "image",
-          "src": "assets/slide7_dato_unico_v2.svg",
-          "alt": "Chart of 'single data point' 65%",
-          "caption": "Source: McKinsey Global AI Survey (2024)"
+          "src": "https://images.pexels.com/photos/12969403/pexels-photo-12969403.jpeg",
+          "alt": "Laptop displaying analytics charts and dashboards",
+          "caption": "Adoption wave: open data and AI dashboards spreading in public agencies"
         }
       ],
       "engagement": {
@@ -205,7 +212,14 @@
         "AI and society"
       ],
       "keyMessage": "Technology ↔ public policy ↔ implementation",
-      "media": [],
+      "media": [
+        {
+          "type": "image",
+          "src": "https://pixabay.com/get/gff2e29a4b7ea36f23bc985c637dc7cda8e6c32f8c35d8da92f435a3ae5e3f0616fdb4c5cfe25095ea8d86394130212c7_1280.jpg",
+          "alt": "Directional signpost with multiple arrows",
+          "caption": "Our roadmap: policy, health, mobility, fairness, and society"
+        }
+      ],
       "engagement": {
         "prompt": "Which block do you want to deepen according to your current work?"
       },
@@ -222,7 +236,14 @@
         "Resources and templates to take away"
       ],
       "keyMessage": "Relate each topic to a local public service in Manizales/Caldas",
-      "media": [],
+      "media": [
+        {
+          "type": "image",
+          "src": "https://images.pexels.com/photos/15505432/pexels-photo-15505432.jpeg",
+          "alt": "Workshop table with sticky notes and ideas",
+          "caption": "Participation and collaboration drive better AI governance"
+        }
+      ],
       "engagement": {
         "prompt": "Note a local service that could benefit from responsible AI."
       },
@@ -455,14 +476,14 @@
           "type": "image",
           "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Esap_C%C3%BAcuta_abril_2021.jpg",
           "alt": "ESAP campus building in Cúcuta, Colombia",
-          "caption": "ESAP: training the next generation of public administrators in Colombia"
+          "caption": "ESAP: future public administrators learning to shape AI policy"
         }
       ],
       "engagement": {
         "prompt": "Name one service you touch that could change with AI—what would ‘good’ look like?"
       },
       "citations": [],
-      "notes": "Anchor the audience’s dual role. Invite a 1–2 sentence example from the room (education, health, transport)."
+      "notes": "Anchor the audience’s dual role. Invite a 1–2 sentence example from the room (education, health, transport).\n\n---\n\n**Mini‑vignette:** 'Two hats.' Ask one student and one official to name a real decision they'll face this year (e.g., classroom AI tool, procurement). Note how their roles overlap and diverge.\n\n**Transition:** 'Let’s ground this in where AI already shows up around us.'"
     },
     {
       "id": "seg-1-11",
@@ -478,15 +499,15 @@
         {
           "type": "image",
           "src": "https://upload.wikimedia.org/wikipedia/commons/8/83/Transmilenio_vehicle_interior.jpg",
-          "alt": "Crowded interior of a TransMilenio bus in Bogotá",
-          "caption": "TransMilenio: an emblem of data-driven urban mobility in Colombia"
+          "alt": "Interior of a TransMilenio bus in Bogotá",
+          "caption": "AI already here: data-driven public transport in Bogotá"
         }
       ],
       "engagement": {
         "prompt": "What’s one benefit and one risk you notice from these uses?"
       },
       "citations": [],
-      "notes": "Use this to segue into the ‘opportunities vs. concerns’ slide."
+      "notes": "Use this to segue into the ‘opportunities vs. concerns’ slide.\n\n---\n\n**Mini‑vignette:** Mobility in Bogotá. Explain how data from buses/cameras helps prioritize lanes and schedules; then ask: 'Who is accountable if the model deprioritizes a vulnerable route?'\n\n**Transition:** 'Before risks, a quick data point to anchor how fast this is moving.'"
     },
     {
       "id": "seg-1-12",
@@ -501,15 +522,15 @@
         {
           "type": "image",
           "src": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Noun_project_8252_-_Bar_graph.svg",
-          "alt": "Simple bar chart icon",
-          "caption": "Insert a local adoption datapoint (source visible on the slide)"
+          "alt": "Simple bar chart icon showing upward growth",
+          "caption": "Grounding the discussion: a snapshot of AI adoption growth"
         }
       ],
       "engagement": {
         "prompt": "If adoption doubles next year, what must your agency strengthen first?"
       },
       "citations": [],
-      "notes": "Replace this icon with a one-number chart if you add a concrete statistic later."
+      "notes": "Replace this icon with a one-number chart if you add a concrete statistic later.\n\n---\n\n**Mini‑vignette:** One‑number moment. Share a current stat (national/sector) on AI use. Invite a 10‑second reaction: 'What capability must we upgrade first—skills, data, or oversight?'\n\n**Transition:** 'Policies and institutions shape how that adoption happens.'"
     },
     {
       "id": "seg-1-13",
@@ -526,14 +547,14 @@
           "type": "image",
           "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Parliament_Hill%2C_Ottawa.jpg",
           "alt": "Parliament Hill in Ottawa, Canada",
-          "caption": "Institutions matter: rules, capacity and accountability enable safe innovation"
+          "caption": "Institutions matter: Canada, Brazil, and Colombia leading frameworks"
         }
       ],
       "engagement": {
         "prompt": "Which policy tool would most help your team in the next 6 months?"
       },
       "citations": [],
-      "notes": "Point to upcoming slides on global approaches and the quick map of laws."
+      "notes": "Point to upcoming slides on global approaches and the quick map of laws.\n\n---\n\n**Mini‑vignette:** Three signals. Canada’s federal testing/guidance; Brazil’s national bill and SUS digitalization; Colombia’s CONPES AI. Ask: 'Which tool—AIA, audits, sandbox—would help your team in 6 months?'\n\n**Transition:** 'Next, we zoom out to the global picture and quick map of laws.'"
     }
   ]
 }
