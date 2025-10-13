@@ -1,0 +1,660 @@
+{
+  "meta": {
+    "author": "Carlos Denner - VIDENS Analytics",
+    "version": "4.4.0",
+    "description": "Del hype a la política pública: cómo gobernar la IA en el sector público",
+    "duration": "90 minutos",
+    "slides": 26
+  },
+  "segments": [
+    {
+      "id": "seg-1",
+      "title": "Del hype a la política pública",
+      "subtitle": "Cómo gobernar la IA en el sector público",
+      "bullets": [],
+      "dimensions": [
+        {
+          "icon": "🎯",
+          "title": "Estratégica",
+          "description": "Visión y Planificación"
+        },
+        {
+          "icon": "⚙️",
+          "title": "Operativa",
+          "description": "Capacidades y Contratación"
+        },
+        {
+          "icon": "⚖️",
+          "title": "Ética",
+          "description": "Transparencia y Rendición de Cuentas"
+        }
+      ],
+      "keyMessage": "Del hype tecnológico a la política pública sostenible",
+      "media": [],
+      "engagement": {
+        "prompt": "¿Cómo está abordando su organización la gobernanza de la IA actualmente?"
+      },
+      "citations": [],
+      "notes": "RESUMEN: La inteligencia artificial ha pasado de ser una promesa tecnológica a convertirse en una herramienta cotidiana para gobiernos y administraciones públicas. Sin embargo, la velocidad de su adopción supera la capacidad institucional para regularla, evaluarla y garantizar su alineación con el interés público. Esta conferencia propone un recorrido crítico del hype a la política pública, explorando cómo los Estados pueden gobernar la IA desde tres dimensiones: estratégica (visión y planificación), operativa (capacidades y contratación pública) y ética (transparencia, rendición de cuentas y equidad). A partir de experiencias internacionales y latinoamericanas, se presentarán lineamientos para una gobernanza responsable y sostenible de la IA en el sector público.",
+      "presenter": {
+        "name": "carlos.denner@videns.ai",
+        "title": "Experto en IA",
+        "organization": "Videns, propulsado por COFOMO",
+        "date": "14 de agosto, 2025",
+        "conference": "Inteligencia Artificial y Administración Pública, Semana de Internacionalización de la Escuela Superior de Administración Pública – ESAP"
+      },
+      "isTitle": true
+    },
+    {
+      "id": "seg-1-2",
+      "title": "¿Dónde está la IA hoy?",
+      "subtitle": "IA en la vida diaria y en el Estado",
+      "bullets": [
+        "Asistentes en teléfono, búsqueda, traducción, fotos.",
+        "Chatbots, priorización de trámites, analítica de riesgo.",
+        "Tráfico, alumbrado, seguridad inteligente.",
+        "Salud, justicia y educación en cambio."
+      ],
+      "keyMessage": "La IA ya transforma servicios públicos y cotidianos.",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Smartphone_with_ChatGPT_app_(52917381673).jpg",
+          "alt": "Smartphone con aplicación ChatGPT",
+          "caption": "Ciudadana usando un asistente IA — la IA cotidiana."
+        }
+      ],
+      "engagement": {
+        "prompt": "Un proceso de tu entidad que ya usa automatización 'tipo IA'."
+      },
+      "citations": [],
+      "notes": "Contar anécdota · Aclarar que 'IA' = modelos generativos + ML tradicional."
+    },
+    {
+      "id": "seg-1-3",
+      "title": "Dinámica relámpago · Encuesta en vivo",
+      "subtitle": "Uso vs. confianza",
+      "bullets": [
+        "1️⃣ ¿Quién usó IA hoy? (levanten la mano)",
+        "2️⃣ ¿Quién confiaría en una IA tanto como en una persona?"
+      ],
+      "keyMessage": "Alta adopción, menor confianza → necesitamos marcos de gobernanza",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://images.pexels.com/photos/9301306/pexels-photo-9301306.jpeg",
+          "alt": "Participantes levantando la mano",
+          "caption": "Participantes levantando la mano — uso alto, confianza baja."
+        }
+      ],
+      "engagement": {
+        "prompt": "¿Qué necesitarías ver para confiar en una decisión automatizada?"
+      },
+      "citations": [],
+      "notes": "Observar contraste → introducir el tema de gobernanza y confianza."
+    },
+    {
+      "id": "seg-1-4",
+      "title": "Oportunidades vs preocupaciones",
+      "subtitle": "El doble filo de la adopción",
+      "bullets": [
+        "Acceso 24/7 e inclusión",
+        "Eficiencia y priorización",
+        "Calidad y antifraude",
+        "Transparencia · sesgos · privacidad · responsabilidad"
+      ],
+      "keyMessage": "La IA ofrece valor público pero plantea riesgos éticos.",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://via.placeholder.com/800x600/E74C3C/FFFFFF?text=Salud+IA",
+          "alt": "Corredor de hospital SUS",
+          "caption": "Hospital SUS — beneficios de IA médica vs riesgos de privacidad y sesgo."
+        }
+      ],
+      "engagement": {
+        "prompt": "¿Cuál riesgo es más material en tu dominio y por qué?"
+      },
+      "citations": [],
+      "notes": "Conectar cada beneficio con su riesgo; 'doble filo' de la adopción pública."
+    },
+    {
+      "id": "seg-1-5",
+      "title": "El impulso global por una IA responsable",
+      "subtitle": "Tendencias que importan para Colombia",
+      "bullets": [
+        "Marcos de riesgo y obligaciones por uso.",
+        "Evaluaciones de impacto algorítmico (AIA).",
+        "Gobernanza de datos y auditorías.",
+        "Oficinas de IA y sandboxes."
+      ],
+      "keyMessage": "No es sólo regular: también habilitar innovación pública segura",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/UNflags.jpg",
+          "alt": "Banderas en ONU",
+          "caption": "Banderas en ONU — Canadá, Brasil y Colombia en foros globales de IA."
+        }
+      ],
+      "engagement": {
+        "prompt": "¿Qué elemento (AIA, auditorías, sandbox) adoptarías primero?"
+      },
+      "citations": [],
+      "notes": "No solo regular → también habilitar innovación pública segura."
+    },
+    {
+      "id": "seg-1-6",
+      "title": "Mapa rápido · Políticas y leyes",
+      "subtitle": "UE · Canadá · Brasil · Colombia",
+      "bullets": [],
+      "keyMessage": "Implementación gradual y supervisión son clave",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Blank_Map_World_Secondary_Political_Divisions.svg/2560px-Blank_Map_World_Secondary_Political_Divisions.svg.png",
+          "alt": "Mapa político mundial",
+          "caption": "Mapa político — UE, Canadá, Brasil, Colombia con sus estrategias IA."
+        }
+      ],
+      "engagement": {
+        "prompt": "Dónde ves quick wins para el sector público colombiano."
+      },
+      "citations": [],
+      "notes": "15 s por región: qué cubre y por qué importa para Colombia."
+    },
+    {
+      "id": "seg-1-7",
+      "title": "La ola de adopción",
+      "subtitle": "Hechos rápidos",
+      "bullets": [],
+      "keyMessage": "La adopción acelera → capacidades deben ponerse al día.",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://via.placeholder.com/800x600/27AE60/FFFFFF?text=Datos+Abiertos",
+          "alt": "Gobierno de Canadá",
+          "caption": "Canadá — líder en gobierno digital e IA responsable."
+        }
+      ],
+      "engagement": {
+        "prompt": "¿Qué métrica agregarías para seguir adopción responsable?"
+      },
+      "citations": [],
+      "notes": "Vincular dato local de adopción con capacidades necesarias."
+    },
+    {
+      "id": "seg-1-8",
+      "title": "Lo que veremos hoy",
+      "subtitle": "Cinco temas, un hilo",
+      "bullets": [
+        "1️⃣ Política y regulación",
+        "2️⃣ Salud",
+        "3️⃣ Vehículos autónomos",
+        "4️⃣ Equidad",
+        "5️⃣ Sociedad"
+      ],
+      "keyMessage": "Tecnología ↔ política pública ↔ implementación",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://via.placeholder.com/800x600/4A90E2/FFFFFF?text=Hoja+de+Ruta",
+          "alt": "Señalización de carretera",
+          "caption": "Señalización — la hoja de ruta de la sesión."
+        }
+      ],
+      "engagement": {
+        "prompt": "¿Qué tema debemos profundizar para tu contexto?"
+      },
+      "citations": [],
+      "notes": "Explicar el hilo conductor ↔ preguntas breves por bloque."
+    },
+    {
+      "id": "seg-1-9",
+      "title": "Expectativas y participación",
+      "subtitle": "Cómo trabajaremos",
+      "bullets": [
+        "Casos reales y mini-debates.",
+        "Encuestas rápidas.",
+        "Plantillas reutilizables."
+      ],
+      "keyMessage": "Relacionar cada tema con un servicio público local en Manizales/Caldas",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://via.placeholder.com/800x600/9B59B6/FFFFFF?text=Participacion",
+          "alt": "Medellín, Colombia",
+          "caption": "Medellín — innovación y servicios públicos digitales."
+        }
+      ],
+      "engagement": {
+        "prompt": "Un servicio local que podría beneficiarse de IA responsable."
+      },
+      "citations": [],
+      "notes": "Invitar a relacionar cada idea con un servicio local."
+    },
+    {
+      "id": "seg-1-10",
+      "title": "Why it matters (Students & Public Officials)",
+      "subtitle": "Dos roles: usuarios y reguladores",
+      "bullets": [],
+      "keyMessage": "Los funcionarios públicos usan y gobiernan IA",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://via.placeholder.com/800x600/F39C12/FFFFFF?text=Educacion",
+          "alt": "Universidad en Colombia",
+          "caption": "Formando funcionarios que usarán y gobernarán IA."
+        }
+      ],
+      "engagement": {
+        "prompt": "¿Cómo equilibras tu rol como usuario y regulador de IA?"
+      },
+      "citations": [],
+      "notes": "Mini-vignette 'Two hats' → roles de usuario y regulador."
+    },
+    {
+      "id": "seg-1-11",
+      "title": "AI is already here (Regional snapshots)",
+      "subtitle": "Ejemplos locales de IA en acción",
+      "bullets": [],
+      "keyMessage": "La IA ya está transformando servicios en Colombia",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://via.placeholder.com/800x600/1ABC9C/FFFFFF?text=Movilidad",
+          "alt": "Interior de vehículo TransMilenio",
+          "caption": "TransMilenio — movilidad urbana con analítica de datos."
+        }
+      ],
+      "engagement": {
+        "prompt": "¿Qué otros ejemplos locales conoces?"
+      },
+      "citations": [],
+      "notes": "Vignette 'Movilidad en Bogotá' → responsabilidad y sesgos."
+    },
+    {
+      "id": "seg-1-12",
+      "title": "A quick stat to ground us",
+      "subtitle": "Un número clave para contextualizar",
+      "bullets": [],
+      "keyMessage": "Los datos guían la priorización de capacidades",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://via.placeholder.com/800x600/34495E/FFFFFF?text=Datos",
+          "alt": "Gráfico de barras",
+          "caption": "Gráfico de barras — usa dato local de adopción."
+        }
+      ],
+      "engagement": {
+        "prompt": "¿Qué capacidad deberíamos fortalecer primero?"
+      },
+      "citations": [],
+      "notes": "Vignette 'Un número clave' → qué capacidad fortalecer primero."
+    },
+    {
+      "id": "seg-1-13",
+      "title": "Institutions set the rules of the game",
+      "subtitle": "Las instituciones definen el marco",
+      "bullets": [],
+      "keyMessage": "Las instituciones definen el marco para una IA segura",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://via.placeholder.com/800x600/2C3E50/FFFFFF?text=Instituciones",
+          "alt": "Parliament Hill, Ottawa",
+          "caption": "Parliament Hill — las instituciones definen el marco para una IA segura."
+        }
+      ],
+      "engagement": {
+        "prompt": "¿Qué herramientas de gobernanza son más urgentes?"
+      },
+      "citations": [],
+      "notes": "Vignette 'Three signals' → Canadá, Brasil, Colombia y sus herramientas de gobernanza."
+    },
+    {
+      "id": "seg-2-1",
+      "title": "AI Policy & Regulation",
+      "subtitle": "El equilibrio entre innovación y protección",
+      "bullets": [],
+      "keyMessage": "La regulación de IA busca maximizar beneficios públicos y minimizar daños—sin frenar la innovación.",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Balance_scale_IMGP9755.jpg",
+          "alt": "Balanza metálica",
+          "caption": "Balance entre innovación y protección."
+        }
+      ],
+      "engagement": {},
+      "citations": [],
+      "notes": "Abrimos con la metáfora de una balanza: innovación ↔ protección. Este segmento compara UE, Canadá, Brasil, EE. UU., China y Colombia: ¿qué regulan, cómo y por qué?"
+    },
+    {
+      "id": "seg-2-2",
+      "title": "¿Por qué regular IA?",
+      "subtitle": "Encontrar el punto justo",
+      "bullets": [
+        "Decisiones críticas: empleo, salud, seguridad.",
+        "Riesgos: sesgo, privacidad, seguridad, accidentes.",
+        "\"Ni sub‑ni sobre‑regulación\": encontrar el punto justo."
+      ],
+      "keyMessage": "Proporcionalidad basada en riesgo—más obligaciones cuanto mayor el impacto.",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Balance_scale_IMGP9755.jpg",
+          "alt": "Balanza de justicia",
+          "caption": "Proporcionalidad regulatoria."
+        }
+      ],
+      "engagement": {},
+      "citations": [
+        "Artificial Intelligence Act (UE)",
+        "Enfoque por niveles de riesgo"
+      ],
+      "notes": "Marco mental: proporcionalidad basada en riesgo—más obligaciones cuanto mayor el impacto. Esto inspira la Ley de IA de la UE, adoptada con un enfoque por niveles de riesgo."
+    },
+    {
+      "id": "seg-2-3",
+      "title": "Mapa rápido de enfoques",
+      "subtitle": "Comparación internacional",
+      "bullets": [
+        "🇪🇺 UE: Ley integral; modelo por riesgo; prohibiciones puntuales",
+        "🇨🇦 Canadá: AIA obligatoria en sector público; transparencia",
+        "🇧🇷 Brasil: PL 2338/2023; riesgo: \"excesivo\" y \"alto\"",
+        "🇺🇸 EE. UU.: Guías sectoriales + leyes locales (p. ej., sesgo en contratación)",
+        "🇨🇳 China: Reglas para IA generativa y revisiones de seguridad",
+        "🇨🇴 Colombia: Política CONPES 4144 y hoja de ruta nacional"
+      ],
+      "keyMessage": "Cada jurisdicción adapta su enfoque regulatorio a su contexto institucional.",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Equirectangular_projection_SW.jpg/1280px-Equirectangular_projection_SW.jpg",
+          "alt": "Mapa mundial",
+          "caption": "Enfoques regulatorios globales de IA."
+        }
+      ],
+      "engagement": {},
+      "citations": [
+        "UE: Comisión Europea; EUR‑Lex",
+        "Canadá: TBS/GC",
+        "Brasil: Senado Federal",
+        "EE. UU.: DCWP (NYC Local Law 144)",
+        "China: CAC",
+        "Colombia: DNP (CONPES 4144)"
+      ],
+      "notes": "UE (riesgo): Comisión y EUR‑Lex. Canadá (Directiva ADM + AIA): TBS/GC. Brasil (PL 2338/2023, Senado 2024): Senado Federal. EE. UU. (NYC Local Law 144—auditoría sesgos): DCWP. China (Medidas IA Generativa): CAC. Colombia (CONPES 4144): DNP."
+    },
+    {
+      "id": "seg-2-4",
+      "title": "Unión Europea: Ley de IA (risk‑based)",
+      "subtitle": "Categorización por nivel de riesgo",
+      "bullets": [
+        "Categorías: riesgo inaceptable (prohibido), alto (requisitos estrictos), limitado (transparencia), mínimo.",
+        "Ejemplos: social scoring (prohibido); IA médica / conducción (alto riesgo).",
+        "Obligaciones: gestión de riesgo, calidad de datos, documentación, supervisión humana, marcado."
+      ],
+      "keyMessage": "El modelo por riesgo gradúa obligaciones según el impacto potencial.",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/Louise_Weiss_building_EP_Strasbourg_11.jpg",
+          "alt": "Parlamento Europeo (Strasbourg)",
+          "caption": "Parlamento Europeo — líder en regulación de IA."
+        }
+      ],
+      "engagement": {},
+      "citations": [
+        "Artificial Intelligence Act (UE)",
+        "EUR-Lex"
+      ],
+      "notes": "Buen slide para explicar el porqué del riesgo y la gradación de obligaciones."
+    },
+    {
+      "id": "seg-2-5",
+      "title": "Canadá: AIA y compras públicas responsables",
+      "subtitle": "Evaluación de impacto algorítmico",
+      "bullets": [
+        "Directiva sobre decisiones automatizadas (ADM) en el Gobierno Federal.",
+        "AIA obligatoria antes de desplegar IA: evalúa sesgo, explicabilidad, privacidad.",
+        "Niveles de impacto → medidas de mitigación y transparencia."
+      ],
+      "keyMessage": "Enfoque proactivo centrado en gestión pública responsable.",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/3/32/Parliament_Hill%2C_Ottawa.jpg",
+          "alt": "Parliament Hill (Ottawa)",
+          "caption": "Canadá — líder en IA responsable en el sector público."
+        }
+      ],
+      "engagement": {},
+      "citations": [
+        "Treasury Board Secretariat (TBS)",
+        "Directiva ADM + AIA"
+      ],
+      "notes": "Menciona que es proactivo y centrado en gestión pública (no sólo mercado)."
+    },
+    {
+      "id": "seg-2-6",
+      "title": "Brasil: PL 2338/2023 (en trámite)",
+      "subtitle": "Marco general de IA",
+      "bullets": [
+        "Senado aprobó marco general de IA (2024).",
+        "Clasificación por riesgo: \"excesivo\" (prohibido), \"alto\" (requisitos: supervisión humana, auditorías).",
+        "Ámbitos: infraestructura crítica, justicia, salud, vehículos autónomos, etc."
+      ],
+      "keyMessage": "Liderazgo regional con alineamiento al modelo europeo.",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Brazilian_National_Congress.jpg",
+          "alt": "Congreso Nacional (Brasília)",
+          "caption": "Brasil — avanzando en regulación de IA en América Latina."
+        }
+      ],
+      "engagement": {},
+      "citations": [
+        "Senado Federal (Brasil)",
+        "PL 2338/2023"
+      ],
+      "notes": "Enfatiza liderazgo regional y alineamiento con tendencia UE."
+    },
+    {
+      "id": "seg-2-7",
+      "title": "Estados Unidos: mosaico sectorial + leyes locales",
+      "subtitle": "Regulación fragmentada",
+      "bullets": [
+        "Sin ley federal única; enfoque por sectores y guías (p. ej., contratación, salud).",
+        "Caso NYC Local Law 144: auditorías de sesgo para herramientas de contratación + notificación al candidato.",
+        "Tendencia: regulaciones estatal/local + guías federales."
+      ],
+      "keyMessage": "Heterogeneidad regulatoria: sectorial + local → oportunidades y vacíos.",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Capitol_west_side.JPG/500px-US_Capitol_west_side.JPG",
+          "alt": "U.S. Capitol (vista oeste)",
+          "caption": "EE. UU. — enfoque sectorial y local en regulación de IA."
+        }
+      ],
+      "engagement": {},
+      "citations": [
+        "NYC Local Law 144 (DCWP)",
+        "The White House AI guidelines"
+      ],
+      "notes": "Explica la heterogeneidad: sectorial + local → oportunidades y vacíos."
+    },
+    {
+      "id": "seg-2-8",
+      "title": "China: control ex‑ante y seguridad",
+      "subtitle": "Regulación preventiva",
+      "bullets": [
+        "Medidas Interinas (2023) para IA generativa: revisiones de seguridad, requisitos de contenido/etiquetado.",
+        "Enfoque en alineación regulatoria con prioridades estatales y gestión de plataformas."
+      ],
+      "keyMessage": "Control previo y seguridad informacional — diferencia filosófica con Occidente.",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/2/21/Beijing%2C_Tiananmen_Square%2C_Great_Hall_of_the_People_%286170353894%29.jpg",
+          "alt": "Gran Salón del Pueblo (Beijing)",
+          "caption": "China — regulación preventiva de IA."
+        }
+      ],
+      "engagement": {},
+      "citations": [
+        "Cyberspace Administration of China (CAC)",
+        "Medidas Interinas 2023"
+      ],
+      "notes": "Diferencia filosófica con UE/Américas: control previo y seguridad informacional."
+    },
+    {
+      "id": "seg-2-9",
+      "title": "Colombia: de estrategia a implementación",
+      "subtitle": "CONPES 4144 y hoja de ruta",
+      "bullets": [
+        "Política Nacional de IA (CONPES 4144) y ruta 2019→.",
+        "Prioridades: adopción ética, datos, talento, servicios públicos.",
+        "Oportunidad: adaptar enfoque por riesgo a capacidad institucional local."
+      ],
+      "keyMessage": "De la estrategia nacional a la implementación práctica en servicios públicos.",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Capitalio_National_de_Colombia%2C_Bogot%C3%A1.jpg",
+          "alt": "Capitolio Nacional (Bogotá)",
+          "caption": "Colombia — implementando política nacional de IA."
+        }
+      ],
+      "engagement": {
+        "prompt": "¿Qué casos locales (salud, subsidios, movilidad) podrían beneficiarse del enfoque por riesgo?"
+      },
+      "citations": [
+        "DNP (CONPES 4144)",
+        "Política Nacional de IA"
+      ],
+      "notes": "Conectar con casos locales (salud, subsidios, movilidad) y cooperación internacional."
+    },
+    {
+      "id": "seg-2-10",
+      "title": "Temas regulatorios recurrentes",
+      "subtitle": "Ejes comunes en todas las jurisdicciones",
+      "bullets": [
+        "✓ Transparencia (informar uso de IA).",
+        "✓ Seguridad (pruebas, gestión de riesgos).",
+        "✓ Privacidad (datos y cumplimiento).",
+        "✓ Responsabilidad (quién responde por daños).",
+        "✓ Humano en el circuito en decisiones críticas."
+      ],
+      "keyMessage": "Estos ejes aparecen en todos los marcos regulatorios principales.",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Checklist-icon.svg",
+          "alt": "Icono checklist",
+          "caption": "Requisitos comunes en regulación de IA."
+        }
+      ],
+      "engagement": {},
+      "citations": [
+        "UE (AI Act)",
+        "Canadá (ADM/AIA)",
+        "Brasil (PL 2338)",
+        "NYC Local Law 144"
+      ],
+      "notes": "Estos ejes aparecen en UE (AI Act), Canadá (ADM/AIA), Brasil (PL 2338), NYC 144."
+    },
+    {
+      "id": "seg-2-11",
+      "title": "Línea de tiempo (hitos)",
+      "subtitle": "Evolución de la regulación global de IA",
+      "bullets": [
+        "2019 — Canadá adopta y operacionaliza ADM + AIA (Gob. Federal)",
+        "2021 — Borrador Ley de IA (UE)",
+        "2023 — Medidas IA generativa (China)",
+        "2023 — NYC Local Law 144 (auditorías de sesgo)",
+        "2024 — UE AI Act adoptada; fases de entrada en vigor",
+        "2024 — Brasil: Senado aprueba PL 2338/2023"
+      ],
+      "keyMessage": "La regulación de IA ha evolucionado rápidamente en los últimos 5 años.",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://via.placeholder.com/800x600/3498DB/FFFFFF?text=Timeline+2019-2024",
+          "alt": "Icono cronograma",
+          "caption": "Cronología de hitos regulatorios en IA."
+        }
+      ],
+      "engagement": {},
+      "citations": [
+        "UE: Comisión Europea",
+        "Canadá: TBS",
+        "Brasil: Senado",
+        "NYC: DCWP",
+        "China: CAC"
+      ],
+      "notes": "Cita oficial por hito (UE, Canadá, Brasil, NYC, China)."
+    },
+    {
+      "id": "seg-2-12",
+      "title": "Mini comparativa: exigencia vs. flexibilidad",
+      "subtitle": "Modelos regulatorios en perspectiva",
+      "bullets": [
+        "🇪🇺 UE: Modelo de riesgo, prohibiciones, requisitos fuertes, transparencia obligatoria",
+        "🇨🇦 Canadá: AIA en sector público, según impacto, transparencia obligatoria",
+        "🇧🇷 Brasil: Modelo de riesgo, prohibiciones, requisitos fuertes, transparencia obligatoria",
+        "🇺🇸 EE. UU.: Sectorial/local, variable, variable",
+        "🇨🇳 China: Control ex‑ante, revisiones/seguridad, obligatoria",
+        "🇨🇴 Colombia: Estrategia nacional en desarrollo"
+      ],
+      "keyMessage": "Diferencias de diseño institucional y grado de prescripción.",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Equirectangular_projection_SW.jpg/1280px-Equirectangular_projection_SW.jpg",
+          "alt": "Mapa político mundial",
+          "caption": "Comparación de modelos regulatorios de IA."
+        }
+      ],
+      "engagement": {},
+      "citations": [],
+      "notes": "Resume diferencias de diseño institucional y grado de prescripción (alto en UE/Brasil; medio en Canadá; variable en EE. UU.; control en China; evolución en Colombia)."
+    },
+    {
+      "id": "seg-2-13",
+      "title": "Caso para debate (interacción)",
+      "subtitle": "Escenario: IA médica con fallas",
+      "bullets": [
+        "\"Un hospital usó un sistema de IA que sobrediagnosticó a varios pacientes.\"",
+        "¿Qué exigirías como policymaker?",
+        "• Registro y AIA.",
+        "• Pruebas de seguridad y validación clínica.",
+        "• Supervisión humana y derecho a apelación.",
+        "• Auditoría independiente y reporte público.",
+        "• Sanciones y plan de corrección."
+      ],
+      "keyMessage": "La regulación efectiva requiere múltiples capas de protección.",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://via.placeholder.com/800x600/E74C3C/FFFFFF?text=Hospital+IA",
+          "alt": "Pasillo hospitalario",
+          "caption": "Caso: IA médica y necesidad de supervisión."
+        }
+      ],
+      "engagement": {
+        "prompt": "¿Qué parte aplicarías mañana en Manizales/Caldas? ¿Qué requeriría cambios legales vs. cambios de gestión?"
+      },
+      "citations": [
+        "NYC Local Law 144",
+        "AIA Canadá",
+        "UE AI Act (alto riesgo)"
+      ],
+      "notes": "Alternativa: mini‑encuesta: \"¿Leyes específicas de IA ya, o basta adaptar leyes existentes?\" Manos arriba por cada opción. Referir a ejemplos: NYC 144 (contratación), AIA Canadá, alto riesgo UE."
+    }
+  ]
+}

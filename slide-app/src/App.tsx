@@ -10,7 +10,7 @@ import { Deck, Language } from './types';
  * Manages language selection, theme toggling, and content loading
  */
 function App() {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>('es');
   const [theme, toggleTheme] = useTheme();
   const [deck, setDeck] = useState<Deck | null>(null);
   const [loading, setLoading] = useState(true);
